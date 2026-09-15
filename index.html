@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="holo" data-view="resume">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Appa Rao Vadde — AI Platforms · Developer Productivity · Site Reliability Engineering. 10+ years shipping production multi-agent systems and developer platforms adopted by 100+ engineers across 25+ teams." />
+<meta name="author" content="Appa Rao Vadde" />
+<meta name="theme-color" content="#04060f" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Appa Rao Vadde — AI Platforms · Dev Productivity · SRE" />
+<meta property="og:description" content="Senior engineer shipping production multi-agent systems and developer platforms adopted by 100+ engineers across 25+ teams. AWS Bedrock · MCP · Context Hub · Chaos Engineering · Observability-as-Code." />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Appa Rao Vadde — Staff-level AI/SRE/Platform Engineer" />
+<meta name="twitter:description" content="AI Platforms · Dev Productivity · SRE · 10+ years · platforms adopted by 100+ engineers." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234de1ff'/%3E%3Cstop offset='0.5' stop-color='%23a855f7'/%3E%3Cstop offset='1' stop-color='%23ff4de1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='58%25' font-family='Inter,system-ui,sans-serif' font-size='26' font-weight='900' fill='white' text-anchor='middle' dominant-baseline='middle'%3EAV%3C/text%3E%3C/svg%3E" />
+<title>Appa Rao Vadde — Cover Letter · Resume · Career Graph</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;700;900&family=Fraunces:ital,wght@0,500;0,700;1,500&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+/* =========================================================================
+   RESUME V3 — OBSERVABLE SYSTEM / COMMAND DECK + COVER LETTER ADDENDUM
+   Single static HTML. 4 themes. 7 viewports. Career graph. Print-perfect.
+   ========================================================================= */
+
+/* ---------- Shared tokens ---------- */
+:root {
+  --measure: 1680px;
+  --measure-letter: 820px;
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+  --shadow: 0 10px 30px rgba(0,0,0,.18);
+  --shadow-lg: 0 24px 70px rgba(0,0,0,.28);
+  --ease: cubic-bezier(.22,1,.36,1);
+  --ease-bounce: cubic-bezier(.34,1.56,.64,1);
+  --t-fast: .18s;
+  --t: .32s;
+  --t-slow: .6s;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --font-serif: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
+  --cx: 50%; --cy: 50%;
+  --mx: 50%; --my: 50%;
+  --progress: 0%;
+}
+
+/* ---------- LIQUID GLASS (default) ---------- */
+:root,
+[data-theme="liquid"] {
+  --bg: #04060f; --bg-alt: #080b1a;
+  --fg: #f1f3ff; --fg-muted: rgba(241,243,255,.74); --fg-dim: rgba(241,243,255,.5);
+  --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.22);
+  --surface: rgba(255,255,255,.05); --surface-hi: rgba(255,255,255,.1);
+  --blur: 30px; --sat: 160%;
+  --a1: #7dd3fc; --a2: #c4b5fd; --a3: #f0abfc; --warn: #fbbf24; --ok: #4ade80;
+  --grad: linear-gradient(135deg, #7dd3fc 0%, #c4b5fd 40%, #f0abfc 100%);
+  --grad-soft: linear-gradient(135deg, rgba(125,211,252,.08) 0%, rgba(196,181,253,.06) 100%);
+  --link: #7dd3fc;
+  --tint: rgba(125,211,252,.14);
+  --paper: rgba(255,255,255,.04);
+  --paper-edge: rgba(255,255,255,.1);
+}
+
+/* ---------- FLUENT ACRYLIC ---------- */
+[data-theme="fluent"] {
+  --bg: #1b1a26; --bg-alt: #252434;
+  --fg: #f5f5ff; --fg-muted: rgba(245,245,255,.76); --fg-dim: rgba(245,245,255,.56);
+  --border: rgba(164,152,255,.24); --border-strong: rgba(164,152,255,.42);
+  --surface: rgba(255,255,255,.04); --surface-hi: rgba(164,152,255,.09);
+  --blur: 26px; --sat: 150%;
+  --a1: #7a7aff; --a2: #a488f3; --a3: #4adfe2; --warn: #ffc83d; --ok: #6bcb77;
+  --grad: linear-gradient(135deg, #4adfe2 0%, #7a7aff 50%, #a488f3 100%);
+  --grad-soft: linear-gradient(135deg, rgba(122,122,255,.08) 0%, rgba(164,136,243,.06) 100%);
+  --link: #a488f3;
+  --tint: rgba(122,122,255,.14);
+  --paper: rgba(255,255,255,.04); --paper-edge: rgba(164,152,255,.16);
+}
+
+/* ---------- MICA (light) ---------- */
+[data-theme="mica"] {
+  --bg: #f4f1ec; --bg-alt: #ebe7df;
+  --fg: #1a1a22; --fg-muted: rgba(26,26,34,.72); --fg-dim: rgba(26,26,34,.5);
+  --border: rgba(26,26,34,.12); --border-strong: rgba(26,26,34,.22);
+  --surface: rgba(255,255,255,.55); --surface-hi: rgba(255,255,255,.85);
+  --blur: 10px; --sat: 120%;
+  --a1: #1e3a8a; --a2: #0f766e; --a3: #b45309; --warn: #b45309; --ok: #15803d;
+  --grad: linear-gradient(135deg, #1e3a8a 0%, #0f766e 50%, #b45309 100%);
+  --grad-soft: linear-gradient(135deg, rgba(30,58,138,.04) 0%, rgba(15,118,110,.04) 100%);
+  --link: #1e40af;
+  --tint: rgba(30,58,138,.08);
+  --paper: #fffaf0; --paper-edge: rgba(26,26,34,.14);
+}
+
+/* ---------- HOLO 2050 (gaming/terminal wow) ---------- */
+[data-theme="holo"] {
+  --bg: #03020a; --bg-alt: #07041a;
+  --fg: #d8f4ff; --fg-muted: rgba(216,244,255,.76); --fg-dim: rgba(216,244,255,.56);
+  --border: rgba(77,225,255,.3); --border-strong: rgba(77,225,255,.55);
+  --surface: rgba(8,12,32,.45); --surface-hi: rgba(77,225,255,.09);
+  --blur: 16px; --sat: 160%;
+  --a1: #4de1ff; --a2: #ff4de1; --a3: #b2ff4d; --warn: #ffde4d; --ok: #b2ff4d;
+  --grad: linear-gradient(135deg, #4de1ff 0%, #b2ff4d 45%, #ff4de1 100%);
+  --grad-soft: linear-gradient(135deg, rgba(77,225,255,.08) 0%, rgba(255,77,225,.06) 100%);
+  --link: #4de1ff;
+  --tint: rgba(77,225,255,.12);
+  --paper: rgba(8,12,32,.55); --paper-edge: rgba(77,225,255,.28);
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+/* Symmetric horizontal centering regardless of scrollbar presence.
+   On <body>, `100%` resolves to html's clientWidth (excludes scrollbar),
+   while 100vw is the full viewport (includes scrollbar). The difference
+   equals the scrollbar width; added as padding-left balances the right-side
+   scrollbar gutter. Works in all engines and all OSes:
+     - Overlay scrollbars (macOS default) → calc = 0 → no-op
+     - Classic scrollbars (Win/Linux) → calc = scrollbar width → matched */
+body {
+  padding-left: calc(100vw - 100%);
+}
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg); color: var(--fg);
+  min-height: 100vh; line-height: 1.55;
+  font-feature-settings: "ss01" 1, "cv11" 1;
+  overflow-x: hidden;
+  transition: background var(--t-slow) var(--ease), color var(--t) var(--ease);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--link); text-decoration: none; transition: color var(--t-fast); }
+a:hover { color: var(--fg); }
+button { font-family: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+h1, h2, h3, h4 { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.015em; line-height: 1.15; margin: 0; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+::selection { background: var(--a1); color: #04060f; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--a1); }
+
+/* ---------- Background layers ---------- */
+.bg-layer { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; transition: opacity var(--t-slow) var(--ease); }
+.bg-gradient {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 0%, rgba(125,211,252,.16), transparent 50%),
+              radial-gradient(ellipse at 80% 100%, rgba(240,171,252,.14), transparent 50%),
+              linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+  transition: background var(--t-slow) var(--ease);
+}
+[data-theme="fluent"] .bg-gradient { background: radial-gradient(ellipse at 10% 0%, rgba(122,122,255,.18), transparent 55%), radial-gradient(ellipse at 90% 100%, rgba(74,223,226,.12), transparent 50%), linear-gradient(180deg, var(--bg), var(--bg-alt)); }
+[data-theme="mica"] .bg-gradient { background: radial-gradient(ellipse at 20% 0%, rgba(30,58,138,.06), transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(180,83,9,.05), transparent 55%), linear-gradient(180deg, var(--bg), var(--bg-alt)); }
+[data-theme="holo"] .bg-gradient { background: radial-gradient(ellipse at 15% 0%, rgba(77,225,255,.18), transparent 55%), radial-gradient(ellipse at 85% 100%, rgba(255,77,225,.14), transparent 55%), linear-gradient(180deg, var(--bg), var(--bg-alt)); }
+
+.bg-orbs { position: absolute; inset: 0; filter: blur(80px); opacity: .65; }
+.orb { position: absolute; border-radius: 50%; animation: drift 40s ease-in-out infinite; }
+.orb-1 { width: 560px; height: 560px; top: -10%; left: -10%; background: radial-gradient(circle, var(--a1), transparent 70%); }
+.orb-2 { width: 480px; height: 480px; top: 40%; right: -15%; background: radial-gradient(circle, var(--a2), transparent 70%); animation-delay: -12s; }
+.orb-3 { width: 620px; height: 620px; bottom: -20%; left: 30%; background: radial-gradient(circle, var(--a3), transparent 70%); animation-delay: -22s; }
+[data-theme="mica"] .bg-orbs { opacity: .3; filter: blur(60px); }
+[data-theme="holo"] .bg-orbs { opacity: .5; }
+@keyframes drift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(50px,-40px) scale(1.05); }
+  66% { transform: translate(-40px,30px) scale(.95); }
+}
+
+.bg-grid, .bg-scan { position: absolute; inset: 0; opacity: 0; transition: opacity var(--t-slow); }
+[data-theme="holo"] .bg-grid {
+  opacity: .14;
+  background-image: linear-gradient(rgba(77,225,255,.28) 1px, transparent 1px), linear-gradient(90deg, rgba(77,225,255,.28) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 40%, #000 20%, transparent 80%);
+}
+[data-theme="holo"] .bg-scan {
+  opacity: .5;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 2px, rgba(77,225,255,.04) 2px, rgba(77,225,255,.04) 3px);
+  animation: scan 8s linear infinite;
+}
+@keyframes scan { 0% { transform: translateY(0); } 100% { transform: translateY(8px); } }
+
+.bg-noise { position: absolute; inset: 0; opacity: 0; mix-blend-mode: overlay; pointer-events: none; transition: opacity var(--t-slow); }
+[data-theme="fluent"] .bg-noise {
+  opacity: .3;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Spotlight + Progress ---------- */
+.spotlight { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(380px circle at var(--cx) var(--cy), rgba(125,211,252,.08), transparent 60%); transition: background var(--t-slow); }
+[data-theme="fluent"] .spotlight { background: radial-gradient(380px circle at var(--cx) var(--cy), rgba(122,122,255,.09), transparent 60%); }
+[data-theme="mica"] .spotlight { background: radial-gradient(380px circle at var(--cx) var(--cy), rgba(30,58,138,.04), transparent 60%); }
+[data-theme="holo"] .spotlight { background: radial-gradient(380px circle at var(--cx) var(--cy), rgba(77,225,255,.1), transparent 60%); }
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 100; pointer-events: none; }
+.progress::before { content: ''; display: block; height: 100%; width: var(--progress); background: var(--grad); box-shadow: 0 0 12px rgba(125,211,252,.5); transition: width .05s linear; }
+[data-theme="holo"] .progress::before { box-shadow: 0 0 14px var(--a1), 0 0 28px var(--a2); }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap;       /* chip strip (nav-links) wraps to row 2 at every width */
+  row-gap: 6px;
+  gap: 14px; padding: 12px 24px;
+  background: rgba(4,6,15,.55);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  border-bottom: 1px solid var(--border);
+  transition: background var(--t) var(--ease), border-color var(--t) var(--ease);
+}
+[data-theme="fluent"] .nav { background: rgba(27,26,38,.65); }
+[data-theme="mica"] .nav { background: rgba(244,241,236,.85); }
+[data-theme="holo"] .nav { background: rgba(3,2,10,.6); }
+
+.nav-brand {
+  font-family: var(--font-mono); font-weight: 700; font-size: 14.5px;
+  letter-spacing: .02em;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 10px; border-radius: 10px;
+  transition: transform var(--t-fast);
+}
+.nav-brand:hover { transform: translateY(-1px); }
+.nav-brand::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--a1); box-shadow: 0 0 10px var(--a1); animation: pulse 2.4s ease-in-out infinite; }
+.nav-status { display: none; }
+[data-theme="holo"] .nav-status {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-left: 10px; padding: 2px 8px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10.5px; letter-spacing: .08em;
+  color: var(--a3);
+  background: rgba(178,255,77,.06);
+  border: 1px solid rgba(178,255,77,.22);
+  border-radius: 999px;
+}
+[data-theme="holo"] .nav-status .ns-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--a3); box-shadow: 0 0 6px var(--a3); animation: pulse 1.6s ease-in-out infinite; }
+[data-theme="holo"] .nav-status .ns-sep { opacity: .4; }
+[data-theme="holo"] .nav-status .ns-uptime { color: var(--a1); }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+
+.nav-doc-switch { display: inline-flex; gap: 2px; padding: 3px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-pill); }
+.doc-btn {
+  font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  padding: 6px 12px; border-radius: var(--radius-pill);
+  color: var(--fg-muted); transition: color var(--t-fast), background var(--t-fast);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.doc-btn:hover { color: var(--fg); background: var(--surface-hi); }
+.doc-btn[data-active="true"] { background: var(--grad); color: #04060f; box-shadow: 0 4px 16px rgba(125,211,252,.3); }
+[data-theme="holo"] .doc-btn[data-active="true"] { color: #03020a; box-shadow: 0 0 0 1px var(--a1), 0 0 14px var(--a1); }
+.doc-btn::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+/* Section-nav chip strip — PERMANENT second row of the nav, at every width.
+   - Wide screens (≥1400): all 8 chips fit without scroll, centered.
+   - Medium/narrow screens: chips scroll horizontally on the same strip.
+   - Always visible, always in the same place, always styled the same way. */
+.nav-links {
+  display: flex;
+  flex: 0 0 100%;              /* always take the full row — forces wrap to row 2 */
+  order: 99;                   /* after brand, doc-switch, nav-actions */
+  gap: 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  padding: 2px 2px 4px;
+  margin-top: 4px;
+  justify-content: center;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  flex: 0 0 auto;
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 12px; font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-family: var(--font-mono);
+  scroll-snap-align: start;
+  color: var(--fg-muted);
+  transition: color var(--t-fast), background var(--t-fast);
+}
+.nav-links a:hover { color: var(--fg); background: var(--surface-hi); }
+
+/* View-aware chip visibility — only show links that jump to visible content.
+   Viewing Cover  → hide all resume section chips.
+   Viewing Resume → hide Cover chip.
+   Viewing Both   → show everything. */
+html[data-view="cover"] .nav-links a[href="#hero"],
+html[data-view="cover"] .nav-links a[href="#stats"],
+html[data-view="cover"] .nav-links a[href="#highlights"],
+html[data-view="cover"] .nav-links a[href="#summary"],
+html[data-view="cover"] .nav-links a[href="#expertise"],
+html[data-view="cover"] .nav-links a[href="#graph"],
+html[data-view="cover"] .nav-links a[href="#experience"],
+html[data-view="cover"] .nav-links a[href="#education"] { display: none; }
+html[data-view="resume"] .nav-links a[href="#cover"] { display: none; }
+
+/* nav-actions relies on .nav's `justify-content: space-between` to sit at the
+   right edge. With nav-links on its own row 2, row 1 has exactly 3 items
+   (brand, doc-switch, nav-actions) which space-between distributes cleanly. */
+.nav-actions { display: flex; align-items: center; gap: 6px; }
+.theme-group { display: flex; gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 3px; }
+.theme-btn { height: 28px; border-radius: 14px; padding: 0 10px 0 8px; gap: 6px; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; transition: transform var(--t-fast), background var(--t-fast); color: var(--fg-muted); }
+.theme-btn .tb-ic { font-size: 13px; line-height: 1; }
+.theme-btn .tb-lb { font-family: var(--font-mono); font-size: 10.8px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.theme-btn[data-active="true"] { color: #04060f; }
+[data-theme="holo"] .theme-btn[data-active="true"] { color: #03020a; }
+/* Theme labels compact to circles below ultrawide (1500px and under) —
+   the only ornamental compaction on desktop/tablet. ONLINE ticker stays
+   visible at every width above mobile so the brand doesn't lose character
+   as you resize. */
+@media (max-width: 1500px) {
+  .theme-btn .tb-lb { display: none; }
+  .theme-btn { width: 28px; padding: 0; border-radius: 50%; }
+}
+.theme-btn:hover { transform: scale(1.08); background: var(--surface-hi); }
+.theme-btn[data-active="true"] { background: var(--grad); transform: scale(1.05); box-shadow: 0 0 0 1px var(--border-strong), 0 4px 16px rgba(125,211,252,.35); }
+[data-theme="holo"] .theme-btn[data-active="true"] { box-shadow: 0 0 0 1px var(--a1), 0 0 14px var(--a1); }
+.icon-btn { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--fg-muted); border: 1px solid var(--border); background: var(--surface); transition: all var(--t-fast); position: relative; }
+.icon-btn:hover { color: var(--fg); background: var(--surface-hi); border-color: var(--border-strong); transform: translateY(-1px); }
+.icon-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Mobile/tablet "all-or-nothing" audio kill: html[data-audio="off"] hides
+   every audio-related UI affordance — toggle button, help row, KBD chip.
+   The matching JS skips initialization entirely so no audio bytes are
+   fetched and no listeners wire. Coarse-pointer detection (phones + tablets). */
+html[data-audio="off"] .audio-btn,
+html[data-audio="off"] [data-audio-only] { display: none !important; }
+
+/* Audio toggle — 3 visual states driven by data-audio-state on the button:
+     muted   → speaker-with-X icon (default visual)
+     playing → speaker-with-waves icon, accent color, gentle ambient ring
+     pending → speaker-with-waves icon, pulsing ring (wants-to-play but autoplay blocked) */
+.audio-btn .audio-ic-on  { display: none; }
+.audio-btn .audio-ic-off { display: block; }
+.audio-btn[data-audio-state="playing"] .audio-ic-on,
+.audio-btn[data-audio-state="pending"] .audio-ic-on { display: block; }
+.audio-btn[data-audio-state="playing"] .audio-ic-off,
+.audio-btn[data-audio-state="pending"] .audio-ic-off { display: none; }
+.audio-btn[data-audio-state="playing"] { color: var(--a1); border-color: var(--a1); }
+.audio-btn[data-audio-state="playing"]::after {
+  content: ''; position: absolute; inset: -2px; border-radius: inherit;
+  border: 1px solid var(--a1); opacity: .35; pointer-events: none;
+  animation: audio-ring 2.4s ease-in-out infinite;
+}
+.audio-btn[data-audio-state="pending"] { color: var(--a1); border-color: var(--a1); }
+.audio-btn[data-audio-state="pending"]::after {
+  content: ''; position: absolute; inset: -3px; border-radius: inherit;
+  border: 1px solid var(--a1); pointer-events: none;
+  animation: audio-pulse 1.4s ease-out infinite;
+}
+@keyframes audio-ring  { 0%,100% { transform: scale(1); opacity: .35; } 50% { transform: scale(1.06); opacity: .15; } }
+@keyframes audio-pulse { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.35); opacity: 0; } }
+[data-theme="holo"] .audio-btn[data-audio-state="playing"] { box-shadow: 0 0 0 1px var(--a1), 0 0 12px rgba(77,225,255,.35); }
+[data-theme="holo"] .audio-btn[data-audio-state="pending"] { box-shadow: 0 0 0 1px var(--a1), 0 0 12px rgba(77,225,255,.45); }
+
+/* ---------- Main container ---------- */
+main { position: relative; z-index: 2; max-width: var(--measure); margin: 0 auto; padding: 28px 28px 60px; }
+
+/* Sticky-nav-aware scroll target (~64px nav + breathing room) */
+/* scroll-margin-top must clear the sticky 2-row nav (brand row + chip strip)
+   plus breathing room so the section kicker line is visible, not glued to the
+   nav. Values measured against the computed nav height at each breakpoint.
+   Bigger on mobile where the nav is 3 rows tall. */
+#cover, #hero, #stats, #highlights, #summary, #expertise, #graph, #experience, #education { scroll-margin-top: 120px; }
+@media (max-width: 640px) {
+  #cover, #hero, #stats, #highlights, #summary, #expertise, #graph, #experience, #education { scroll-margin-top: 190px; }
+}
+
+/* =====================================================================
+   COVER LETTER — letterhead aesthetic, distinct from resume
+   ===================================================================== */
+.cover-letter { max-width: 1280px; margin: 0 auto; padding: 22px 0 0; }
+
+.doc-banner {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 7px 14px 7px 12px;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--a1);
+  background: var(--tint);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  margin-bottom: 18px;
+}
+.doc-banner::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--a1); box-shadow: 0 0 8px var(--a1); animation: pulse 2.4s ease-in-out infinite; }
+.doc-banner.resume { color: var(--a2); background: rgba(196,181,253,.1); }
+.doc-banner.resume::before { background: var(--a2); box-shadow: 0 0 8px var(--a2); }
+[data-theme="mica"] .doc-banner.resume { background: rgba(15,118,110,.08); color: var(--a2); }
+[data-theme="mica"] .doc-banner.resume::before { background: var(--a2); box-shadow: none; }
+[data-theme="holo"] .doc-banner { color: var(--a1); }
+[data-theme="holo"] .doc-banner.resume { color: var(--a2); background: rgba(255,77,225,.1); border-color: rgba(255,77,225,.35); }
+
+.letter-meta {
+  font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);
+  padding: 14px 18px; margin-bottom: 18px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  border-left: 3px solid var(--a1);
+}
+.letter-meta .frontmatter {
+  font-family: var(--font-mono); font-size: 11.5px; color: var(--fg-dim); margin: 0;
+}
+.letter-meta .frontmatter dt { display: inline; color: var(--a1); font-weight: 600; }
+.letter-meta .frontmatter dd { display: inline; margin: 0; margin-right: 14px; color: var(--fg-muted); }
+.letter-meta .frontmatter dd::after { content: ''; }
+.letter-meta .fm-line { display: flex; gap: 10px; margin-bottom: 4px; }
+.letter-meta .fm-line:last-child { margin-bottom: 0; }
+.letter-meta .fm-key { color: var(--a1); font-weight: 700; min-width: 76px; }
+.letter-meta .fm-val { color: var(--fg-muted); }
+.letter-meta .fm-sep { color: var(--fg-dim); }
+
+.letter {
+  position: relative;
+  padding: 44px clamp(36px, 6vw, 96px) 40px;
+  background: var(--paper);
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.letter::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
+[data-theme="holo"] .letter::after {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 3px, rgba(77,225,255,.015) 3px, rgba(77,225,255,.015) 4px);
+  pointer-events: none;
+}
+
+.letter-head {
+  display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 22px; margin-bottom: 24px;
+  border-bottom: 1px dashed var(--border);
+}
+.letter-from { max-width: 58%; }
+.letter-name {
+  font-family: var(--font-sans);
+  font-size: 26px; font-weight: 800; letter-spacing: -0.02em;
+  color: var(--fg); margin-bottom: 4px;
+}
+[data-theme="holo"] .letter-name { font-family: 'Orbitron', sans-serif; letter-spacing: .01em; font-weight: 700; }
+.letter-title {
+  font-family: var(--font-mono); font-size: 12px;
+  color: var(--a1); letter-spacing: .04em;
+  margin-bottom: 10px;
+}
+.letter-contact { font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); display: flex; flex-wrap: wrap; gap: 2px 12px; }
+.letter-contact a { color: var(--fg-muted); }
+.letter-contact a:hover { color: var(--a1); }
+
+.letter-to { text-align: right; font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); min-width: 180px; padding: 8px 12px; background: var(--tint); border: 1px solid var(--border); border-radius: var(--radius); }
+.letter-ref-label { font-size: 10px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 2px; }
+.letter-ref-value { font-size: 13px; font-weight: 700; color: var(--fg); margin-bottom: 2px; letter-spacing: .01em; }
+.letter-ref-sub { font-size: 10.5px; color: var(--fg-muted); letter-spacing: .02em; }
+
+.letter-body { font-size: 15.5px; line-height: 1.72; color: var(--fg-muted); max-width: 76ch; margin: 0 auto; }
+.letter-body .salute { color: var(--fg); font-weight: 600; margin-bottom: 18px; font-size: 15px; }
+.letter-body p { margin-bottom: 16px; }
+.letter-body p:last-of-type { margin-bottom: 20px; }
+.letter-body strong { color: var(--fg); font-weight: 600; }
+.letter-body em { font-style: normal; color: var(--a1); font-family: var(--font-mono); font-size: .92em; background: var(--tint); padding: 1px 6px; border-radius: 4px; }
+.letter-body .emphasize { color: var(--fg); font-style: italic; }
+
+.letter-sig { margin: 28px auto 0; padding-top: 20px; border-top: 1px dashed var(--border); max-width: 76ch; }
+.letter-sig-close { font-size: 14.5px; color: var(--fg-muted); margin-bottom: 14px; }
+.letter-sig-name {
+  font-family: var(--font-serif); font-style: italic; font-weight: 500;
+  font-size: 28px; color: var(--fg); letter-spacing: -0.005em;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+[data-theme="mica"] .letter-sig-name {
+  -webkit-text-fill-color: #1a1a22;
+  color: #1a1a22;
+  background: none;
+}
+.letter-sig-typed { font-family: var(--font-sans); font-weight: 700; font-size: 14.5px; color: var(--fg); }
+.letter-sig-role { font-family: var(--font-mono); font-size: 11.5px; color: var(--fg-dim); letter-spacing: .04em; margin-top: 4px; }
+
+/* (No cover→resume divider — modern UX uses visual hierarchy + view toggle instead) */
+
+/* ===================================================================
+   RESUME sections
+   =================================================================== */
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 40px; align-items: center;
+  padding: 30px 0 44px;
+  position: relative;
+}
+.hero-left { min-width: 0; }
+.hero-eyebrow { font-family: var(--font-mono); font-size: 12px; font-weight: 500; color: var(--a1); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.hero-eyebrow::before { content: '▸'; color: var(--a1); }
+[data-theme="holo"] .hero-eyebrow::before { content: '$'; }
+.hero-name {
+  font-size: clamp(42px, 6.5vw, 74px);
+  font-weight: 900; letter-spacing: -0.03em; line-height: 1.0;
+  margin-bottom: 16px;
+  background: var(--grad); background-size: 200% 200%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: hero-flow 14s ease infinite;
+}
+[data-theme="holo"] .hero-name { font-family: 'Orbitron', sans-serif; letter-spacing: .02em; }
+@keyframes hero-flow { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+.hero-title { font-size: clamp(15px, 1.4vw, 19px); color: var(--fg-muted); font-weight: 500; letter-spacing: .01em; margin-bottom: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.hero-title .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--a2); display: inline-block; }
+
+.hero-contact { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.contact-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 13px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-pill); font-size: 12.5px; color: var(--fg-muted);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  transition: all var(--t-fast);
+}
+.contact-pill:hover { color: var(--fg); border-color: var(--border-strong); transform: translateY(-1px); background: var(--surface-hi); }
+.contact-pill svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--a1); }
+
+.hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.hero-stat {
+  padding: 16px 14px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  position: relative; overflow: hidden;
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.hero-stat::before { content: ''; position: absolute; inset: 0; background: var(--grad-soft); opacity: 0; transition: opacity var(--t); pointer-events: none; }
+.hero-stat:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+.hero-stat:hover::before { opacity: 1; }
+.hero-stat-value { font-family: var(--font-mono); font-size: clamp(20px, 2.4vw, 28px); font-weight: 700; letter-spacing: -0.01em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; margin-bottom: 6px; }
+.hero-stat-label { font-size: 10.5px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: .08em; font-weight: 500; }
+
+/* Section chrome */
+.section {
+  margin-bottom: 48px;
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+}
+html.js-ready .section:not(.in) { opacity: 0; transform: translateY(14px); }
+html.js-ready .section.in { opacity: 1; transform: none; }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.section-title { font-family: var(--font-mono); font-size: 12.5px; font-weight: 600; color: var(--fg-muted); letter-spacing: .02em; display: flex; align-items: center; gap: 10px; }
+.section-title::before { content: '$'; color: var(--a1); font-weight: 700; }
+[data-theme="holo"] .section-title::before { content: '>'; }
+.section-title-name { font-family: var(--font-sans); font-size: 19px; font-weight: 800; color: var(--fg); margin-left: 4px; letter-spacing: -0.01em; }
+[data-theme="holo"] .section-title-name { font-family: 'Orbitron', sans-serif; letter-spacing: 0; font-weight: 700; }
+.section-kicker { font-family: var(--font-mono); font-size: 11px; color: var(--fg-dim); letter-spacing: .06em; }
+
+/* Numbers grid */
+.stats-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 10px; }
+@media (min-width: 1440px) { .stats-grid { grid-template-columns: repeat(8, minmax(0,1fr)); } }
+.stat-card {
+  position: relative; padding: 14px 14px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  overflow: hidden;
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.stat-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(140px circle at var(--mx) var(--my), var(--tint), transparent 70%); opacity: 0; transition: opacity var(--t); pointer-events: none; }
+.stat-card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+.stat-card:hover::before { opacity: 1; }
+.stat-value { font-family: var(--font-mono); font-size: 21px; font-weight: 700; letter-spacing: -0.01em; color: var(--fg); line-height: 1; margin-bottom: 6px; display: flex; align-items: baseline; gap: 3px; }
+.stat-value .unit { font-size: 12.5px; color: var(--fg-muted); font-weight: 500; }
+.stat-label { font-size: 10.8px; color: var(--fg-dim); letter-spacing: .04em; line-height: 1.35; }
+
+/* Highlights */
+.highlights-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+@media (min-width: 1440px) { .highlights-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.highlight {
+  position: relative;
+  display: grid; grid-template-columns: 48px 1fr; gap: 14px;
+  padding: 16px 18px 16px 14px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  overflow: hidden;
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.highlight::before { content: ''; position: absolute; inset: 0; background: radial-gradient(220px circle at var(--mx) var(--my), var(--tint), transparent 70%); opacity: 0; transition: opacity var(--t); pointer-events: none; }
+.highlight:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+.highlight:hover::before { opacity: 1; }
+.highlight-num { font-family: var(--font-mono); font-size: 22px; font-weight: 700; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.01em; line-height: 1; padding-top: 2px; position: relative; }
+.highlight-num::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-right: 1px solid var(--border); }
+.highlight-body { font-size: 13.8px; color: var(--fg-muted); line-height: 1.55; }
+.highlight-body strong { color: var(--fg); font-weight: 600; }
+.highlight-body em { font-style: normal; color: var(--a1); font-family: var(--font-mono); font-size: .92em; background: var(--tint); padding: 1px 6px; border-radius: 4px; }
+[data-theme="holo"] .highlight-num { font-family: 'Orbitron', sans-serif; }
+
+/* Summary */
+.summary {
+  padding: 26px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  position: relative; overflow: hidden;
+}
+.summary::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--grad); opacity: .6; }
+.summary p { font-size: 14.5px; color: var(--fg-muted); line-height: 1.7; margin-bottom: 16px; }
+.summary p:last-of-type { margin-bottom: 0; }
+.summary strong { color: var(--fg); font-weight: 600; }
+.summary em { font-style: normal; color: var(--a1); font-family: var(--font-mono); font-size: .92em; }
+.platforms-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 20px 0; }
+.platform { display: flex; gap: 12px; padding: 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--grad-soft); transition: transform var(--t-fast); }
+.platform:hover { transform: translateY(-2px); }
+.platform-icon { font-size: 22px; line-height: 1; flex-shrink: 0; }
+.platform-title { font-weight: 700; font-size: 13.5px; margin-bottom: 3px; color: var(--fg); }
+.platform-desc { font-size: 12.3px; color: var(--fg-muted); line-height: 1.45; }
+.core-stack { margin-top: 20px; padding-top: 18px; border-top: 1px dashed var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.core-stack-label { font-family: var(--font-mono); font-size: 10.8px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: .1em; margin-right: 8px; }
+.chip { display: inline-block; padding: 3px 10px; font-size: 11.3px; font-family: var(--font-mono); font-weight: 500; background: var(--tint); border: 1px solid var(--border); border-radius: var(--radius-pill); color: var(--fg); transition: all var(--t-fast); }
+.chip:hover { background: var(--surface-hi); border-color: var(--border-strong); }
+
+/* Expertise */
+.expertise-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin-top: 18px; }
+@media (min-width: 1440px) { .expertise-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.skill-row {
+  padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.skill-row:hover { transform: translateY(-1px); border-color: var(--border-strong); }
+.skill-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; padding-bottom: 7px; border-bottom: 1px dashed var(--border); }
+.skill-emoji { font-size: 14px; line-height: 1; }
+.skill-cat { font-family: var(--font-mono); font-size: 11.8px; font-weight: 700; color: var(--a1); letter-spacing: .02em; text-transform: uppercase; }
+.skill-list { display: flex; flex-wrap: wrap; gap: 4px 5px; }
+.skill-tag { display: inline-block; padding: 2px 7px; font-size: 10.8px; font-family: var(--font-mono); color: var(--fg-muted); background: var(--surface-hi); border: 1px solid var(--border); border-radius: 5px; transition: color var(--t-fast); }
+.skill-tag:hover { color: var(--fg); }
+
+/* Career Graph */
+.graph-caption { font-size: 13.2px; color: var(--fg-muted); margin: -8px 0 14px; line-height: 1.55; max-width: 96ch; }
+.graph-caption kbd { font-family: var(--font-mono); font-size: 10.5px; padding: 1px 6px; background: var(--surface-hi); border: 1px solid var(--border); border-radius: 4px; color: var(--fg); }
+.graph-focus {
+  outline: 2px solid var(--a1) !important;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 1px var(--a1), 0 0 40px rgba(77,225,255,.45), 0 0 80px rgba(255,77,225,.25) !important;
+  transition: outline-color .25s, box-shadow .25s;
+  animation: focus-pulse 1.2s var(--ease) 1;
+  border-radius: var(--radius);
+  position: relative; z-index: 3;
+}
+@keyframes focus-pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 1px var(--a1), 0 0 0 rgba(77,225,255,0); }
+  30% { transform: scale(1.01); box-shadow: 0 0 0 1px var(--a1), 0 0 50px rgba(77,225,255,.6), 0 0 100px rgba(255,77,225,.35); }
+  100% { transform: scale(1); box-shadow: 0 0 0 1px var(--a1), 0 0 40px rgba(77,225,255,.45), 0 0 80px rgba(255,77,225,.25); }
+}
+.graph-container {
+  position: relative;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  padding: 16px; overflow: hidden;
+}
+.graph-container::before { content: ''; position: absolute; inset: 0; background: var(--grad-soft); opacity: .3; pointer-events: none; }
+.graph-svg { width: 100%; height: 440px; display: block; position: relative; z-index: 1; }
+.graph-svg .edge { stroke: var(--border-strong); stroke-width: 1; opacity: .42; transition: opacity var(--t), stroke-width var(--t), stroke var(--t); }
+.graph-svg .edge.cross { stroke-dasharray: 3 3; opacity: .55; }
+.graph-svg .edge.highlight { stroke: var(--a1); stroke-width: 2; opacity: 1; }
+[data-theme="holo"] .graph-svg .edge.highlight { filter: drop-shadow(0 0 4px var(--a1)); }
+.graph-svg .node-hit { cursor: pointer; fill: transparent; }
+.graph-svg .node-ring { fill: none; stroke-width: 1.5; opacity: .7; transition: all var(--t); }
+.graph-svg .node-dot { transition: all var(--t); }
+.graph-svg .node-label { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; fill: var(--fg); pointer-events: none; text-anchor: middle; transition: fill var(--t); }
+.graph-svg .node.active .node-ring { stroke-width: 2.5; opacity: 1; }
+.graph-svg .node.dim .node-ring,
+.graph-svg .node.dim .node-dot,
+.graph-svg .node.dim .node-label { opacity: .2; }
+.graph-svg .edge.dim { opacity: .08; }
+.graph-legend { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-family: var(--font-mono); font-size: 11.3px; color: var(--fg-dim); position: relative; z-index: 2; }
+.legend-swatch { display: inline-flex; align-items: center; gap: 6px; color: var(--fg-muted); }
+.legend-swatch::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--swatch, var(--a1)); box-shadow: 0 0 10px var(--swatch, var(--a1)); }
+.graph-hint { margin-left: auto; font-size: 11px; color: var(--fg-dim); }
+.graph-hint kbd { font-family: var(--font-mono); padding: 1px 6px; background: var(--surface-hi); border: 1px solid var(--border); border-radius: 4px; font-size: 10.5px; color: var(--fg); }
+
+/* Experience */
+.role {
+  padding: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  margin-bottom: 14px; position: relative; overflow: hidden;
+}
+.role::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--grad); opacity: .55; }
+.role-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px dashed var(--border); }
+.role-title { font-size: 18.5px; font-weight: 800; color: var(--fg); letter-spacing: -0.01em; }
+.role-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-family: var(--font-mono); font-size: 11.8px; color: var(--fg-muted); }
+.role-meta .sep { opacity: .4; }
+.role-meta .company { color: var(--a1); font-weight: 600; }
+.role-meta .dates { color: var(--fg-dim); }
+.domain { margin-bottom: 16px; }
+.domain:last-child { margin-bottom: 0; }
+.domain-head { display: inline-flex; align-items: center; gap: 8px; padding: 4px 11px; background: var(--tint); border: 1px solid var(--border); border-radius: var(--radius-pill); margin-bottom: 10px; }
+.domain-icon { font-size: 12.5px; }
+.domain-title { font-family: var(--font-mono); font-size: 10.8px; font-weight: 600; color: var(--fg); letter-spacing: .05em; text-transform: uppercase; }
+.bullets { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px 16px; }
+@media (min-width: 1440px) { .bullets { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.bullet {
+  position: relative; padding: 7px 10px 7px 22px;
+  font-size: 13px; color: var(--fg-muted); line-height: 1.55;
+  border-radius: 8px; transition: background var(--t-fast);
+}
+.bullet:hover { background: var(--surface-hi); }
+.bullet::before { content: '▸'; position: absolute; left: 6px; top: 7px; color: var(--a1); font-size: 11px; line-height: 1.55; }
+[data-theme="holo"] .bullet::before { content: '>'; font-family: var(--font-mono); }
+.bullet strong { color: var(--fg); font-weight: 600; }
+.bullet em { font-style: normal; color: var(--a1); font-family: var(--font-mono); font-size: .9em; background: var(--tint); padding: 0 5px; border-radius: 4px; }
+.bullet .callout { display: inline-block; font-size: 11px; color: var(--warn); font-family: var(--font-mono); margin-top: 4px; padding: 2px 8px; background: rgba(251,191,36,.08); border-left: 2px solid var(--warn); border-radius: 3px; }
+.bullet.full { grid-column: 1 / -1; }
+
+/* Education */
+.education-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+.edu {
+  padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.edu:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+.edu-degree { font-size: 14.2px; font-weight: 700; color: var(--fg); margin-bottom: 4px; }
+.edu-school { font-size: 12.8px; color: var(--fg-muted); font-family: var(--font-mono); margin-bottom: 2px; }
+.edu-year { font-size: 11.5px; color: var(--fg-dim); font-family: var(--font-mono); }
+
+/* Footer */
+.footer { margin-top: 50px; margin-bottom: 60px; padding: 22px 28px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 12.3px; color: var(--fg-dim); font-family: var(--font-mono); position: relative; z-index: 2; max-width: var(--measure); margin-left: auto; margin-right: auto; }
+.footer-sig { display: flex; align-items: center; gap: 14px; }
+.footer-name { font-weight: 700; color: var(--fg); }
+.footer-tag { color: var(--fg-muted); }
+.footer-contact { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.footer-contact a { color: var(--fg-muted); }
+.footer-contact a:hover { color: var(--a1); }
+
+/* Keyboard HUD */
+body { padding-bottom: 48px; }
+.kbd-hud {
+  position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
+  z-index: 40; display: inline-flex; align-items: center; gap: 10px;
+  padding: 7px 16px; background: rgba(4,6,15,.7);
+  backdrop-filter: blur(26px) saturate(160%); -webkit-backdrop-filter: blur(26px) saturate(160%);
+  border: 1px solid var(--border); border-radius: var(--radius-pill);
+  font-family: var(--font-mono); font-size: 10.8px; color: var(--fg-muted);
+  box-shadow: var(--shadow);
+  opacity: 0; transform: translateX(-50%) translateY(10px);
+  transition: opacity var(--t) var(--ease), transform var(--t) var(--ease);
+}
+.kbd-hud.in { opacity: .92; transform: translateX(-50%) translateY(0); }
+.kbd-hud.idle { opacity: 0.18; transform: translateX(-50%) translateY(4px); }
+.kbd-hud.idle:hover { opacity: .95; transform: translateX(-50%) translateY(0); }
+[data-theme="mica"] .kbd-hud { background: rgba(244,241,236,.92); }
+[data-theme="holo"] .kbd-hud { background: rgba(3,2,10,.8); box-shadow: 0 0 0 1px rgba(77,225,255,.15), 0 10px 30px rgba(77,225,255,.15); }
+.kbd-hud .dot { opacity: .35; }
+.kbd-hud kbd { font-family: var(--font-mono); font-size: 10.2px; padding: 2px 6px; background: var(--surface-hi); border: 1px solid var(--border); border-radius: 4px; color: var(--fg); margin-right: 4px; }
+
+/* Command Palette */
+.palette-backdrop { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; align-items: flex-start; justify-content: center; padding-top: 12vh; }
+.palette-backdrop.open { display: flex; }
+.palette {
+  width: min(640px, calc(100vw - 40px));
+  background: rgba(20,20,32,.85); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+  backdrop-filter: blur(40px) saturate(180%); -webkit-backdrop-filter: blur(40px) saturate(180%);
+  box-shadow: var(--shadow-lg); overflow: hidden;
+  transform: scale(.97); animation: palette-in .2s var(--ease-bounce) forwards;
+}
+[data-theme="mica"] .palette { background: rgba(255,255,255,.95); }
+[data-theme="holo"] .palette { box-shadow: 0 0 0 1px var(--a1), 0 24px 60px rgba(77,225,255,.25); }
+@keyframes palette-in { to { transform: scale(1); } }
+.palette-input-wrap { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.palette-icon { color: var(--a1); font-family: var(--font-mono); font-weight: 700; }
+.palette-input { flex: 1; background: transparent; border: 0; outline: 0; font-family: var(--font-mono); font-size: 14.5px; color: var(--fg); }
+.palette-input::placeholder { color: var(--fg-dim); }
+.palette-results { max-height: 50vh; overflow-y: auto; padding: 8px; }
+.palette-item { padding: 9px 14px; border-radius: 10px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; transition: background var(--t-fast); }
+.palette-item:hover, .palette-item.active { background: var(--surface-hi); }
+.palette-item.active { box-shadow: inset 0 0 0 1px var(--border-strong); }
+.palette-item-title { font-size: 13px; color: var(--fg); font-weight: 500; }
+.palette-item-meta { font-family: var(--font-mono); font-size: 10.3px; color: var(--fg-dim); display: flex; gap: 8px; }
+.palette-item-meta .tag { color: var(--a1); }
+.palette-empty { padding: 28px; text-align: center; font-family: var(--font-mono); color: var(--fg-dim); font-size: 12px; }
+
+/* Help Modal */
+.help-backdrop { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; padding: 20px; }
+.help-backdrop.open { display: flex; }
+.help {
+  width: min(540px, 100%);
+  background: rgba(20,20,32,.92); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+  backdrop-filter: blur(30px) saturate(170%); -webkit-backdrop-filter: blur(30px) saturate(170%);
+  padding: 22px 26px; box-shadow: var(--shadow-lg);
+}
+[data-theme="mica"] .help { background: rgba(255,255,255,.96); }
+.help h3 { font-family: var(--font-mono); font-size: 13px; color: var(--a1); margin-bottom: 14px; letter-spacing: .04em; text-transform: uppercase; }
+.help-table { display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; font-size: 13px; color: var(--fg-muted); }
+.help-table kbd { font-family: var(--font-mono); font-size: 11px; padding: 2px 8px; background: var(--surface-hi); border: 1px solid var(--border); border-radius: 5px; color: var(--fg); justify-self: start; }
+.help-close { margin-top: 18px; font-family: var(--font-mono); font-size: 11px; color: var(--fg-dim); text-align: right; }
+
+/* Toasts */
+.toasts { position: fixed; right: 22px; bottom: 66px; z-index: 45; display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+.toast {
+  min-width: 260px; padding: 10px 14px 10px 12px;
+  background: rgba(4,6,15,.85); border: 1px solid var(--border-strong); border-left: 3px solid var(--a1);
+  border-radius: 8px; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  color: #f1f3ff; font-family: var(--font-mono); font-size: 11.3px;
+  box-shadow: var(--shadow);
+  animation: toast-in .45s var(--ease) forwards, toast-out .4s var(--ease) 2.2s forwards;
+  opacity: 0; transform: translateX(20px);
+}
+/* Mica (light) → light toast with navy accent */
+[data-theme="mica"] .toast {
+  background: rgba(255,250,240,.96);
+  color: #1a1a22;
+  border: 1px solid rgba(26,26,34,.18);
+  border-left: 3px solid var(--a1);
+  box-shadow: 0 12px 32px rgba(26,26,34,.18);
+}
+[data-theme="holo"] .toast { box-shadow: 0 0 0 1px var(--a1), 0 8px 30px rgba(77,225,255,.25); }
+.toast-head { color: var(--a1); font-weight: 700; letter-spacing: .05em; margin-bottom: 2px; font-size: 10.3px; }
+.toast-body { color: rgba(241,243,255,.78); font-size: 11.3px; line-height: 1.4; }
+[data-theme="mica"] .toast-body { color: rgba(26,26,34,.74); }
+@keyframes toast-in { to { opacity: 1; transform: none; } }
+@keyframes toast-out { to { opacity: 0; transform: translateY(-12px); } }
+
+/* Boot loader (Holo) */
+.boot { position: fixed; inset: 0; z-index: 300; background: #03020a; display: none; align-items: center; justify-content: center; font-family: var(--font-mono); color: #4de1ff; animation: boot-out .5s var(--ease) 1.6s forwards; }
+.boot-inner { text-align: center; font-size: 13px; }
+.boot-line { opacity: 0; animation: boot-line .3s linear forwards; }
+.boot-line:nth-child(1) { animation-delay: 0ms; }
+.boot-line:nth-child(2) { animation-delay: 220ms; }
+.boot-line:nth-child(3) { animation-delay: 520ms; }
+.boot-line:nth-child(4) { animation-delay: 780ms; }
+.boot-line:nth-child(5) { animation-delay: 1100ms; }
+.boot-bar { width: 320px; height: 4px; background: rgba(77,225,255,.15); border-radius: 2px; overflow: hidden; margin: 10px auto 12px; }
+.boot-bar::before { content: ''; display: block; height: 100%; background: linear-gradient(90deg, #4de1ff, #ff4de1); width: 0; animation: boot-bar 1.4s var(--ease) forwards; }
+.boot-ok { color: #b2ff4d; }
+@keyframes boot-line { to { opacity: 1; } }
+@keyframes boot-bar { to { width: 100%; } }
+@keyframes boot-out { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+html.booting .boot { display: flex; }
+
+/* Document-view toggle (show cover only / resume only / both) */
+html[data-view="cover"] .resume-main { display: none; }
+html[data-view="resume"] .cover-letter { display: none; }
+html[data-view="resume"] main,
+html[data-view="cover"] main { padding-top: 16px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .bg-orbs, .bg-scan, .hero-name { animation: none !important; }
+}
+
+/* ============================================================================
+   RESPONSIVE LAYER — tablet, phone, small-phone, touch, and notched devices.
+   Built to keep the design coherent from 320px wide up to 4K monitors.
+   Breakpoints: 1080 (tablet-landscape/laptop), 768 (tablet-portrait),
+                640 (phone-landscape), 480 (phone-portrait), 380 (small phone).
+   ============================================================================ */
+
+/* ── Section-nav chip strip is now PERMANENT at every viewport (see
+   base .nav-links rule). No more hiding at intermediate widths. ── */
+
+/* ── Tablet landscape + small laptop (≤1080px) ── */
+@media (max-width: 1080px) {
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .highlights-grid, .expertise-grid, .education-grid, .bullets, .platforms-grid { grid-template-columns: 1fr; }
+  .letter { padding: 30px 28px; }
+  .letter-head { flex-direction: column; }
+  .letter-to { text-align: left; }
+  .letter-from { max-width: 100%; }
+}
+
+/* ── Tablet portrait (≤768px) — iPad portrait, large phones landscape ── */
+@media (max-width: 768px) {
+  main { padding: 24px 20px 60px; }
+  .nav-brand .nav-status { display: none; }
+  .nav { gap: 8px; padding: 10px 16px; flex-wrap: wrap; }
+  .graph-svg { height: 360px; }
+  .graph-svg .node-label { font-size: 10.5px; }
+  .role { padding: 22px 22px; }
+  .role-meta { flex-wrap: wrap; gap: 6px 12px; }
+  .summary { padding: 24px 26px; }
+  .letter-contact { flex-wrap: wrap; gap: 4px 10px; row-gap: 6px; }
+}
+
+/* ── Phone landscape + large phone portrait (≤640px) ── */
+@media (max-width: 640px) {
+  main { padding: 18px 16px 40px; }
+
+  /* Mobile nav — 3 rows, primary-first hierarchy:
+       Row 1: brand (left) + doc-switch RESUME/COVER/BOTH (right) — primary control
+       Row 2: section chip strip — secondary nav (horizontal scroll)
+       Row 3: theme picker + search/print/help — utility, centered
+     Uses CSS `order` to control flex-wrap layout, regardless of HTML order. */
+  .nav {
+    padding: 8px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: sticky;
+    row-gap: 8px;
+  }
+  .nav-brand {
+    order: 0;
+    font-size: 13px;
+    flex: 0 0 auto;
+  }
+  /* On mobile the ONLINE ticker pill is too big alongside the doc-switch.
+     Hide it regardless of theme — only affects Holo where it was visible. */
+  .nav-brand .nav-status { display: none; }
+  .nav-doc-switch {
+    order: 1;
+    margin-left: auto;   /* push to right of row 1, opposite brand */
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+  .nav-doc-switch .doc-btn { padding: 4px 11px; font-size: 11.5px; }
+  /* Mobile nav-links fine-tuning: order already set to 99 in base, just
+     align left-start on mobile so the scroll feels natural (no centered gap). */
+  .nav-links { order: 2; justify-content: flex-start; }
+  .nav-links a { font-size: 11.5px; padding: 5px 11px; }
+  .nav-actions {
+    order: 3;
+    /* flex-basis: 100% to reliably wrap to a new row (see nav-links comment above) */
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 0;
+    gap: 6px;
+  }
+  .theme-group { gap: 2px; }
+  .icon-btn { width: 34px; height: 34px; }
+
+  /* Hero — name down-scaled, contact pills wrap tightly */
+  .hero-name { font-size: clamp(30px, 9vw, 44px); letter-spacing: -0.02em; }
+  .hero-title { font-size: 13.5px; }
+  .hero-eyebrow { font-size: 10.5px; margin-bottom: 8px; }
+  .hero-contact { gap: 6px; }
+  .contact-pill { font-size: 12px; padding: 4px 10px; }
+
+  /* Stats grids — 2 cols on phone */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat-card { padding: 12px 14px; }
+  .hero-stat { padding: 12px 14px; }
+  .hero-stat-value, .stat-value { font-size: 19px; }
+  .hero-stat-label, .stat-label { font-size: 10.5px; }
+
+  /* Highlights — slimmer cards */
+  .highlight { grid-template-columns: 40px 1fr; gap: 10px; padding: 14px 16px; }
+  .highlight-num { font-size: 18px; }
+  .highlight-body { font-size: 13.2px; line-height: 1.5; }
+
+  /* Summary + platforms */
+  .summary { padding: 20px 18px; }
+  .summary p { font-size: 14px; line-height: 1.6; }
+  .summary em { font-size: .9em; }
+  .platform { padding: 12px; }
+  .platform-title { font-size: 13.5px; }
+  .platform-desc { font-size: 12.5px; line-height: 1.4; }
+
+  /* Skills */
+  .skill-row { padding: 12px 14px; }
+  .skill-cat { font-size: 13px; }
+  .skill-tag { font-size: 11px; padding: 2px 7px; }
+
+  /* Experience */
+  .role { padding: 18px 18px; }
+  .role-title { font-size: 18px; }
+  .role-meta { font-size: 12px; flex-wrap: wrap; gap: 6px 10px; row-gap: 4px; }
+  .domain-head { padding: 4px 10px; }
+  .domain-title { font-size: 11.5px; }
+  .bullets { gap: 4px; }
+  .bullet { font-size: 13px; line-height: 1.55; padding: 3px 0 3px 14px; }
+
+  /* Education */
+  .edu { padding: 14px 16px; }
+  .edu-degree { font-size: 14.5px; }
+
+  /* Graph — smaller on phone, labels readable */
+  .graph-svg { height: 300px; }
+  .graph-svg .node-label { font-size: 10px; }
+  .graph-legend { font-size: 10.5px; gap: 4px 10px; flex-wrap: wrap; }
+  .graph-caption { font-size: 11px; line-height: 1.4; }
+
+  /* Cover letter */
+  .letter { padding: 22px 18px; }
+  .letter-name { font-size: 22px; }
+  .letter-sig-name { font-size: 24px; }
+  .letter-body { font-size: 14px; line-height: 1.65; }
+  .letter-body p { margin-bottom: 14px; }
+  .letter-contact { flex-wrap: wrap; gap: 4px 10px; font-size: 12.5px; }
+
+  /* Footer — clean centered vertical stack. Each piece on its own line,
+     no zig-zag, no forced `·` separators. Mobile-only layout. */
+  .footer {
+    margin-top: 28px;
+    padding: 20px 20px 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    font-size: 11.8px;
+  }
+  .footer-sig {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .footer-name { font-size: 13.5px; letter-spacing: .01em; }
+  .footer-tag { font-size: 11.5px; }
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+  }
+  /* Hide the middle-dot separators between contact pieces on mobile */
+  .footer-contact > span { display: none; }
+
+  /* Command palette — full-width on phone, prevent iOS zoom on focus */
+  .palette { margin: 0 12px; width: calc(100% - 24px); max-width: none; }
+  .palette-input { font-size: 16px; }  /* ≥16px prevents iOS Safari zoom */
+  .palette-results { max-height: 60vh; }
+
+  /* Interactive chrome — hide on phones for real estate */
+  .kbd-hud { display: none; }
+  .graph-hint { font-size: 11px; padding: 6px 10px; }
+
+  /* Perf — drop expensive bg layers on small screens */
+  .bg-orbs { filter: blur(55px); opacity: .5; }
+  .bg-noise { display: none; }
+}
+
+/* ── Small phone (≤480px) ── */
+@media (max-width: 480px) {
+  .hero-name { font-size: clamp(26px, 9.5vw, 38px); }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero-stat-value, .stat-value { font-size: 17px; }
+  .hero-stat-label, .stat-label { font-size: 10px; }
+  .section-head { flex-wrap: wrap; gap: 6px; }
+  .section-title-name { font-size: 17px; }
+  .highlight { padding: 12px 14px; grid-template-columns: 32px 1fr; }
+  .highlight-num { font-size: 16px; }
+  .highlight-body { font-size: 12.8px; }
+  .role-title { font-size: 16.5px; }
+  .graph-svg { height: 260px; }
+  .graph-svg .node-label { font-size: 9.5px; }
+  .palette-input { padding: 0; }
+}
+
+/* ── iPhone SE / tiny phones (≤380px) ── */
+@media (max-width: 380px) {
+  main { padding: 14px 10px 36px; }
+  .nav { padding: 6px 10px; }
+  .nav-brand { font-size: 12px; }
+  .theme-btn { padding: 3px 6px; font-size: 10.5px; }
+  .icon-btn { width: 30px; height: 30px; }
+  .hero-name { font-size: clamp(24px, 8.5vw, 32px); }
+  .hero-title { font-size: 12.5px; }
+  .contact-pill { font-size: 11px; padding: 3px 8px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .stat-card, .hero-stat { padding: 10px 12px; }
+  .highlight { grid-template-columns: 28px 1fr; gap: 8px; padding: 10px 12px; }
+  .highlight-num { font-size: 15px; }
+  .highlight-body { font-size: 12.5px; line-height: 1.45; }
+  .bullet { font-size: 12.5px; }
+  .graph-svg { height: 240px; }
+  .role-title { font-size: 15.5px; }
+}
+
+/* ── Touch devices — kill hover effects + pointer-tracked UI ── */
+@media (hover: none) {
+  .spotlight { display: none; }
+  .highlight:hover, .role:hover, .stat-card:hover, .hero-stat:hover,
+  .skill-row:hover, .edu:hover, .platform:hover { transform: none; }
+}
+
+/* ── Safe-area insets for notched/rounded devices (iPhone X+ etc.) ── */
+@supports (padding: max(0px)) {
+  @media (max-width: 768px) {
+    main {
+      padding-left: max(14px, env(safe-area-inset-left));
+      padding-right: max(14px, env(safe-area-inset-right));
+      padding-bottom: max(40px, env(safe-area-inset-bottom));
+    }
+    .nav {
+      padding-left: max(12px, env(safe-area-inset-left));
+      padding-right: max(12px, env(safe-area-inset-right));
+      padding-top: max(8px, env(safe-area-inset-top));
+    }
+    .footer {
+      padding-bottom: max(20px, env(safe-area-inset-bottom));
+    }
+  }
+}
+
+/* ── Honor reduced-motion user preference (iOS + macOS + Android) ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .orb, .bg-grid, .bg-scan { animation: none !important; }
+}
+
+/* =====================================================================
+   HOLO 2050 — full sci-fi font system (only when theme is Holo)
+   Body: Rajdhani · UI labels: Share Tech Mono · HUD titles: Chakra Petch
+   Plus neon text-shadow on metrics, bracketed section titles, glowing emphasis
+   ===================================================================== */
+
+/* Body text — sci-fi geometric (Rajdhani) instead of Inter */
+[data-theme="holo"] body,
+[data-theme="holo"] .summary p,
+[data-theme="holo"] .highlight-body,
+[data-theme="holo"] .bullet,
+[data-theme="holo"] .platform-desc,
+[data-theme="holo"] .letter-body { font-family: 'Rajdhani', 'Inter', sans-serif; font-weight: 500; letter-spacing: .005em; }
+[data-theme="holo"] .letter-body { font-size: 16.5px; line-height: 1.65; }
+[data-theme="holo"] .summary p { font-size: 15.5px; line-height: 1.65; }
+[data-theme="holo"] .highlight-body { font-size: 14.5px; line-height: 1.55; }
+[data-theme="holo"] .bullet { font-size: 13.7px; line-height: 1.55; }
+[data-theme="holo"] .letter-body .salute { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 16px; }
+
+/* Section kickers + skill cats + chips + tags — Share Tech Mono (LCD/CRT terminal) */
+[data-theme="holo"] .section-kicker,
+[data-theme="holo"] .skill-cat,
+[data-theme="holo"] .domain-title,
+[data-theme="holo"] .role-meta,
+[data-theme="holo"] .core-stack-label,
+[data-theme="holo"] .stat-label,
+[data-theme="holo"] .hero-stat-label,
+[data-theme="holo"] .hero-eyebrow,
+[data-theme="holo"] .doc-btn,
+[data-theme="holo"] .nav-links a,
+[data-theme="holo"] .platform-title { font-family: 'Share Tech Mono', 'JetBrains Mono', monospace; }
+[data-theme="holo"] .theme-btn .tb-lb { font-family: 'Share Tech Mono', monospace; }
+
+/* Hero name + section titles + role titles — Chakra Petch (tactical/HUD) blended */
+[data-theme="holo"] .hero-name {
+  font-family: 'Orbitron', 'Chakra Petch', sans-serif;
+  letter-spacing: .025em;
+  text-shadow: 0 0 24px rgba(77,225,255,.45), 0 0 48px rgba(255,77,225,.25);
+}
+[data-theme="holo"] .section-title-name,
+[data-theme="holo"] .role-title { font-family: 'Chakra Petch', 'Orbitron', sans-serif; font-weight: 700; letter-spacing: .015em; }
+
+/* Chips & skill tags — uppercase HUD pills */
+[data-theme="holo"] .chip,
+[data-theme="holo"] .skill-tag {
+  text-transform: uppercase;
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+/* Neon glow on metrics + emphasis — the "data is alive" feel */
+[data-theme="holo"] .summary em,
+[data-theme="holo"] .highlight-body em,
+[data-theme="holo"] .bullet em,
+[data-theme="holo"] .letter-body em {
+  text-shadow: 0 0 8px rgba(77,225,255,.55), 0 0 16px rgba(77,225,255,.3);
+  background: rgba(77,225,255,.13);
+  border: 1px solid rgba(77,225,255,.32);
+  border-radius: 4px;
+}
+[data-theme="holo"] .summary strong,
+[data-theme="holo"] .highlight-body strong,
+[data-theme="holo"] .bullet strong,
+[data-theme="holo"] .letter-body strong {
+  color: var(--fg);
+  text-shadow: 0 0 8px rgba(77,225,255,.18);
+}
+
+/* Section title gets bracketed HUD framing */
+[data-theme="holo"] .section-title-name::before { content: '['; color: var(--a2); margin-right: 6px; opacity: .65; }
+[data-theme="holo"] .section-title-name::after  { content: ']'; color: var(--a2); margin-left: 6px;  opacity: .65; }
+
+/* Letter signature — Orbitron with gradient + glow (sci-fi, not script) */
+[data-theme="holo"] .letter-sig-name {
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: .04em;
+  text-shadow: 0 0 18px rgba(77,225,255,.45), 0 0 36px rgba(255,77,225,.25);
+}
+
+/* Contact pills — terminal chips */
+[data-theme="holo"] .contact-pill,
+[data-theme="holo"] .letter-contact { font-family: 'Share Tech Mono', monospace; letter-spacing: .03em; }
+
+/* Stat values get glow */
+[data-theme="holo"] .stat-value,
+[data-theme="holo"] .hero-stat-value { text-shadow: 0 0 14px rgba(77,225,255,.35); }
+
+/* Reference box / letter-ref — terminal HUD */
+[data-theme="holo"] .letter-ref-label,
+[data-theme="holo"] .letter-ref-value,
+[data-theme="holo"] .letter-ref-sub { font-family: 'Share Tech Mono', monospace; }
+
+/* ---------- Holo: 3D card tilt — cards lean toward the cursor (spatial UI) ---------- */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  [data-theme="holo"] .stat-card,
+  [data-theme="holo"] .highlight,
+  [data-theme="holo"] .hero-stat,
+  [data-theme="holo"] .skill-row,
+  [data-theme="holo"] .edu,
+  [data-theme="holo"] .platform {
+    transform-style: preserve-3d;
+    transition: transform .35s var(--ease), border-color var(--t-fast), box-shadow .35s var(--ease);
+    will-change: transform;
+  }
+  [data-theme="holo"] .stat-card:hover,
+  [data-theme="holo"] .highlight:hover,
+  [data-theme="holo"] .hero-stat:hover,
+  [data-theme="holo"] .skill-row:hover,
+  [data-theme="holo"] .edu:hover,
+  [data-theme="holo"] .platform:hover {
+    transform:
+      perspective(900px)
+      rotateX(calc(var(--myN, 0) * -7deg))
+      rotateY(calc(var(--mxN, 0) * 7deg))
+      translateZ(8px);
+    box-shadow: 0 12px 36px rgba(77,225,255,.18), 0 0 0 1px rgba(77,225,255,.35);
+  }
+}
+
+/* ---------- Holo: section title chromatic-glitch on reveal (one shot per section) ---------- */
+@keyframes holo-glitch {
+  0%   { text-shadow: 0 0 0 transparent; }
+  10%  { text-shadow: -2px 0 var(--a2), 2px 0 var(--a1), 0 0 0 var(--fg); transform: translate(1px, 0); }
+  20%  { text-shadow:  3px 0 var(--a2), -3px 0 var(--a1); transform: translate(-1px, 0); }
+  35%  { text-shadow: -2px 0 var(--a2), 2px 0 var(--a1); transform: translate(1px, 0); }
+  55%  { text-shadow:  1px 0 var(--a2), -1px 0 var(--a1); transform: translate(0, 0); }
+  100% { text-shadow: 0 0 0 transparent; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-theme="holo"] .section-title-name.glitch { animation: holo-glitch .55s linear 1; }
+}
+
+/* ---------- Holo: hero scan-line sweep (HUD scanner across the name every 9s) ---------- */
+@keyframes holo-scan {
+  0%   { transform: translateX(-110%); opacity: 0; }
+  10%  { opacity: .9; }
+  90%  { opacity: .9; }
+  100% { transform: translateX(110%); opacity: 0; }
+}
+[data-theme="holo"] .hero-name { position: relative; overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  [data-theme="holo"] .hero-name::after {
+    content: '';
+    position: absolute; top: 0; bottom: 0; left: 0; width: 28%;
+    background: linear-gradient(90deg, transparent, rgba(77,225,255,.65) 45%, rgba(178,255,77,.4) 55%, transparent);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    animation: holo-scan 2.4s ease-in-out 1.6s 1, holo-scan 2.4s ease-in-out 11s infinite;
+    animation-fill-mode: both;
+  }
+}
+
+/* =====================================================================
+   PRINT — honors active theme, edge-to-edge bg, follows current view
+   ===================================================================== */
+@media print {
+  /* ============================================================
+     APPLES-TO-APPLES PRINT — preserve the web experience as
+     faithfully as paper allows. Type scale, card shadows, gradient
+     text, theme atmosphere all preserved. Only things the medium
+     genuinely can't replicate are dropped:
+       - backdrop-filter (translucency): collapses to solid surfaces
+       - Animations + transitions: frozen
+       - Interactive chrome: hidden
+       - Bg orbs + noise + scan lines: hidden (smudge on paper)
+     ============================================================ */
+
+  /* Translucency fallback — backdrop-filter doesn't print */
+  :root, :root[data-theme="liquid"], :root[data-theme="fluent"],
+  :root[data-theme="mica"], :root[data-theme="holo"] {
+    --blur: 0 !important; --sat: 100% !important;
+  }
+  :root[data-theme="liquid"] { --surface: rgba(255,255,255,.10) !important; --surface-hi: rgba(255,255,255,.16) !important; }
+  :root[data-theme="fluent"] { --surface: rgba(255,255,255,.07) !important; --surface-hi: rgba(164,152,255,.14) !important; }
+  :root[data-theme="holo"]   { --surface: rgba(8,12,32,.85) !important; --surface-hi: rgba(77,225,255,.14) !important; }
+
+  /* EDGE-TO-EDGE THEME BG — the ONLY reliable way in Chrome:
+     @page { margin: 0 } removes the paper-white "margin box" entirely,
+     and html/body bg fills the whole page canvas. Non-zero @page margins
+     would leave paper white showing because Chrome does not propagate
+     html/body background into the @page margin box (Chrome limitation,
+     no CSS-only workaround).
+     Tradeoff: page 1 gets 12mm insets via container padding below, but
+     content on pages 2+ flows closer to the paper edge at the top.
+     Apples-to-apples with the web (which has no page concept) requires
+     accepting this — equal margins on every page would bring back the
+     paper-white frame. */
+  html {
+    background: var(--bg) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page { size: letter; margin: 0 !important; }
+
+  /* Freeze animations + transitions. Shadows are PRESERVED by design —
+     targeted Holo reductions below prevent the heavy neon glows from smudging. */
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Single-view printing — avoid trailing blank pages */
+  html[data-view="cover"] .cover-letter { page-break-after: auto !important; break-after: auto !important; }
+  html[data-view="resume"] .resume-main { page-break-before: auto !important; break-before: auto !important; }
+
+  /* Hide only interactive chrome and smudge-causing layers.
+     KEEP bg-layer + bg-gradient + bg-grid for the same atmosphere as web. */
+  .nav, .kbd-hud, .toasts, .palette-backdrop, .help-backdrop, .boot,
+  .spotlight, .progress, .graph-hint,
+  .bg-orbs, .orb, .bg-scan, .bg-noise { display: none !important; }
+  .graph-caption kbd { display: none !important; }
+  .bg-layer { position: fixed !important; inset: 0 !important; z-index: -1 !important; }
+  .bg-gradient { opacity: 1 !important; }
+  .bg-grid { opacity: .08 !important; }
+  main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+
+  /* ============================================================
+     HOLO — reduce heavy neon glows to printable intensity
+     (keeps the neon signature without smudging ink)
+     ============================================================ */
+  :root[data-theme="holo"] .hero-name {
+    text-shadow: 0 0 6px rgba(77,225,255,.35), 0 0 12px rgba(255,77,225,.18) !important;
+  }
+  :root[data-theme="holo"] .hero-stat-value,
+  :root[data-theme="holo"] .stat-value,
+  :root[data-theme="holo"] .highlight-num,
+  :root[data-theme="holo"] .letter-sig-name {
+    text-shadow: 0 0 5px rgba(77,225,255,.3) !important;
+  }
+  :root[data-theme="holo"] .summary em,
+  :root[data-theme="holo"] .bullet em,
+  :root[data-theme="holo"] .letter-body em,
+  :root[data-theme="holo"] .highlight-body em,
+  :root[data-theme="holo"] strong {
+    text-shadow: 0 0 3px rgba(77,225,255,.25) !important;
+  }
+  :root[data-theme="holo"] .role {
+    box-shadow: 0 0 0 1px var(--a1), 0 0 12px rgba(77,225,255,.22) !important;
+  }
+  :root[data-theme="holo"] .letter {
+    box-shadow: 0 0 0 1px var(--a1), 0 0 10px rgba(77,225,255,.18) !important;
+  }
+
+  /* ============================================================
+     COVER LETTER — web proportions, gradient text preserved
+     ============================================================ */
+  /* box-decoration-break: clone — clones the container's padding (and border
+     if set) onto EVERY page fragment when content spans multiple pages.
+     This gives a consistent 12mm top + bottom on every page, not just page 1
+     + last page. Without this, page 2+ content hugs the paper top. */
+  .cover-letter { max-width: 100% !important; padding: 12mm 12mm !important; margin: 0 !important; page-break-after: always !important; break-after: page !important; background: transparent !important; -webkit-box-decoration-break: clone !important; box-decoration-break: clone !important; }
+  /* Hide the doc-banner + letter-meta in print — they add ~7mm of content above
+     the letter card which makes the top gap perceptually larger than the
+     symmetric 12mm sides/bottom. Letter-head already carries the name/title. */
+  .doc-banner { display: none !important; }
+  .letter-meta { display: none !important; }
+  .letter {
+    padding: 20px 28px 22px !important;
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+  }
+  .letter::before { background: var(--grad) !important; opacity: 1 !important; }
+  .letter::after { display: none !important; }
+  .letter-head { padding-bottom: 12px !important; margin-bottom: 14px !important; }
+  .letter-name { font-size: 22px !important; color: var(--fg) !important; margin-bottom: 3px !important; }
+  .letter-title { font-size: 11px !important; color: var(--a1) !important; margin-bottom: 6px !important; }
+  .letter-contact { font-size: 11px !important; color: var(--fg-muted) !important; }
+  .letter-contact a { color: var(--fg-muted) !important; }
+  .letter-ref-label { font-size: 9.5px !important; color: var(--fg-dim) !important; }
+  .letter-ref-value { font-size: 12px !important; color: var(--fg) !important; font-weight: 700 !important; }
+  .letter-ref-sub { font-size: 10px !important; color: var(--fg-dim) !important; }
+  .letter-body { font-size: 12px !important; line-height: 1.55 !important; color: var(--fg-muted) !important; max-width: none !important; }
+  .letter-body .salute { font-size: 12.5px !important; color: var(--fg) !important; margin-bottom: 10px !important; }
+  .letter-body p { margin-bottom: 10px !important; }
+  .letter-body strong { color: var(--fg) !important; }
+  .letter-body em {
+    color: var(--a1) !important; font-style: normal !important;
+    font-family: var(--font-mono) !important; font-size: .95em !important;
+  }
+  .letter-sig { margin-top: 14px !important; padding-top: 10px !important; }
+  .letter-sig-close { font-size: 11.5px !important; margin-bottom: 6px !important; }
+  .letter-sig-name { font-size: 22px !important; margin-bottom: 3px !important; /* gradient text preserved from web */ }
+  .letter-sig-typed { font-size: 11px !important; }
+  .letter-sig-role { font-size: 10px !important; color: var(--fg-dim) !important; }
+
+  /* ============================================================
+     RESUME — restored type scale, gradient text, card shadows
+     ============================================================ */
+  .resume-main { page-break-before: always !important; break-before: page !important; padding: 12mm 12mm !important; background: transparent !important; -webkit-box-decoration-break: clone !important; box-decoration-break: clone !important; }
+  .section { opacity: 1 !important; transform: none !important; margin-bottom: 18px !important; }
+  .section-head { margin-bottom: 10px !important; padding-bottom: 8px !important; }
+  .section-title::before { content: '•' !important; color: var(--a1) !important; }
+  .section-title { font-size: 10.5px !important; color: var(--fg-muted) !important; }
+  .section-title-name { font-size: 14.5px !important; color: var(--fg) !important; }
+  .section-kicker { font-size: 9.5px !important; color: var(--fg-dim) !important; }
+
+  /* Hero — gradient name preserved */
+  .hero { padding: 0 0 14px !important; gap: 16px !important; page-break-after: avoid; }
+  .hero-name { font-size: 34px !important; /* gradient text preserved */ }
+  .hero-title { font-size: 13.5px !important; color: var(--fg-muted) !important; }
+  .hero-eyebrow { color: var(--a1) !important; margin-bottom: 8px !important; font-size: 10.5px !important; }
+  .hero-stats { grid-template-columns: repeat(6, 1fr) !important; gap: 6px !important; }
+  .hero-stat { padding: 9px 11px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
+  .hero-stat-value { font-size: 17px !important; /* gradient text preserved */ }
+  .hero-stat-label { font-size: 9.5px !important; }
+  .contact-pill { padding: 4px 11px !important; background: var(--surface-hi) !important; border: 1px solid var(--border) !important; font-size: 11.5px !important; }
+
+  .stats-grid { grid-template-columns: repeat(5, 1fr) !important; gap: 6px !important; }
+  .stat-card { padding: 9px 11px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
+  .stat-value { font-size: 16px !important; }
+  .stat-label { font-size: 9.5px !important; }
+
+  .highlights-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 7px !important; }
+  .highlight {
+    padding: 9px 12px !important; background: var(--surface) !important; border: 1px solid var(--border) !important;
+    grid-template-columns: 32px 1fr !important;
+    page-break-inside: avoid;
+  }
+  .highlight-num { font-size: 16px !important; /* gradient text preserved */ }
+  .highlight-num::after { display: none !important; }
+  .highlight-body { font-size: 11.5px !important; line-height: 1.45 !important; color: var(--fg-muted) !important; }
+  .highlight-body em {
+    color: var(--a1) !important; font-style: normal !important;
+    font-family: var(--font-mono) !important; font-size: .95em !important;
+  }
+
+  .summary { padding: 12px 16px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
+  .summary p { font-size: 12px !important; line-height: 1.55 !important; margin-bottom: 8px !important; color: var(--fg-muted) !important; }
+  .summary em {
+    color: var(--a1) !important; font-style: normal !important;
+    font-family: var(--font-mono) !important; font-size: .92em !important;
+  }
+  .platforms-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 7px !important; margin: 10px 0 !important; }
+  .platform { padding: 9px !important; background: var(--grad-soft) !important; border: 1px solid var(--border) !important; }
+  .platform-title { font-size: 12px !important; }
+  .platform-desc { font-size: 10.5px !important; line-height: 1.4 !important; }
+  .core-stack { margin-top: 10px !important; padding-top: 8px !important; }
+  .core-stack-label { font-size: 9.5px !important; }
+  .chip { padding: 2px 7px !important; font-size: 10px !important; background: var(--surface-hi) !important; border: 1px solid var(--border) !important; color: var(--fg) !important; }
+
+  .expertise-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 5px !important; margin-top: 8px !important; }
+  .skill-row { padding: 7px 11px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; page-break-inside: avoid; }
+  .skill-head { margin-bottom: 4px !important; padding-bottom: 4px !important; }
+  .skill-cat { font-size: 10.5px !important; }
+  .skill-tag { font-size: 9.5px !important; padding: 2px 6px !important; background: var(--surface-hi) !important; }
+
+  /* Graph: allow natural flow — page-break-inside NOT avoided, otherwise it
+     claims its own page and leaves a gap behind it. Height sized so it
+     typically fits alongside its neighbors on the same page. */
+  .graph-container { padding: 10px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; margin: 0 0 12px !important; }
+  .graph-container::before { display: block !important; opacity: .25 !important; background: var(--grad-soft) !important; }
+  .graph-svg { height: 240px !important; }
+  .graph-svg .node-label { font-size: 8.5px !important; }
+  .graph-legend { font-size: 9px !important; gap: 3px 10px !important; margin-top: 5px !important; }
+  .graph-caption { font-size: 10px !important; margin-top: 0 !important; margin-bottom: 5px !important; }
+
+  .role { padding: 12px 16px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; margin-bottom: 10px !important; }
+  .role-head { padding-bottom: 7px !important; margin-bottom: 9px !important; }
+  .role-title { font-size: 14.5px !important; }
+  .role-meta { font-size: 11px !important; }
+  .domain { margin-bottom: 9px !important; }
+  .domain-head { padding: 3px 10px !important; margin-bottom: 6px !important; background: var(--surface-hi) !important; }
+  .domain-title { font-size: 10.5px !important; }
+  .bullets { gap: 3px 14px !important; }
+  .bullet {
+    padding: 3px 10px 3px 15px !important; font-size: 11.2px !important; line-height: 1.45 !important;
+    color: var(--fg-muted) !important; page-break-inside: avoid;
+  }
+  .bullet::before { content: '•' !important; left: 2px !important; font-size: 11.5px !important; color: var(--a1) !important; }
+  .bullet em {
+    color: var(--a1) !important; font-style: normal !important;
+    font-family: var(--font-mono) !important; font-size: .95em !important;
+  }
+  .bullet .callout { font-size: 9.5px !important; padding: 1px 6px !important; background: rgba(180,83,9,.10) !important; color: var(--a3) !important; }
+
+  .education-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 7px !important; }
+  .edu { padding: 9px 14px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
+  .edu-degree { font-size: 12px !important; }
+  .edu-school { font-size: 11px !important; }
+  .edu-year { font-size: 10px !important; }
+
+  /* Footer: HIDDEN in print. The hero/letter-head already carries name +
+     contact at the top of each document, so a second copy at the bottom
+     is redundant and (on narrow pages) wraps to multiple lines. */
+  .footer { display: none !important; }
+
+  h2, h3 { page-break-after: avoid !important; }
+  /* .role is NOT in the avoid-split list — roles have 10+ bullets and cannot fit
+     in a partial-page remainder, so Chrome would move the entire role to the
+     next page, leaving big empty real estate behind (e.g. after the graph).
+     Individual .bullet items still avoid splitting, so content stays readable. */
+  .highlight, .stat-card, .skill-row, .edu, .platform, .hero-stat, .letter, .bullet { page-break-inside: avoid !important; }
+  .section { page-break-inside: auto !important; }
+  .role { page-break-inside: auto !important; }
+  /* Keep a role's header with at least the first bullet when splitting */
+  .role-head { page-break-after: avoid !important; }
+  .domain-head { page-break-after: avoid !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Boot loader (Holo only) -->
+<div class="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-line">&gt; initializing career.graph</div>
+    <div class="boot-line">&gt; loading telemetry 40+ microservices</div>
+    <div class="boot-line">&gt; mounting 197 skills · 25+ teams · 100+ engineers</div>
+    <div class="boot-bar"></div>
+    <div class="boot-line boot-ok">&gt; system online ▸ rendering UI</div>
+  </div>
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Background -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-gradient"></div>
+  <div class="bg-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+  <div class="bg-grid"></div>
+  <div class="bg-scan"></div>
+  <div class="bg-noise"></div>
+</div>
+<div class="spotlight" aria-hidden="true"></div>
+
+<!-- Nav -->
+<nav class="nav" aria-label="Primary">
+  <a href="#top" class="nav-brand">career.graph<span class="nav-status" id="navStatus" aria-hidden="true"><span class="ns-dot"></span><span class="ns-label">ONLINE</span><span class="ns-sep">·</span><span class="ns-uptime" id="navUptime">00:00</span></span></a>
+  <div class="nav-doc-switch" role="tablist" aria-label="Document view">
+    <button class="doc-btn" data-view-set="resume" data-active="true" title="Show Resume (R)">Resume</button>
+    <button class="doc-btn" data-view-set="cover" title="Show Cover Letter (C)">Cover</button>
+    <button class="doc-btn" data-view-set="both" title="Show Both (B)">Both</button>
+  </div>
+  <div class="nav-links">
+    <a href="#cover">Cover</a>
+    <a href="#hero">Resume</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#summary">Summary</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#graph">Graph</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+  </div>
+  <div class="nav-actions">
+    <div class="theme-group" role="tablist" aria-label="Theme">
+      <button class="theme-btn" data-theme-set="liquid" title="Liquid Glass (1)" aria-label="Liquid Glass"><span class="tb-ic">💧</span><span class="tb-lb">Liquid</span></button>
+      <button class="theme-btn" data-theme-set="fluent" title="Fluent Acrylic (2)" aria-label="Fluent Acrylic"><span class="tb-ic">🎐</span><span class="tb-lb">Fluent</span></button>
+      <button class="theme-btn" data-theme-set="mica"   title="Mica (3)" aria-label="Mica"><span class="tb-ic">🪟</span><span class="tb-lb">Mica</span></button>
+      <button class="theme-btn" data-theme-set="holo"   title="Holo 2050 (4)" aria-label="Holo 2050"><span class="tb-ic">🔮</span><span class="tb-lb">Holo</span></button>
+    </div>
+    <button class="icon-btn audio-btn" id="audioBtn" data-audio-state="muted" title="Toggle audio (M)" aria-label="Toggle audio" aria-pressed="false">
+      <!-- Speaker SVG; the X mute slash is shown via CSS based on data-audio-state -->
+      <svg viewBox="0 0 24 24" class="audio-ic-on" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      <svg viewBox="0 0 24 24" class="audio-ic-off" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+    </button>
+    <button class="icon-btn" id="paletteBtn" title="Command palette (⌘K)" aria-label="Command palette">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+    </button>
+    <button class="icon-btn" id="printBtn" title="Print Cover + Resume (P)" aria-label="Print">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    </button>
+    <button class="icon-btn" id="helpBtn" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17.01"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ========================================================================
+     PART I — COVER LETTER (Generic · fits any staff-level AI/SRE/Cloud role)
+     ======================================================================== -->
+<section class="cover-letter" id="cover" aria-label="Cover Letter">
+  <div class="letter-meta" aria-label="Letter metadata">
+    <div class="fm-line"><span class="fm-key">subject:</span><span class="fm-val">Staff-level Engineering · AI Platforms · Developer Productivity · SRE</span></div>
+    <div class="fm-line"><span class="fm-key">tags:</span><span class="fm-val">aws-bedrock · mcp · terraform · aws-fis · observability-as-code · intern-pipeline</span></div>
+  </div>
+
+  <article class="letter">
+    <header class="letter-head">
+      <div class="letter-from">
+        <div class="letter-name">Appa Rao Vadde</div>
+        <div class="letter-title">AI Platforms · Developer Productivity · Site Reliability Engineering</div>
+        <div class="letter-contact">
+          <a href="mailto:apparao.vadde@gmail.com">apparao.vadde@gmail.com</a>
+          <span>·</span>
+          <a href="tel:+14696623373">+1-469-662-3373</a>
+          <span>·</span>
+          <a href="https://linkedin.com/in/aparvvadde">linkedin.com/in/aparvvadde</a>
+          <span>·</span>
+          <span>Boston, MA (Remote)</span>
+        </div>
+      </div>
+      <div class="letter-to">
+        <div class="letter-ref-label">Ref</div>
+        <div class="letter-ref-value">Staff-level Engineering Seat</div>
+        <div class="letter-ref-sub">AI Platforms · Dev Productivity · SRE</div>
+      </div>
+    </header>
+
+    <div class="letter-body">
+      <p class="salute">Dear Hiring Team,</p>
+
+      <p>Enterprise engineering orgs live or die on two things — the platforms their teams build on, and the operational discipline to keep them running. That is the work I have done at Cox Automotive for the past six years, and it is the lens through which I am evaluating a Staff-level seat on a team where that combination matters.</p>
+
+      <p>Over ten years I have shipped production software at every layer of the stack. A <strong>six-agent AWS Bedrock orchestration</strong> (Strands SDK + A2A protocol) that replaces hours of manual SRE dashboard triage with a single natural-language query across <em>40+ services</em>. An IDE-native <strong>Model Context Protocol (MCP) server</strong> attributing P95 latency to the exact files and lines engineers rewrite, with a DNA-tagging correlation pattern linking <em>50+ event types</em> through a single component identifier. <strong>Context Hub</strong> — an open-standard plugin marketplace unifying Claude Code and VS Code GitHub Copilot Chat for <em>100+ engineers across 25+ teams</em>, shipping <em>197 skills, 3 agents, and 22 slash commands</em> via one install. <strong>Copilot Proxy</strong> — a production Go gateway translating the full Anthropic Messages API to OpenAI Chat Completions, unlocking Claude Code CLI for a Microsoft-first org with no new Anthropic spend. A <strong>400-component datacenter-to-AWS migration</strong> with <em>$180K annual savings</em> and zero production rollbacks. And an <strong>AWS FIS-driven chaos-engineering and GameDay program</strong> (<em>MTTR 26–45 min</em>) serving <em>30+ engineering teams</em>, feeding the Production Readiness Review framework and SLO recalibration across the same 40+ microservices.</p>
+
+      <p>The through-line is <span class="emphasize">Infrastructure-as-Code, Observability-as-Code, and Constitution-driven SDLC</span> — platforms others build on, documented well enough that the team does not need me to operate them. Evidence-based engineering, human-in-the-loop consensus, and phase-gated governance are not slogans; they are how my changes ship. The same discipline that keeps on-call calm is what keeps AI acceleration from turning into AI chaos.</p>
+
+      <p>What makes the profile unusual for a Staff-level seat is how we grow the team around the platforms. On a <strong>4-engineer team</strong> we host <em>2–3 interns every semester</em> — engineering leadership's designated training ground — and over the past two years <em>8–12 interns</em> have rotated forward into full-time software engineering roles across the broader organization. We run <em>1–2 enterprise-wide brownbags per quarter</em> on AI coding agents, Observability-as-Code, chaos engineering, and MCP; principal engineers across the org consult the team for deep-dive engineering questions; and the team operates on the no-boundary principle: you build it, you own it, you run it — from design through incident response. Reliability rigor and cross-domain depth, taught hands-on from day one.</p>
+
+      <p>I would value thirty minutes to understand what your team needs from this role, and to walk through the multi-agent orchestration, the migration sequencing, the GameDay fault catalog, or the Observability-as-Code module library in whatever depth is useful. My calendar is open.</p>
+    </div>
+
+    <footer class="letter-sig">
+      <div class="letter-sig-close">Respectfully,</div>
+      <div class="letter-sig-name">Appa Rao Vadde</div>
+      <div class="letter-sig-typed">Appa Rao Vadde</div>
+      <div class="letter-sig-role">Staff-level · AI Platforms · Developer Productivity · SRE</div>
+    </footer>
+  </article>
+</section>
+
+<!-- ========================================================================
+     RESUME (Dashboard · career graph · 38 bullets)
+     ======================================================================== -->
+<div class="resume-main">
+
+<!-- Hero -->
+<header class="hero section" id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">whoami · staff-level · 2016 → present</div>
+    <h1 class="hero-name">APPA RAO VADDE</h1>
+    <p class="hero-title">
+      <span>AI Platforms</span><span class="dot"></span>
+      <span>Developer Productivity</span><span class="dot"></span>
+      <span>Site Reliability Engineering</span>
+    </p>
+    <div class="hero-contact">
+      <a class="contact-pill" href="mailto:apparao.vadde@gmail.com">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        apparao.vadde@gmail.com
+      </a>
+      <a class="contact-pill" href="tel:+14696623373">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +1-469-662-3373
+      </a>
+      <a class="contact-pill" href="https://linkedin.com/in/aparvvadde" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        linkedin.com/in/aparvvadde
+      </a>
+      <span class="contact-pill">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Boston, MA (Remote)
+      </span>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat" style="--i:0"><div class="hero-stat-value" data-count="10" data-suffix="+">10+</div><div class="hero-stat-label">Years</div></div>
+    <div class="hero-stat" style="--i:1"><div class="hero-stat-value" data-count="100" data-suffix="+">100+</div><div class="hero-stat-label">Engineers</div></div>
+    <div class="hero-stat" style="--i:2"><div class="hero-stat-value" data-count="400" data-suffix="+">400+</div><div class="hero-stat-label">Components</div></div>
+    <div class="hero-stat" style="--i:3"><div class="hero-stat-value" data-count="180" data-prefix="$" data-suffix="K">$180K</div><div class="hero-stat-label">Annual Savings</div></div>
+    <div class="hero-stat" style="--i:4"><div class="hero-stat-value" data-count="99.95" data-suffix="%">99.95%</div><div class="hero-stat-label">Uptime</div></div>
+    <div class="hero-stat" style="--i:5"><div class="hero-stat-value" data-count="80" data-suffix="%">80%</div><div class="hero-stat-label">Esc Reduction</div></div>
+  </div>
+</header>
+
+<!-- Numbers -->
+<section class="section" id="stats">
+  <div class="section-head">
+    <h2 class="section-title">cat <span class="section-title-name">Numbers at a Glance</span></h2>
+    <span class="section-kicker">15 signals · telemetry.live</span>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card" style="--i:0"><div class="stat-value" data-count="10" data-suffix="+">10+</div><div class="stat-label">Years engineering</div></div>
+    <div class="stat-card" style="--i:1"><div class="stat-value" data-count="100" data-suffix="+">100+</div><div class="stat-label">Engineers on the platforms</div></div>
+    <div class="stat-card" style="--i:2"><div class="stat-value" data-count="25" data-suffix="+">25+</div><div class="stat-label">Teams adopting</div></div>
+    <div class="stat-card" style="--i:3"><div class="stat-value" data-count="400" data-suffix="+">400+</div><div class="stat-label">Components migrated</div></div>
+    <div class="stat-card" style="--i:4"><div class="stat-value" data-count="180" data-prefix="$" data-suffix="K">$180K</div><div class="stat-label">Annual AWS savings</div></div>
+    <div class="stat-card" style="--i:5"><div class="stat-value" data-count="99.95" data-suffix="%">99.95%</div><div class="stat-label">Uptime @ 300% COVID surge</div></div>
+    <div class="stat-card" style="--i:6"><div class="stat-value" data-count="80" data-suffix="%">80%</div><div class="stat-label">SRE escalations reduced</div></div>
+    <div class="stat-card" style="--i:7"><div class="stat-value" data-count="30" data-suffix="+">30+</div><div class="stat-label">Teams served by GameDay</div></div>
+    <div class="stat-card" style="--i:8"><div class="stat-value" data-count="40" data-suffix="+">40+</div><div class="stat-label">Microservices governed</div></div>
+    <div class="stat-card" style="--i:9"><div class="stat-value" data-count="5000" data-suffix="+">5,000+</div><div class="stat-label">Alert policies as code</div></div>
+    <div class="stat-card" style="--i:10"><div class="stat-value" data-count="197">197</div><div class="stat-label">Skills shipped (Context Hub)</div></div>
+    <div class="stat-card" style="--i:11"><div class="stat-value" data-count="50" data-suffix="+">50+</div><div class="stat-label">Event types correlated (MCP)</div></div>
+    <div class="stat-card" style="--i:12"><div class="stat-value" data-count="85" data-suffix="%">85%</div><div class="stat-label">Deploy-time reduction</div></div>
+    <div class="stat-card" style="--i:13"><div class="stat-value">26–45<span class="unit">m</span></div><div class="stat-label">MTTR (L200–L300)</div></div>
+    <div class="stat-card" style="--i:14"><div class="stat-value">8–12</div><div class="stat-label">Interns mentored (2 yrs)</div></div>
+  </div>
+</section>
+
+<!-- Impact Highlights -->
+<section class="section" id="highlights">
+  <div class="section-head">
+    <h2 class="section-title">cat <span class="section-title-name">Impact Highlights</span> --render=cards</h2>
+    <span class="section-kicker">top 10 · staff-signal</span>
+  </div>
+  <div class="highlights-grid">
+    <article class="highlight" style="--i:0" data-title="6-agent AWS Bedrock orchestration" data-graph-id="bedrock">
+      <div class="highlight-num">01</div>
+      <div class="highlight-body"><strong>Replaced hours of manual SRE dashboard triage with a single natural-language query across <em>40+ services</em></strong> — 6-agent AI orchestration on AWS Bedrock (Strands SDK + A2A protocol) delivering benchmark-graded team-health assessments unified across PagerDuty, New Relic, ServiceNow, and Splunk.</div>
+    </article>
+    <article class="highlight" style="--i:1" data-title="SRE Observability MCP — DNA-tagging correlation" data-graph-id="mcp">
+      <div class="highlight-num">02</div>
+      <div class="highlight-body"><strong>Collapsed <em>25-minute multi-dashboard</em> incident triage into a single IDE prompt</strong> — SRE Observability MCP (Go Model Context Protocol server) embedding New Relic telemetry inside AI coding agents; designed a DNA-tagging correlation pattern linking <em>50+ event types</em> via a single component identifier, attributing P95 latency to the exact files and lines to rewrite.</div>
+    </article>
+    <article class="highlight" style="--i:2" data-title="Context Hub — plugin marketplace" data-graph-id="context-hub">
+      <div class="highlight-num">03</div>
+      <div class="highlight-body"><strong>Unified Claude Code and VS Code GitHub Copilot Chat for <em>100+ engineers</em> across <em>25+ teams</em></strong> — Context Hub, an enterprise plugin marketplace shipping <em>197 skills</em>, <em>3 custom agents</em>, and <em>22 slash commands</em> via one install on the agentskills.io open standard.</div>
+    </article>
+    <article class="highlight" style="--i:3" data-title="Copilot Proxy — Anthropic→OpenAI gateway" data-graph-id="copilot">
+      <div class="highlight-num">04</div>
+      <div class="highlight-body"><strong>Unlocked Claude Code CLI for <em>100+ engineers</em> in a Microsoft-first org</strong> — Copilot Proxy, a production Go gateway routing Claude Code CLI traffic through the same GitHub Copilot endpoints already powering VS Code Copilot Chat, JetBrains, and GitHub Copilot CLI installs; full Anthropic Messages API to OpenAI Chat Completions translation preserves SSE streaming, vision, extended thinking, prompt caching, and tool use — no new Anthropic subscription required.</div>
+    </article>
+    <article class="highlight" style="--i:4" data-title="Chaos / GameDay program" data-graph-id="gameday">
+      <div class="highlight-num">05</div>
+      <div class="highlight-body"><strong>Led Chaos Engineering and GameDay program for <em>30+ engineering teams</em></strong> — designed <em>10+</em> AWS FIS-driven, hypothesis-graded fault-injection exercises with a tiered (L200–L400) fault catalog; <em>MTTR 26–45 min</em>, graded readiness assessments fed the Production Readiness Review framework and SLO recalibration across <em>40+ microservices</em>.</div>
+    </article>
+    <article class="highlight" style="--i:5" data-title="80% escalation reduction">
+      <div class="highlight-num">06</div>
+      <div class="highlight-body"><strong><em>80% reduction</em> in SRE escalations</strong> via self-service developer platforms and AI-assisted triage.</div>
+    </article>
+    <article class="highlight" style="--i:6" data-title="$180K AWS savings">
+      <div class="highlight-num">07</div>
+      <div class="highlight-body"><strong><em>$180K annual AWS savings</em></strong> through cost optimization and resource rightsizing — idle-resource identification and EC2/RDS rightsizing without touching a single workload's SLA.</div>
+    </article>
+    <article class="highlight" style="--i:7" data-title="400-component migration">
+      <div class="highlight-num">08</div>
+      <div class="highlight-body"><strong><em>400-component AWS migration</em> with <em>85% deployment-time reduction</em>, zero production rollbacks</strong> — legacy VMware VMs running zipped-artifact deploys behind a monolithic F5 load balancer → containerized, IaC-provisioned AWS workloads.</div>
+    </article>
+    <article class="highlight" style="--i:8" data-title="COVID uptime">
+      <div class="highlight-num">09</div>
+      <div class="highlight-body"><strong><em>99.95% uptime</em> maintained during <em>300% COVID-19 traffic surge</em></strong> through scalable monitoring architecture and self-service observability.</div>
+    </article>
+    <article class="highlight" style="--i:9" data-title="Intern pipeline" data-graph-id="team">
+      <div class="highlight-num">10</div>
+      <div class="highlight-body"><strong>Mentored <em>8–12 interns</em> (2–3 per semester over 2 years) on a 4-engineer team</strong> — engineering leadership's designated training ground; interns rotate forward from our team into full-time software engineering roles across the broader organization.</div>
+    </article>
+  </div>
+</section>
+
+<!-- Summary -->
+<section class="section" id="summary">
+  <div class="section-head">
+    <h2 class="section-title">cat <span class="section-title-name">Professional Summary</span></h2>
+    <span class="section-kicker">staff-level narrative · 10+ years</span>
+  </div>
+  <div class="summary">
+    <p>Senior engineer with <strong>10+ years</strong> across <em>AI platforms, developer productivity, cloud, and Site Reliability Engineering (SRE)</em>. Ships production multi-agent systems and developer platforms adopted by <strong>100+ engineers across 25+ teams</strong> — not prototypes.</p>
+    <div class="platforms-grid">
+      <div class="platform">
+        <div class="platform-icon">🤖</div>
+        <div>
+          <div class="platform-title">6-agent AWS Bedrock</div>
+          <div class="platform-desc">Strands SDK + A2A orchestration for incident-response and readiness triage across 40+ services</div>
+        </div>
+      </div>
+      <div class="platform">
+        <div class="platform-icon">🔍</div>
+        <div>
+          <div class="platform-title">SRE Observability MCP</div>
+          <div class="platform-desc">IDE-native Model Context Protocol server attributing telemetry to the exact files and lines engineers rewrite</div>
+        </div>
+      </div>
+      <div class="platform">
+        <div class="platform-icon">📦</div>
+        <div>
+          <div class="platform-title">Context Hub</div>
+          <div class="platform-desc">Open-standard plugin marketplace unifying Claude Code and VS Code GitHub Copilot Chat</div>
+        </div>
+      </div>
+    </div>
+    <p>Led a <strong>400-component AWS migration</strong> (<em>$180K annual savings</em>); designed an AWS FIS-driven chaos-engineering and GameDay program serving <strong>30+ engineering teams</strong>; established a Constitution-driven SDLC for AI-augmented development; and rotated <strong>8–12 interns</strong> into full-time engineering roles over 2 years as engineering leadership's designated training ground.</p>
+    <div class="core-stack">
+      <span class="core-stack-label">core.stack</span>
+      <span class="chip">Python</span><span class="chip">Go</span><span class="chip">JavaScript</span><span class="chip">SQL</span>
+      <span class="chip">AWS Bedrock</span><span class="chip">Terraform</span><span class="chip">Kubernetes</span><span class="chip">GitHub Actions</span>
+      <span class="chip">Multi-Agent</span><span class="chip">MCP</span><span class="chip">A2A</span>
+      <span class="chip">Claude Code</span><span class="chip">GitHub Copilot</span>
+      <span class="chip">AWS FIS</span><span class="chip">New Relic</span><span class="chip">Splunk</span><span class="chip">PagerDuty</span>
+    </div>
+  </div>
+</section>
+
+<!-- Expertise -->
+<section class="section" id="expertise">
+  <div class="section-head">
+    <h2 class="section-title">ls <span class="section-title-name">Technical Expertise</span>/</h2>
+    <span class="section-kicker">13 domains · deep + broad</span>
+  </div>
+  <div class="expertise-grid">
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🔤</span><span class="skill-cat">Core Languages</span></div><div class="skill-list">
+      <span class="skill-tag">Python</span><span class="skill-tag">Go</span><span class="skill-tag">SQL</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Bash</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🤖</span><span class="skill-cat">AI &amp; Agents</span></div><div class="skill-list">
+      <span class="skill-tag">AWS Bedrock AgentCore</span><span class="skill-tag">Strands SDK</span><span class="skill-tag">A2A Protocol</span><span class="skill-tag">MCP</span><span class="skill-tag">Multi-Agent Orchestration</span><span class="skill-tag">LLM Prompt Engineering</span><span class="skill-tag">Claude Code</span><span class="skill-tag">GitHub Copilot</span><span class="skill-tag">ReAct Pattern</span><span class="skill-tag">Human-in-the-Loop</span><span class="skill-tag">Telemetry-Grounded Code Attribution</span><span class="skill-tag">LLM Tool Consolidation</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">📐</span><span class="skill-cat">AI Platform Standards</span></div><div class="skill-list">
+      <span class="skill-tag">agentskills.io</span><span class="skill-tag">Claude Code Plugin Marketplaces</span><span class="skill-tag">VS Code Copilot Chat Agent Plugins</span><span class="skill-tag">SKILL.md Frontmatter</span><span class="skill-tag">Sub-agents</span><span class="skill-tag">Hooks</span><span class="skill-tag">Slash Commands</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🌉</span><span class="skill-cat">AI Gateway Engineering</span></div><div class="skill-list">
+      <span class="skill-tag">Anthropic Messages API → OpenAI Chat Completions</span><span class="skill-tag">SSE Streaming</span><span class="skill-tag">OAuth Device Flow</span><span class="skill-tag">Token Lifecycle &amp; Auto-Refresh</span><span class="skill-tag">Rate Limit Handling (Exp. Backoff)</span><span class="skill-tag">Zero-Allocation Hot Paths</span><span class="skill-tag">govulncheck</span><span class="skill-tag">Semantic Release Automation</span><span class="skill-tag">Multi-Platform Binary Distribution</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🧰</span><span class="skill-cat">Developer Experience</span></div><div class="skill-list">
+      <span class="skill-tag">Internal Developer Platforms (IDP)</span><span class="skill-tag">Plugin Marketplaces</span><span class="skill-tag">Self-Service CLIs</span><span class="skill-tag">Cross-Platform Go Binaries (stdlib-only)</span><span class="skill-tag">POSIX shell + PowerShell parity</span><span class="skill-tag">Liquid Glass · Fluent · Mica · Acrylic design systems</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🧩</span><span class="skill-cat">Frameworks</span></div><div class="skill-list">
+      <span class="skill-tag">Django</span><span class="skill-tag">React</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Pydantic</span><span class="skill-tag">boto3</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Playwright</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">☁️</span><span class="skill-cat">Cloud Platforms</span></div><div class="skill-list">
+      <span class="skill-tag">AWS Bedrock</span><span class="skill-tag">ECS</span><span class="skill-tag">Lambda</span><span class="skill-tag">Step Functions</span><span class="skill-tag">RDS</span><span class="skill-tag">DynamoDB</span><span class="skill-tag">S3</span><span class="skill-tag">IAM</span><span class="skill-tag">VPC</span><span class="skill-tag">CloudWatch</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🏗️</span><span class="skill-cat">Infrastructure</span></div><div class="skill-list">
+      <span class="skill-tag">Terraform</span><span class="skill-tag">Helm</span><span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">Jenkins (Groovy pipeline-as-code)</span><span class="skill-tag">Octopus Deploy (via Terraform provider)</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">📈</span><span class="skill-cat">Observability</span></div><div class="skill-list">
+      <span class="skill-tag">Splunk Enterprise (SPL, ES, ITSI, MLTK)</span><span class="skill-tag">Splunk Observability Cloud (SignalFlow, APM, RUM, Synthetics)</span><span class="skill-tag">New Relic (NRQL, NerdGraph, APM, Browser, Mobile)</span><span class="skill-tag">PagerDuty</span><span class="skill-tag">Kubernetes + Pixie</span><span class="skill-tag">OpenTelemetry</span><span class="skill-tag">Langfuse (LLM o11y)</span><span class="skill-tag">SLO/SLI Design</span><span class="skill-tag">Incident Management</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🧨</span><span class="skill-cat">Chaos &amp; Resilience</span></div><div class="skill-list">
+      <span class="skill-tag">AWS FIS</span><span class="skill-tag">Hypothesis-Driven Fault Injection</span><span class="skill-tag">GameDay Program Design</span><span class="skill-tag">Blast Radius Sizing</span><span class="skill-tag">Incident Commander (PagerDuty IR)</span><span class="skill-tag">MTTI/MTTR/MTTA</span><span class="skill-tag">Cascading Failure Analysis</span><span class="skill-tag">Break-Glass &amp; Role-Escalation</span><span class="skill-tag">Circuit Breaker &amp; Bulkhead</span><span class="skill-tag">Production Readiness Reviews</span><span class="skill-tag">Region-Failover Drills</span><span class="skill-tag">Post-Incident Retrospectives</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">📊</span><span class="skill-cat">Data Engineering</span></div><div class="skill-list">
+      <span class="skill-tag">Snowflake</span><span class="skill-tag">PowerBI</span><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">Data Modeling</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">⚖️</span><span class="skill-cat">Governance &amp; SDLC</span></div><div class="skill-list">
+      <span class="skill-tag">Constitution-driven SDLC</span><span class="skill-tag">Phase-gated Consensus</span><span class="skill-tag">ReAct Scratchpad Discipline</span><span class="skill-tag">Evidence-Based Assertions</span><span class="skill-tag">SemVer</span><span class="skill-tag">ADRs</span>
+    </div></div>
+    <div class="skill-row"><div class="skill-head"><span class="skill-emoji">🔄</span><span class="skill-cat">Methodologies</span></div><div class="skill-list">
+      <span class="skill-tag">Agile/Scrum</span><span class="skill-tag">TDD</span><span class="skill-tag">Infrastructure as Code</span><span class="skill-tag">Observability as Code</span><span class="skill-tag">Chaos Engineering</span><span class="skill-tag">GameDay Orchestration</span><span class="skill-tag">Hypothesis-Driven Experimentation</span><span class="skill-tag">Evidence-Based Engineering</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- Career Graph -->
+<section class="section" id="graph">
+  <div class="section-head">
+    <h2 class="section-title">render <span class="section-title-name">career.graph</span> --interactive</h2>
+    <span class="section-kicker">15 nodes · 4 communities · cross-domain edges</span>
+  </div>
+  <p class="graph-caption">How the work connects. Click any node to jump straight to the exact bullet or card and watch it light up. Hover to trace related work · press <kbd>Esc</kbd> or scroll to clear focus.</p>
+  <div class="graph-container">
+    <svg class="graph-svg" id="careerGraph" viewBox="0 0 900 440" preserveAspectRatio="xMidYMid meet" aria-label="Interactive career knowledge graph"></svg>
+    <div class="graph-legend">
+      <span class="legend-swatch" style="--swatch: #ff4de1">AI Platform</span>
+      <span class="legend-swatch" style="--swatch: #fbbf24">Cloud Migration</span>
+      <span class="legend-swatch" style="--swatch: #4de1ff">SRE / Chaos</span>
+      <span class="legend-swatch" style="--swatch: #b2ff4d">SWE Foundations</span>
+      <span class="legend-swatch" style="--swatch: #c4b5fd">Bridge / Team</span>
+      <span class="graph-hint"><kbd>hover</kbd> trace edges · <kbd>click</kbd> jump · <kbd>G</kbd> focus</span>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="section" id="experience">
+  <div class="section-head">
+    <h2 class="section-title">cat <span class="section-title-name">Professional Experience</span>.log</h2>
+    <span class="section-kicker">2 roles · 10+ years · interview-defensible</span>
+  </div>
+
+  <article class="role">
+    <header class="role-head">
+      <h3 class="role-title">Senior Software Engineer</h3>
+      <div class="role-meta">
+        <span class="company">Cox Automotive</span><span class="sep">·</span>
+        <span>Boston, MA (Remote)</span><span class="sep">·</span>
+        <span class="dates">Feb 2020 → Present</span>
+      </div>
+    </header>
+
+    <div class="domain">
+      <div class="domain-head" data-graph-id="ai-hub"><span class="domain-icon">🤖</span><span class="domain-title">AI Enablement &amp; Developer Productivity</span></div>
+      <div class="bullets">
+        <div class="bullet"><strong>Architected a multi-agent AI system on AWS Bedrock AgentCore</strong> using Strands SDK and A2A protocol — <em>6 autonomous agents</em> (PagerDuty, New Relic, Snowflake ITSM, Splunk, PRR, CloudWatch) orchestrated to assess incident response health, on-call burden, and operational readiness across <em>40+ services</em>, replacing hours of manual dashboard triage with a single natural-language question.</div>
+        <div class="bullet"><strong>Unified PagerDuty incident analytics</strong> (MTTA/TTE/MTTR), New Relic observability signals, ServiceNow ITSM records, and Production Readiness scores into a Slack-native interface — enabling directors and on-call engineers alike to get benchmark-graded team health assessments without touching a dashboard or writing a query.</div>
+        <div class="bullet"><strong>Designed and shipped Copilot Proxy</strong> — a production Go gateway (<em>&lt;1ms overhead</em>, 200+ concurrent connections) that routes Claude Code CLI traffic through the same GitHub Copilot endpoints our Microsoft-first org already uses from VS Code Copilot Chat, JetBrains, and GitHub Copilot CLI; unlocked Claude Code CLI's plugin, agent, and high-capability system-prompt tooling for <em>100+ engineers</em> with no new Anthropic spend.
+          <span class="callout">⚠ Claude Code CLI only; Claude Desktop requires a separate claude.ai subscription and is out of scope.</span>
+        </div>
+        <div class="bullet"><strong>Implemented full Anthropic Messages API to OpenAI Chat Completions translation</strong> with real-time SSE streaming, OAuth device flow with auto token refresh, rate-limit handling with exponential backoff, and complete feature parity (vision, extended thinking, prompt caching, tool use, multi-turn context); distributed as signed binaries for macOS/Linux/Windows (arm64 and amd64) via semantic release automation with govulncheck security scanning.</div>
+        <div class="bullet"><strong>Designed the SRE Observability MCP Server (Go)</strong> — a Model Context Protocol gateway making New Relic a first-class tool inside AI coding agents. Designed a DNA-based cross-event correlation pattern (single-tag linking <em>50+ event types</em> — Transaction, Span, SystemSample, K8sPodSample, PageView — via component CI-ID) and consolidated 69 single-purpose operations into <em>9 intent-driven tools</em> as a deliberate LLM-context-efficiency pattern. Pairs with coding agents running in parallel to attribute P95 latency to specific files and lines and draft surgical rewrites — replacing <em>25-minute multi-dashboard triage</em> with a single IDE prompt.</div>
+        <div class="bullet"><strong>Built complementary MCP connectors</strong> for Rally (work management) and a Figma-to-React design pipeline — extending the MCP footprint across the SDLC for <em>25+ teams</em>.</div>
+        <div class="bullet"><strong>Launched Context Hub (formerly Skills Hub)</strong> — enterprise plugin marketplace and CLI for packaging and distributing reusable AI agent skills across Claude Code and VS Code GitHub Copilot Chat via the agentskills.io open standard. Ships cross-platform binaries, a liquid-glass Pages catalog, and a multi-target plugin dispatcher — one install, two tools.</div>
+        <div class="bullet"><strong>Shipped the Observability Plugin</strong> — <em>197 skills + 3 custom agents + 22 slash commands</em> covering Splunk Enterprise, Splunk Observability Cloud, and New Relic. ReAct + human-in-the-loop on every write path; docs-grounded, validator-before-write.</div>
+        <div class="bullet"><strong>Established a Constitution-driven SDLC for AI-augmented development</strong> — 6-phase governance with consensus gates at every transition, producing auditable change history and preventing AI-driven scope drift.</div>
+        <div class="bullet"><strong>Led GitHub Copilot enterprise rollout</strong> with security guardrails and SDLC compliance, achieving <em>98% developer adoption</em> within 3 months.</div>
+        <div class="bullet"><strong>Designed self-service developer platforms</strong> reducing engineering escalations <em>80%</em> through automated Terraform validation, AWS diagnostics, and bottleneck detection.</div>
+        <div class="bullet"><strong>Authored Architecture Design Reviews (ADRs)</strong> for engineering initiatives, submitting to principals/architects for approval and reviewing peer ADRs across teams.</div>
+        <div class="bullet full"><strong>Co-ran the team's intern mentorship cohorts</strong> — <em>2–3 interns every semester for the past 2 years (8–12 total)</em> on a 4-engineer team; engineering leadership's designated training ground for new engineers, selected for our no-boundary culture and cross-domain depth across AI platforms, cloud, and SRE. Exposed every intern to the full software engineering lifecycle — design, implementation, code review, deployment, and incident response — before they rotate forward to full-time software engineering roles across the broader organization, arriving at their receiving team ready to take on any challenge from day one.</div>
+        <div class="bullet"><strong>Technical cross-level resource</strong> — supported peer engineers through SWE I/II to Senior leveling transitions via code walkthroughs, ADR coaching, and documentation synthesis; principal engineers consult the team for deep-dive engineering questions across AI, cloud, and SRE domains.</div>
+        <div class="bullet"><strong>Delivered 1–2 enterprise-wide brownbag sessions per quarter</strong> on modern engineering tooling and platform work (AWS ECS containerization, AI coding agents, MCP, Observability-as-Code, chaos engineering, developer productivity) — a default team practice of turning internal builds into broader organizational knowledge.</div>
+      </div>
+    </div>
+
+    <div class="domain">
+      <div class="domain-head" data-graph-id="cloud-hub"><span class="domain-icon">☁️</span><span class="domain-title">Cloud Migration &amp; Platform Engineering</span></div>
+      <div class="bullets">
+        <div class="bullet"><strong>Led datacenter-to-AWS migration for <em>400+ components</em> across 5 environments</strong> with a 4-engineer team — modernized from legacy VMware VMs running zipped-artifact deploys behind a monolithic F5 load balancer to containerized, IaC-provisioned AWS workloads; delivered on schedule with zero production rollbacks.</div>
+        <div class="bullet" data-graph-id="tf"><strong>Built reusable Terraform modules</strong> for multi-account AWS provisioning (5 accounts), reducing deployment time <em>85% from 3 days to 4 hours</em>.</div>
+        <div class="bullet"><strong>Designed multi-region DR architecture</strong> with automated failover testing, achieving <em>4-hour RTO</em> vs. datacenter's 48-hour manual process.</div>
+        <div class="bullet"><strong>Implemented cost optimization</strong> identifying idle resources and rightsizing EC2/RDS instances, achieving <em>$180K annual savings (25% reduction)</em>.</div>
+        <div class="bullet full" data-graph-id="12factor"><strong>Refactored <em>5,000+ lines</em> of legacy application code across <em>30+ services</em> to 12-factor compliance</strong> — externalizing hardcoded configuration, service URLs, and secrets into IaC-fed environment variables — as a prerequisite to containerization; rewrote CI/CD from Jenkins Groovy pipelines to GitHub Actions + Octopus Deploy (all pipeline-as-code via Terraform), reducing build times <em>40%</em>.</div>
+      </div>
+    </div>
+
+    <div class="domain">
+      <div class="domain-head" data-graph-id="sre-hub"><span class="domain-icon">🔧</span><span class="domain-title">Site Reliability Engineering</span></div>
+      <div class="bullets">
+        <div class="bullet full"><strong>Chaos Engineering &amp; GameDay Program Lead</strong> — designed and facilitated <em>10+ hypothesis-driven GameDays</em> for <em>30+ engineering teams</em>; owned fault catalog design, blast-radius sizing, Incident Commander rotation, and cross-functional coordination across engineering leadership, component SMEs, DBAs, Security/WAF, and AWS break-glass approvers; outputs fed the Production Readiness Review framework and SLO/error-budget recalibration across <em>40+ microservices</em>.</div>
+        <div class="bullet full"><strong>Designed a tiered fault catalog (L200/L300/L400)</strong> executed via AWS Fault Injection Simulator (CPU stress, network latency, packet loss) and deliberate AWS control-plane manipulation — IAM permission strips on SQS, AWS WAF IP-set exclusions on NAT Gateway egress, VPC Network ACL outbound egress denial (region-failover simulation), Security Group port-range tampering on VPC endpoints, Lambda reserved-concurrency throttling (exposing 429-to-API-Gateway-500 masking), ECS task-definition degradation, circuit-breaker route flipping, and Secrets Manager certificate corruption.</div>
+        <div class="bullet full"><strong>Reverse-engineered application code, AWS service configurations</strong> (ECS, Lambda, SQS, API Gateway, NACL, WAF, VPC Endpoint, IAM, Secrets Manager), and NRQL/Splunk telemetry to pre-compute failure modes and author ideal-resolution runbooks — delivering <em>MTTR of 26–45 minutes</em> on L200–L300 scenarios; led a severity-1 region-outage drill that drove structural incident-response and checklist reforms.</div>
+        <div class="bullet"><strong>Authored every post-exercise retrospective</strong> — star-rated exercise-effectiveness, team-performance, and process-maturity assessments plus structured action items that fed checklist updates, PRR signals, and SLO recalibrations; grounded in live session note-taking and replay-driven review of recordings.</div>
+        <div class="bullet"><strong>Resolved <em>200+ critical incidents</em> as primary escalation point</strong> across application code, infrastructure, and observability platforms; pulled into cross-functional warrooms and special projects to unblock high-priority customer-facing production events — partnered with product, support, and engineering to ship fixes at speed and keep dealers productive on our tool suite.</div>
+        <div class="bullet full" data-graph-id="oac"><strong>Pioneered Observability-as-Code across <em>40+ microservices</em></strong> — authored custom Terraform modules where a single YAML input provisions New Relic Key Transactions, Service Level (SLO) calculator dashboards, and Transaction-segment breakdowns covering every Critical User Journey step, giving on-call engineers forensic, span-level visibility into critical flows.</div>
+        <div class="bullet"><strong>Managed <em>5,000+ alert policies</em></strong> across New Relic, PagerDuty, and Splunk as code via the same module library, eliminating configuration drift; ran workshops and authored self-paced documentation enabling <em>30+ teams</em> to self-serve.</div>
+        <div class="bullet"><strong>Deployed a production-grade New Relic Kubernetes observability stack</strong> — Terraform-provisioned clusters with Helm-installed nri-bundle (infrastructure agent, logging, Prometheus OpenMetrics, Pixie) and the standalone newrelic-pixie chart for long-term Pixie data retention — extending Observability-as-Code into the container tier.</div>
+        <div class="bullet"><strong>Established SLO/SLI frameworks</strong> with error-budget tracking across <em>40+ microservices</em>, reducing feature rollbacks <em>35%</em>.</div>
+        <div class="bullet"><strong>Achieved <em>70% MTTR reduction</em>, <em>60% alert noise decrease</em>, <em>45% fewer critical incidents</em></strong> — saving ~800 engineering hours annually.</div>
+        <div class="bullet"><strong>Created Production Readiness Review framework</strong> adopted by <em>15+ teams</em>, reducing post-handoff incidents <em>50%</em> and accelerating onboarding from <em>6 to 3 weeks</em>.</div>
+        <div class="bullet"><strong>Maintained <em>99.95% uptime</em></strong> during COVID-19 traffic surge (<em>300% volume increase</em>) through scalable monitoring architecture.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="role" data-graph-id="swe-hub">
+    <header class="role-head">
+      <h3 class="role-title">Software Engineer</h3>
+      <div class="role-meta">
+        <span class="company">Cox Automotive</span><span class="sep">·</span>
+        <span>New York, NY</span><span class="sep">·</span>
+        <span class="dates">Jul 2016 → Jan 2020</span>
+      </div>
+    </header>
+    <div class="bullets">
+      <div class="bullet"><strong>Built dealership financing SaaS platform</strong> (Python/Django, React) serving <em>15,000+ dealerships</em> processing <em>40M daily transactions</em>.</div>
+      <div class="bullet"><strong>Engineered lender REST APIs</strong> handling <em>500K credit applications</em> and <em>125K contract fundings weekly</em> with <em>99.9% SLA uptime</em>.</div>
+      <div class="bullet"><strong>Developed digital contracting engine</strong> automating compliance across <em>50 states</em> and <em>600+ lender rule sets</em>, reducing processing time <em>60%</em>.</div>
+      <div class="bullet" data-graph-id="py23"><strong>Led enterprise Python 2 to Python 3 migration</strong> across the full product suite (<em>40+ services, 15 teams</em>) — owned technical project management across testing, CI/CD updates, and production rollout.</div>
+      <div class="bullet full" data-graph-id="oncall"><strong>Lived "you build it, you own it, you run it"</strong> — owned on-call for services my team shipped, led production-incident triage and resolution, tuned Django ORM / SQLAlchemy hot paths at the <em>40M-transaction tier</em>, and authored Splunk + New Relic dashboards, alerts, and reports consumed by the team, the enterprise Operations Center, and engineering leadership.</div>
+      <div class="bullet"><strong>Selected for Special Projects Group</strong> (<em>top 2% of engineers</em>) for cross-functional projects and war rooms.</div>
+    </div>
+  </article>
+</section>
+
+<!-- Education -->
+<section class="section" id="education">
+  <div class="section-head">
+    <h2 class="section-title">cat <span class="section-title-name">Education</span></h2>
+    <span class="section-kicker">2 degrees</span>
+  </div>
+  <div class="education-grid">
+    <div class="edu">
+      <div class="edu-degree">M.S. Computer Science</div>
+      <div class="edu-school">The University of Texas at Dallas</div>
+      <div class="edu-year">2016</div>
+    </div>
+    <div class="edu">
+      <div class="edu-degree">B.S. Information Technology</div>
+      <div class="edu-school">JNTU-Hyderabad</div>
+      <div class="edu-year">2012</div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.resume-main -->
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-sig">
+    <span class="footer-name">Appa Rao Vadde</span>
+    <span class="footer-tag">AI Platforms · Dev Productivity · SRE</span>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:apparao.vadde@gmail.com">apparao.vadde@gmail.com</a>
+    <span>·</span>
+    <a href="https://linkedin.com/in/aparvvadde">linkedin.com/in/aparvvadde</a>
+    <span>·</span>
+    <a href="tel:+14696623373">+1-469-662-3373</a>
+  </div>
+</footer>
+
+<!-- Keyboard HUD -->
+<div class="kbd-hud" id="kbdHud" aria-hidden="true">
+  <span><kbd>1-4</kbd>theme</span><span class="dot">·</span>
+  <span><kbd>C/R</kbd>view</span><span class="dot">·</span>
+  <span><kbd>⌘K</kbd>search</span><span class="dot">·</span>
+  <span><kbd>J/K</kbd>nav</span><span class="dot">·</span>
+  <span><kbd>G</kbd>graph</span><span class="dot">·</span>
+  <span><kbd>P</kbd>print</span><span class="dot">·</span>
+  <span data-audio-only><kbd>M</kbd>music</span><span class="dot" data-audio-only>·</span>
+  <span><kbd>?</kbd>help</span>
+</div>
+
+<!-- Command Palette -->
+<div class="palette-backdrop" id="paletteBackdrop" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="palette">
+    <div class="palette-input-wrap">
+      <span class="palette-icon">&gt;</span>
+      <input type="text" class="palette-input" id="paletteInput" placeholder="search cover + resume — bullets, skills, metrics…" autocomplete="off" />
+    </div>
+    <div class="palette-results" id="paletteResults"></div>
+  </div>
+</div>
+
+<!-- Help Modal -->
+<!-- Background audio. Single track served from same private S3 bucket via CloudFront.
+     `loop` keeps it continuous. `preload="none"` means no bytes fetched until user enables.
+     volume is set in JS from --audio-volume CSS var (default 0.22 = 22%, ambient feel). -->
+<audio id="bgm" src="/audio/theme.mp3" loop preload="none" aria-hidden="true"></audio>
+
+<div class="help-backdrop" id="helpBackdrop" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="help">
+    <h3>&gt; keyboard shortcuts</h3>
+    <div class="help-table">
+      <kbd>1 / 2 / 3 / 4</kbd><span>Switch theme (Liquid · Fluent · Mica · Holo)</span>
+      <kbd>C</kbd><span>Show Cover Letter only</span>
+      <kbd>R</kbd><span>Show Resume only</span>
+      <kbd>B</kbd><span>Show Both (default)</span>
+      <kbd>⌘K / Ctrl+K</kbd><span>Command palette — fuzzy search cover + resume</span>
+      <kbd>J / K</kbd><span>Scroll next / previous section (vim)</span>
+      <kbd>G</kbd><span>Focus the career graph</span>
+      <kbd>P</kbd><span>Print whatever's on screen — Resume / Cover / Both follows current view</span>
+      <kbd data-audio-only>M</kbd><span data-audio-only>Toggle background music — choice is remembered across visits</span>
+      <kbd>?</kbd><span>Toggle this help</span>
+      <kbd>Esc</kbd><span>Close any open modal · clear graph focus</span>
+    </div>
+    <h3 style="margin-top: 22px;">&gt; toasts &amp; signals</h3>
+    <div class="help-table" style="font-size: 12px;">
+      <span style="font-family: var(--font-mono); color: var(--a1);">⬢ THEME / VIEW</span><span>Fires on every theme or view change — all themes.</span>
+      <span style="font-family: var(--font-mono); color: var(--a1);">⬢ GRAPH</span><span>Fires when you click any career-graph node — names the focused target.</span>
+      <span style="font-family: var(--font-mono); color: var(--a1);">⬢ SIGNAL N</span><span><strong>Holo theme only.</strong> Each Impact Highlight (01–10) "unlocks" once when its card scrolls past 55% in view — gaming achievement-style. Refresh the page to unlock again. Switch off Holo to silence them.</span>
+    </div>
+    <div class="help-close">press <kbd>Esc</kbd> to close</div>
+  </div>
+</div>
+
+<!-- Toasts -->
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+(function(){
+  'use strict';
+  const root = document.documentElement;
+  root.classList.add('js-ready');
+  const THEMES = ['liquid', 'fluent', 'mica', 'holo'];
+  const VIEWS = ['both', 'cover', 'resume'];
+  const DEFAULT_THEME = 'holo';
+  const DEFAULT_VIEW = 'resume';
+
+  // (Letter is generic / undated — no auto-date injection.)
+
+  // ========== Live session uptime (Holo nav status) ==========
+  const sessionStart = Date.now();
+  const uptimeEl = document.getElementById('navUptime');
+  function tickUptime(){
+    if (!uptimeEl) return;
+    const sec = Math.floor((Date.now() - sessionStart) / 1000);
+    const h = Math.floor(sec / 3600);
+    const m = Math.floor((sec % 3600) / 60);
+    const s = sec % 60;
+    const pad = n => String(n).padStart(2, '0');
+    uptimeEl.textContent = h > 0 ? `${pad(h)}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
+  }
+  tickUptime();
+  setInterval(tickUptime, 1000);
+
+  // ========== Theme management ==========
+  function setTheme(theme, opts){
+    if (!THEMES.includes(theme)) theme = DEFAULT_THEME;
+    root.setAttribute('data-theme', theme);
+    try { localStorage.setItem('arv_theme', theme); } catch(e){}
+    document.querySelectorAll('.theme-btn').forEach(b => {
+      b.setAttribute('data-active', b.getAttribute('data-theme-set') === theme ? 'true' : 'false');
+    });
+    if (theme === 'holo' && opts && opts.boot) runBoot();
+    if (!(opts && opts.silent)) {
+      const tName = { liquid: 'Liquid Glass', fluent: 'Fluent Acrylic', mica: 'Mica', holo: 'Holo 2050' }[theme] || theme;
+      toast('THEME → ' + tName.toUpperCase(), tName + ' engaged');
+    }
+  }
+  document.querySelectorAll('.theme-btn').forEach(b => {
+    b.addEventListener('click', () => setTheme(b.getAttribute('data-theme-set')));
+  });
+
+  function runBoot(){
+    if (root.classList.contains('booted')) return;
+    root.classList.add('booting', 'booted');
+    setTimeout(() => root.classList.remove('booting'), 2200);
+  }
+
+  (function initTheme(){
+    let t = DEFAULT_THEME;
+    try { const saved = localStorage.getItem('arv_theme'); if (saved && THEMES.includes(saved)) t = saved; } catch(e){}
+    setTheme(t, { silent: true });
+  })();
+
+  // ========== Document view (cover / resume / both) ==========
+  // Title suggestion for browser print dialog (becomes the default PDF filename)
+  function titleFor(view){
+    return ({
+      resume: 'Appa Rao Vadde Resume',
+      cover:  'Appa Rao Vadde Cover',
+      both:   'Appa Rao Vadde Cover Resume'
+    })[view] || 'Appa Rao Vadde Resume';
+  }
+  function setView(view, opts){
+    if (!VIEWS.includes(view)) view = DEFAULT_VIEW;
+    root.setAttribute('data-view', view);
+    try { localStorage.setItem('arv_view', view); } catch(e){}
+    document.querySelectorAll('.doc-btn').forEach(b => {
+      b.setAttribute('data-active', b.getAttribute('data-view-set') === view ? 'true' : 'false');
+    });
+    document.title = titleFor(view);
+    // Scroll to top of viewport (sections have scroll-margin-top so headers are visible)
+    if (view === 'cover') window.scrollTo({top: 0, behavior: 'smooth'});
+    else if (view === 'resume') window.scrollTo({top: 0, behavior: 'smooth'});
+    else window.scrollTo({top: 0, behavior: 'smooth'});
+    if (!(opts && opts.silent)) {
+      const vName = { resume: 'Resume', cover: 'Cover Letter', both: 'Cover + Resume' }[view] || view;
+      toast('VIEW → ' + vName.toUpperCase(), 'Showing ' + vName);
+    }
+    // If the command palette is open, refresh its scope to match the new view
+    // so the user never sees a Cover result while looking at Resume (or vice versa).
+    const pal = document.getElementById('paletteBackdrop');
+    if (pal && pal.classList.contains('open')) {
+      const pi = document.getElementById('paletteInput');
+      if (pi && typeof palettePlaceholder === 'function') pi.placeholder = palettePlaceholder();
+      if (typeof renderPaletteResults === 'function') renderPaletteResults(pi ? pi.value : '');
+    }
+  }
+  document.querySelectorAll('.doc-btn').forEach(b => {
+    b.addEventListener('click', () => setView(b.getAttribute('data-view-set')));
+  });
+  // Nav anchor links auto-switch view if needed
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+      const currentView = root.getAttribute('data-view');
+      if (href === '#cover' && currentView !== 'cover' && currentView !== 'both') { e.preventDefault(); setView('cover'); }
+      else if (href !== '#cover' && currentView === 'cover') { e.preventDefault(); setView('resume'); setTimeout(() => document.querySelector(href)?.scrollIntoView({behavior: 'smooth', block: 'start'}), 80); }
+    });
+  });
+  (function initView(){
+    let v = DEFAULT_VIEW;
+    try { const saved = localStorage.getItem('arv_view'); if (saved && VIEWS.includes(saved)) v = saved; } catch(e){}
+    root.setAttribute('data-view', v);
+    document.querySelectorAll('.doc-btn').forEach(b => {
+      b.setAttribute('data-active', b.getAttribute('data-view-set') === v ? 'true' : 'false');
+    });
+    document.title = titleFor(v);
+    // No toast on initial load — only on user-initiated changes
+  })();
+
+  // ========== Spotlight + card reveal tracking ==========
+  document.addEventListener('pointermove', (e) => {
+    root.style.setProperty('--cx', e.clientX + 'px');
+    root.style.setProperty('--cy', e.clientY + 'px');
+  }, { passive: true });
+  document.addEventListener('pointermove', (e) => {
+    const cards = document.querySelectorAll('.stat-card, .highlight, .hero-stat, .skill-row, .edu, .platform');
+    cards.forEach(card => {
+      const r = card.getBoundingClientRect();
+      if (e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom) {
+        const px = (e.clientX - r.left) / r.width;
+        const py = (e.clientY - r.top) / r.height;
+        card.style.setProperty('--mx', (px * 100) + '%');
+        card.style.setProperty('--my', (py * 100) + '%');
+        // Normalized -0.5..0.5 for 3D tilt math
+        card.style.setProperty('--mxN', (px - 0.5).toFixed(3));
+        card.style.setProperty('--myN', (py - 0.5).toFixed(3));
+      }
+    });
+  }, { passive: true });
+
+  // ========== Progress bar ==========
+  function updateProgress(){
+    const h = document.documentElement;
+    const p = Math.max(0, Math.min(1, h.scrollTop / (h.scrollHeight - h.clientHeight)));
+    root.style.setProperty('--progress', (p * 100) + '%');
+  }
+  document.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // ========== Section reveal + Holo title glitch ==========
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      // Holo-only: glitch the section title once when it scrolls into view
+      if (root.getAttribute('data-theme') === 'holo') {
+        const title = e.target.querySelector('.section-title-name');
+        if (title && !title.dataset.glitched) {
+          title.dataset.glitched = '1';
+          title.classList.add('glitch');
+          setTimeout(() => title.classList.remove('glitch'), 700);
+        }
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+  document.querySelectorAll('.section').forEach(s => revealObs.observe(s));
+
+  // ========== Live count ==========
+  function animateCount(el){
+    const target = parseFloat(el.getAttribute('data-count'));
+    if (isNaN(target)) return;
+    const prefix = el.getAttribute('data-prefix') || '';
+    const suffix = el.getAttribute('data-suffix') || '';
+    const isFloat = target % 1 !== 0;
+    const duration = 1000;
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const v = target * eased;
+      let str;
+      if (isFloat) str = v.toFixed(2);
+      else if (target >= 1000) str = Math.round(v).toLocaleString();
+      else str = Math.round(v).toString();
+      el.textContent = prefix + str + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = (prefix + (isFloat ? target.toFixed(2) : (target >= 1000 ? target.toLocaleString() : target)) + suffix);
+    }
+    requestAnimationFrame(tick);
+  }
+  const countObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !e.target.dataset.counted) {
+        e.target.dataset.counted = '1';
+        animateCount(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+  // ========== Toasts / Achievement unlock ==========
+  const toastHost = document.getElementById('toasts');
+  function toast(title, body){
+    if (!toastHost) return;
+    const el = document.createElement('div');
+    el.className = 'toast';
+    el.innerHTML = '<div class="toast-head">⬢ ' + title + '</div><div class="toast-body">' + body + '</div>';
+    toastHost.appendChild(el);
+    setTimeout(() => el.remove(), 2800);
+  }
+  // Impact-Highlight unlock toasts — only in Holo theme (matches the gaming/terminal aesthetic).
+  //  Each highlight unlocks once per session as it scrolls into view.
+  const hlObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      if (root.getAttribute('data-theme') !== 'holo') return;
+      if (e.target.dataset.unlocked) return;
+      e.target.dataset.unlocked = '1';
+      const num = e.target.querySelector('.highlight-num')?.textContent.trim() || '';
+      const title = e.target.getAttribute('data-title') || '';
+      toast('SIGNAL ' + num + ' UNLOCKED', title);
+    });
+  }, { threshold: 0.55 });
+  document.querySelectorAll('.highlight').forEach(h => hlObs.observe(h));
+
+  // ========== Keyboard HUD fade-in + auto-idle ==========
+  const kbdHud = document.getElementById('kbdHud');
+  setTimeout(() => kbdHud?.classList.add('in'), 900);
+  let idleTimer = null;
+  function wakeHud(){
+    if (!kbdHud) return;
+    kbdHud.classList.remove('idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => kbdHud.classList.add('idle'), 3500);
+  }
+  ['pointermove', 'scroll', 'keydown'].forEach(ev => document.addEventListener(ev, wakeHud, { passive: true }));
+  setTimeout(wakeHud, 1200);
+
+  // ========== Command Palette ==========
+  const palette = document.getElementById('paletteBackdrop');
+  const paletteInput = document.getElementById('paletteInput');
+  const paletteResults = document.getElementById('paletteResults');
+  let searchCorpus = null;
+  let activeIdx = 0;
+
+  function buildCorpus(){
+    const corpus = [];
+    const letter = document.querySelector('.letter');
+    if (letter) {
+      letter.querySelectorAll('.letter-body p').forEach((p, i) => {
+        corpus.push({
+          title: p.textContent.replace(/\s+/g, ' ').trim().slice(0, 100),
+          meta: 'Cover Letter · ¶' + (i + 1),
+          text: p.textContent.replace(/\s+/g, ' ').trim(),
+          href: '#cover', el: p
+        });
+      });
+    }
+    document.querySelectorAll('.highlight').forEach(h => {
+      corpus.push({
+        title: h.getAttribute('data-title') || h.querySelector('.highlight-body')?.textContent.slice(0, 80),
+        meta: 'Resume · Highlight',
+        text: h.textContent.replace(/\s+/g, ' ').trim(),
+        href: '#highlights', el: h
+      });
+    });
+    document.querySelectorAll('.bullet').forEach(b => {
+      const role = b.closest('.role')?.querySelector('.role-title')?.textContent.trim() || '';
+      const domain = b.closest('.domain')?.querySelector('.domain-title')?.textContent.trim() || '';
+      corpus.push({
+        title: b.textContent.replace(/\s+/g, ' ').trim().slice(0, 100),
+        meta: 'Resume · ' + role + (domain ? ' · ' + domain : ''),
+        text: b.textContent.replace(/\s+/g, ' ').trim(),
+        href: '#experience', el: b
+      });
+    });
+    document.querySelectorAll('.skill-row').forEach(s => {
+      corpus.push({
+        title: s.querySelector('.skill-cat')?.textContent.trim(),
+        meta: 'Resume · Technical Expertise',
+        text: s.textContent.replace(/\s+/g, ' ').trim(),
+        href: '#expertise', el: s
+      });
+    });
+    return corpus;
+  }
+
+  function scoreMatch(item, q){
+    if (!q) return 0;
+    const text = item.text.toLowerCase();
+    const title = (item.title || '').toLowerCase();
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    let score = 0;
+    terms.forEach(t => { if (title.includes(t)) score += 5; if (text.includes(t)) score += 1; });
+    return score;
+  }
+
+  function renderPaletteResults(q){
+    if (!searchCorpus) searchCorpus = buildCorpus();
+    // View-aware: only search within what's currently visible on screen.
+    // Resume view hides cover items, Cover view hides resume items, Both shows all.
+    const view = root.getAttribute('data-view') || 'resume';
+    const viewFiltered = view === 'both'
+      ? searchCorpus
+      : searchCorpus.filter(it => {
+          const isCover = it.href === '#cover';
+          return view === 'cover' ? isCover : !isCover;
+        });
+    const ranked = viewFiltered
+      .map(item => ({item, score: scoreMatch(item, q)}))
+      .filter(r => q ? r.score > 0 : true)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 24);
+    activeIdx = 0;
+    if (ranked.length === 0) {
+      const hint = view === 'cover'
+        ? 'no matches in cover letter · try "hiring", "platforms", "team"…'
+        : view === 'resume'
+        ? 'no matches in resume · try "bedrock", "chaos", "$180K", "MCP"…'
+        : 'no matches · try "bedrock", "chaos", "django", "$180K", "MCP"…';
+      paletteResults.innerHTML = '<div class="palette-empty">' + hint + '</div>';
+      return;
+    }
+    paletteResults.innerHTML = ranked.map((r, i) => `
+      <div class="palette-item${i === 0 ? ' active' : ''}" data-href="${r.item.href}" data-idx="${i}">
+        <div class="palette-item-title">${r.item.title}</div>
+        <div class="palette-item-meta"><span class="tag">${r.item.meta}</span></div>
+      </div>
+    `).join('');
+    paletteResults.querySelectorAll('.palette-item').forEach(el => {
+      el.addEventListener('click', () => {
+        const idx = parseInt(el.getAttribute('data-idx'));
+        jumpTo(el.getAttribute('data-href'), ranked[idx].item.el);
+        closePalette();
+      });
+      el.addEventListener('mousemove', () => {
+        paletteResults.querySelectorAll('.palette-item').forEach(i => i.classList.remove('active'));
+        el.classList.add('active');
+        activeIdx = parseInt(el.getAttribute('data-idx'));
+      });
+    });
+  }
+  function palettePlaceholder(){
+    const view = root.getAttribute('data-view') || 'resume';
+    return view === 'cover'
+      ? 'search cover letter — paragraphs…'
+      : view === 'resume'
+      ? 'search resume — bullets, highlights, skills…'
+      : 'search cover + resume — bullets, skills, metrics…';
+  }
+  function openPalette(){
+    palette.classList.add('open');
+    paletteInput.placeholder = palettePlaceholder();
+    paletteInput.value = '';
+    renderPaletteResults('');
+    setTimeout(() => paletteInput.focus(), 50);
+  }
+  function closePalette(){ palette.classList.remove('open'); }
+  paletteInput?.addEventListener('input', () => renderPaletteResults(paletteInput.value));
+  palette?.addEventListener('click', (e) => { if (e.target === palette) closePalette(); });
+  document.getElementById('paletteBtn')?.addEventListener('click', openPalette);
+
+  function jumpTo(href, el){
+    const target = el || document.querySelector(href);
+    if (!target) return;
+    target.scrollIntoView({behavior: 'smooth', block: 'center'});
+    const prevOutline = target.style.outline;
+    target.style.outline = '2px solid var(--a1)';
+    target.style.borderRadius = target.style.borderRadius || '8px';
+    setTimeout(() => { target.style.outline = prevOutline; }, 1400);
+  }
+
+  // ========== Help modal ==========
+  const helpBackdrop = document.getElementById('helpBackdrop');
+  function openHelp(){ helpBackdrop.classList.add('open'); }
+  function closeHelp(){ helpBackdrop.classList.remove('open'); }
+  document.getElementById('helpBtn')?.addEventListener('click', openHelp);
+  helpBackdrop?.addEventListener('click', (e) => { if (e.target === helpBackdrop) closeHelp(); });
+
+  // ========== Print ==========
+  // Print honors the current view: Resume only, Cover only, or Both — whatever's on screen.
+  // Document title is set to the view-specific filename so the browser's
+  // Save-as-PDF dialog suggests: "Appa Rao Vadde Resume" / "Cover" / "Cover Resume".
+  function doPrint(){
+    const v = root.getAttribute('data-view');
+    const vName = { resume: 'Resume', cover: 'Cover Letter', both: 'Cover + Resume' }[v] || 'Resume';
+    document.title = titleFor(v);
+    toast('PRINT → ' + vName.toUpperCase(), 'Sending ' + vName + ' to print');
+    setTimeout(() => window.print(), 120);
+  }
+  document.getElementById('printBtn')?.addEventListener('click', doPrint);
+
+  // ========== Background audio (M) ==========
+  // Single track, looped, low volume (ambient). 3 button states driven by
+  // data-audio-state on the toggle: muted | playing | pending. Pending = "user
+  // wants playback but browser autoplay was blocked"; pulses to invite a click.
+  // Persistence via localStorage key `arv_audio_muted` (true|false).
+  // Default on first visit: WANTS playing (browser will block until first
+  // interaction, then audio starts). Once user explicitly mutes, that's saved.
+  const bgm     = document.getElementById('bgm');
+  const audioBtn = document.getElementById('audioBtn');
+  // Atomic mobile/tablet kill-switch. On coarse-pointer devices, mobile system
+  // EQs and small drivers turn even whisper-volume cinematic music into
+  // "noisy." Rather than DSP-filter on those devices, just disable the entire
+  // audio surface — button, M shortcut, help row, KBD chip, audio fetch. The
+  // CSS rule on html[data-audio="off"] hides the UI; this JS skips init.
+  const isCoarsePointer = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  if (isCoarsePointer) {
+    document.documentElement.dataset.audio = 'off';
+  }
+  const AUDIO_TARGET_VOL = 0.02;     // desktop only — knob is one place to tune
+  const AUDIO_FADE_MS    = 900;
+  let audioFadeTimer = null;
+
+  function setAudioState(state) {           // 'muted' | 'playing' | 'pending'
+    audioBtn?.setAttribute('data-audio-state', state);
+    audioBtn?.setAttribute('aria-pressed', state === 'playing' ? 'true' : 'false');
+    if (audioBtn) {
+      audioBtn.title = state === 'muted'  ? 'Audio off — click to enable (M)'
+                     : state === 'pending' ? 'Click to start audio (M)'
+                                           : 'Audio playing — click to mute (M)';
+    }
+  }
+  function fadeAudio(targetVol, ms) {
+    if (!bgm) return;
+    clearInterval(audioFadeTimer);
+    const startVol = bgm.volume;
+    const startTs  = performance.now();
+    audioFadeTimer = setInterval(() => {
+      const t = Math.min(1, (performance.now() - startTs) / ms);
+      bgm.volume = startVol + (targetVol - startVol) * t;
+      if (t >= 1) { clearInterval(audioFadeTimer); audioFadeTimer = null; if (targetVol === 0) bgm.pause(); }
+    }, 30);
+  }
+  function audioMutedPref() {
+    try { return localStorage.getItem('arv_audio_muted') === 'true'; } catch(e) { return false; }
+  }
+  function setAudioMutedPref(muted) {
+    try { localStorage.setItem('arv_audio_muted', muted ? 'true' : 'false'); } catch(e) {}
+  }
+  async function tryPlayAudio() {
+    if (!bgm) return false;
+    bgm.volume = 0;
+    try { await bgm.play(); fadeAudio(AUDIO_TARGET_VOL, AUDIO_FADE_MS); return true; }
+    catch(e) { return false; }              // autoplay blocked — caller handles 'pending'
+  }
+  async function enableAudio({ persistPreference = true } = {}) {
+    if (persistPreference) setAudioMutedPref(false);
+    const ok = await tryPlayAudio();
+    setAudioState(ok ? 'playing' : 'pending');
+    return ok;
+  }
+  function disableAudio() {
+    setAudioMutedPref(true);
+    fadeAudio(0, AUDIO_FADE_MS / 2);
+    setAudioState('muted');
+  }
+  function toggleAudio() {
+    const state = audioBtn?.getAttribute('data-audio-state');
+    if (state === 'playing') {
+      disableAudio();
+      toast('AUDIO → OFF', 'Background music muted');
+    } else {
+      enableAudio().then(ok => {
+        toast('AUDIO → ON', ok ? 'Background music playing' : 'Tap once more — browser blocked autoplay');
+      });
+    }
+  }
+  // All-or-nothing: on coarse-pointer devices skip click handler + init.
+  if (!isCoarsePointer) {
+    audioBtn?.addEventListener('click', toggleAudio);
+
+    // Initial state — respect saved preference, attempt autoplay where allowed.
+    (function initAudio(){
+      if (!bgm) return;
+      if (audioMutedPref()) { setAudioState('muted'); return; }
+      // No preference saved OR last state was playing — try to play.
+      enableAudio({ persistPreference: false });
+      // If autoplay was blocked, wire a one-shot listener so the FIRST user
+      // interaction (anywhere on the page) kicks off audio without needing them
+      // to find the button. Respects mute preference if set in the meantime.
+      const kickOnFirstInteraction = () => {
+        if (audioBtn?.getAttribute('data-audio-state') !== 'pending') return;
+        if (audioMutedPref()) return;
+        enableAudio({ persistPreference: false });
+      };
+      ['pointerdown', 'keydown', 'touchstart'].forEach(ev =>
+        document.addEventListener(ev, kickOnFirstInteraction, { once: false, passive: true })
+      );
+    })();
+  }
+
+  // ========== Keyboard shortcuts ==========
+  function focusGraph(){ document.getElementById('graph')?.scrollIntoView({behavior: 'smooth'}); }
+  function scrollSection(dir){
+    const sections = Array.from(document.querySelectorAll('#cover, #hero, #stats, #highlights, #summary, #expertise, #graph, #experience, #education'));
+    const scrollTop = window.scrollY + 100;
+    let idx = sections.findIndex(s => s.offsetTop >= scrollTop);
+    if (idx === -1) idx = sections.length - 1;
+    if (dir > 0) idx = Math.min(sections.length - 1, (sections[idx]?.offsetTop <= scrollTop ? idx + 1 : idx));
+    else idx = Math.max(0, idx - 1);
+    sections[idx]?.scrollIntoView({behavior: 'smooth'});
+  }
+
+  document.addEventListener('keydown', (e) => {
+    const tag = e.target?.tagName;
+    const inInput = tag === 'INPUT' || tag === 'TEXTAREA';
+
+    if (e.key === 'Escape') { closePalette(); closeHelp(); return; }
+
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      palette.classList.contains('open') ? closePalette() : openPalette();
+      return;
+    }
+
+    if (inInput) {
+      if (palette.classList.contains('open')) {
+        const items = paletteResults.querySelectorAll('.palette-item');
+        if (!items.length) return;
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          activeIdx = Math.min(items.length - 1, activeIdx + 1);
+          items.forEach(i => i.classList.remove('active'));
+          items[activeIdx].classList.add('active');
+          items[activeIdx].scrollIntoView({block: 'nearest'});
+        }
+        if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          activeIdx = Math.max(0, activeIdx - 1);
+          items.forEach(i => i.classList.remove('active'));
+          items[activeIdx].classList.add('active');
+          items[activeIdx].scrollIntoView({block: 'nearest'});
+        }
+        if (e.key === 'Enter') { e.preventDefault(); items[activeIdx]?.click(); }
+      }
+      return;
+    }
+
+    // Bare single-letter shortcuts only — let browser handle Cmd/Ctrl/Alt + key (reload, print, find, etc.)
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+    const k = e.key.toLowerCase();
+    if (e.key === '1') setTheme('liquid');
+    else if (e.key === '2') setTheme('fluent');
+    else if (e.key === '3') setTheme('mica');
+    else if (e.key === '4') setTheme('holo', {boot: true});
+    else if (k === 'c') { e.preventDefault(); setView('cover'); }
+    else if (k === 'r') { e.preventDefault(); setView('resume'); }
+    else if (k === 'b') { e.preventDefault(); setView('both'); }
+    else if (k === 'p') { e.preventDefault(); doPrint(); }
+    else if (k === 'm' && !isCoarsePointer) { e.preventDefault(); toggleAudio(); }
+    else if (k === 'g') { e.preventDefault(); focusGraph(); }
+    else if (k === 'j') { e.preventDefault(); scrollSection(1); }
+    else if (k === 'k') { e.preventDefault(); scrollSection(-1); }
+    else if (e.key === '?' || e.key === '/') { if (e.key === '/') e.preventDefault(); openHelp(); }
+  });
+
+  // ========== Career Graph (custom force-directed, self-contained) ==========
+  const nodes = [
+    { id: 'ai-hub',      label: 'AI Platform',         c: 0, kind: 'hub',  r: 22, href: '#highlights' },
+    { id: 'cloud-hub',   label: 'Cloud Migration',     c: 1, kind: 'hub',  r: 22, href: '#experience' },
+    { id: 'sre-hub',     label: 'SRE / Chaos',         c: 2, kind: 'hub',  r: 22, href: '#experience' },
+    { id: 'swe-hub',     label: 'SWE Foundations',     c: 3, kind: 'hub',  r: 20, href: '#experience' },
+    { id: 'team',        label: '4-Engineer Team',     c: 4, kind: 'hub',  r: 18, href: '#experience' },
+    { id: 'bedrock',     label: 'Bedrock 6-Agent',     c: 0, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'mcp',         label: 'SRE Obs MCP',         c: 0, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'context-hub', label: 'Context Hub',         c: 0, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'copilot',     label: 'Copilot Proxy',       c: 0, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'tf',          label: 'Terraform Modules',   c: 1, kind: 'node', r: 13, href: '#experience' },
+    { id: '12factor',    label: '12-Factor Refactor',  c: 1, kind: 'node', r: 12, href: '#experience' },
+    { id: 'gameday',     label: 'GameDay Program',     c: 2, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'oac',         label: 'Observability-as-Code', c: 2, kind: 'node', r: 13, href: '#highlights' },
+    { id: 'py23',        label: 'Py 2 → 3',            c: 3, kind: 'node', r: 11, href: '#experience' },
+    { id: 'oncall',      label: 'On-Call Ownership',   c: 3, kind: 'node', r: 11, href: '#experience' }
+  ];
+  const edges = [
+    ['ai-hub','bedrock'],['ai-hub','mcp'],['ai-hub','context-hub'],['ai-hub','copilot'],
+    ['cloud-hub','tf'],['cloud-hub','12factor'],
+    ['sre-hub','gameday'],['sre-hub','oac'],
+    ['swe-hub','py23'],['swe-hub','oncall'],
+    ['oac','mcp',true],['tf','oac',true],['12factor','bedrock',true],
+    ['gameday','ai-hub',true],['py23','cloud-hub',true],
+    ['oncall','sre-hub',true],['oncall','gameday',true],
+    ['team','ai-hub'],['team','cloud-hub'],['team','sre-hub'],
+    ['swe-hub','cloud-hub'],['cloud-hub','sre-hub'],['sre-hub','ai-hub'],
+    ['context-hub','copilot',true],['bedrock','mcp',true]
+  ];
+
+  const COMM_COLORS_DARK = ['#ff4de1', '#fbbf24', '#4de1ff', '#b2ff4d', '#c4b5fd'];
+  const COMM_COLORS_MICA = ['#b45309', '#ca8a04', '#0f766e', '#15803d', '#1e40af'];
+  function commColor(c){ return root.getAttribute('data-theme') === 'mica' ? COMM_COLORS_MICA[c] : COMM_COLORS_DARK[c]; }
+
+  const nodeMap = {};
+  nodes.forEach(n => { nodeMap[n.id] = n; n.x = 450 + (Math.random()-0.5) * 200; n.y = 220 + (Math.random()-0.5) * 120; n.vx = 0; n.vy = 0; });
+  const edgeObjs = edges.map(([s, t, cross]) => ({ source: nodeMap[s], target: nodeMap[t], cross: !!cross }));
+
+  const W = 900, H = 440;
+  const CENTER_FORCE = 0.008;
+  const CHARGE = 3500;
+  const LINK_DIST = 92;
+  const LINK_STRENGTH = 0.035;
+  const DAMP = 0.84;
+
+  function tick(){
+    for (let i = 0; i < nodes.length; i++){
+      for (let j = i + 1; j < nodes.length; j++){
+        const a = nodes[i], b = nodes[j];
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const d2 = dx*dx + dy*dy || 1;
+        const d = Math.sqrt(d2);
+        const f = CHARGE / d2;
+        const fx = (dx / d) * f, fy = (dy / d) * f;
+        a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
+      }
+    }
+    edgeObjs.forEach(e => {
+      const dx = e.target.x - e.source.x, dy = e.target.y - e.source.y;
+      const d = Math.sqrt(dx*dx + dy*dy) || 1;
+      const f = (d - LINK_DIST) * LINK_STRENGTH;
+      const fx = (dx / d) * f, fy = (dy / d) * f;
+      e.source.vx += fx; e.source.vy += fy;
+      e.target.vx -= fx; e.target.vy -= fy;
+    });
+    nodes.forEach(n => {
+      n.vx += (W/2 - n.x) * CENTER_FORCE;
+      n.vy += (H/2 - n.y) * CENTER_FORCE;
+      n.vx *= DAMP; n.vy *= DAMP;
+      n.x += n.vx; n.y += n.vy;
+      n.x = Math.max(n.r + 10, Math.min(W - n.r - 10, n.x));
+      n.y = Math.max(n.r + 10, Math.min(H - n.r - 10, n.y));
+    });
+  }
+
+  const svg = document.getElementById('careerGraph');
+  const NS = 'http://www.w3.org/2000/svg';
+  const edgeLayer = document.createElementNS(NS, 'g');
+  const nodeLayer = document.createElementNS(NS, 'g');
+  svg.appendChild(edgeLayer);
+  svg.appendChild(nodeLayer);
+
+  edgeObjs.forEach((e, i) => {
+    const line = document.createElementNS(NS, 'line');
+    line.setAttribute('class', 'edge' + (e.cross ? ' cross' : ''));
+    line.dataset.i = i;
+    edgeLayer.appendChild(line);
+    e.el = line;
+  });
+  nodes.forEach(n => {
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'node');
+    g.dataset.id = n.id;
+    const ring = document.createElementNS(NS, 'circle');
+    ring.setAttribute('class', 'node-ring');
+    ring.setAttribute('r', n.r + 4);
+    const dot = document.createElementNS(NS, 'circle');
+    dot.setAttribute('class', 'node-dot');
+    dot.setAttribute('r', n.kind === 'hub' ? n.r : n.r - 2);
+    dot.setAttribute('fill', commColor(n.c));
+    dot.setAttribute('fill-opacity', n.kind === 'hub' ? '0.85' : '0.55');
+    ring.setAttribute('stroke', commColor(n.c));
+    const label = document.createElementNS(NS, 'text');
+    label.setAttribute('class', 'node-label');
+    label.setAttribute('dy', n.r + 14);
+    label.textContent = n.label;
+    const hit = document.createElementNS(NS, 'circle');
+    hit.setAttribute('class', 'node-hit');
+    hit.setAttribute('r', n.r + 12);
+    g.appendChild(ring); g.appendChild(dot); g.appendChild(label); g.appendChild(hit);
+    g.addEventListener('pointerenter', () => highlightNode(n.id));
+    g.addEventListener('pointerleave', () => clearHighlight());
+    g.addEventListener('click', () => focusGraphTarget(n.id));
+    nodeLayer.appendChild(g);
+    n.g = g; n.ring = ring; n.dot = dot; n.label = label; n.hit = hit;
+  });
+
+  function positionAll(){
+    nodes.forEach(n => n.g.setAttribute('transform', `translate(${n.x}, ${n.y})`));
+    edgeObjs.forEach(e => {
+      e.el.setAttribute('x1', e.source.x); e.el.setAttribute('y1', e.source.y);
+      e.el.setAttribute('x2', e.target.x); e.el.setAttribute('y2', e.target.y);
+    });
+  }
+  // Two-phase animation:
+  //  Phase 1 (0-380 ticks): full physics — settles into community layout
+  //  Phase 2 (380+):        gentle "constellation" drift — small perturbations + soft forces
+  //                          so the graph feels alive (molecular / orbital), not frozen.
+  let simTicks = 0;
+  let graphVisible = true;
+  function driftPerturb(){
+    nodes.forEach(n => {
+      // Tiny random impulse — gives organic motion without chaos
+      n.vx += (Math.random() - 0.5) * 0.18;
+      n.vy += (Math.random() - 0.5) * 0.18;
+    });
+  }
+  function simFrame(){
+    if (!graphVisible) { requestAnimationFrame(simFrame); return; }
+    if (simTicks < 380) {
+      // Settle phase — full physics
+      tick();
+    } else {
+      // Drift phase — softer physics + occasional perturbation = constellation feel
+      const savedCharge = window.__savedCharge;
+      // Use a milder tick: weaker charge, weaker spring, lighter damping
+      for (let i = 0; i < nodes.length; i++){
+        for (let j = i + 1; j < nodes.length; j++){
+          const a = nodes[i], b = nodes[j];
+          const dx = b.x - a.x, dy = b.y - a.y;
+          const d2 = dx*dx + dy*dy || 1; const d = Math.sqrt(d2);
+          const f = (CHARGE * 0.18) / d2;
+          const fx = (dx/d) * f, fy = (dy/d) * f;
+          a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
+        }
+      }
+      edgeObjs.forEach(e => {
+        const dx = e.target.x - e.source.x, dy = e.target.y - e.source.y;
+        const d = Math.sqrt(dx*dx + dy*dy) || 1;
+        const f = (d - LINK_DIST) * (LINK_STRENGTH * 0.5);
+        const fx = (dx/d) * f, fy = (dy/d) * f;
+        e.source.vx += fx; e.source.vy += fy;
+        e.target.vx -= fx; e.target.vy -= fy;
+      });
+      nodes.forEach(n => {
+        n.vx += (W/2 - n.x) * (CENTER_FORCE * 0.6);
+        n.vy += (H/2 - n.y) * (CENTER_FORCE * 0.6);
+        n.vx *= 0.94; n.vy *= 0.94;     // lighter damping than settle phase
+        n.x += n.vx; n.y += n.vy;
+        n.x = Math.max(n.r + 10, Math.min(W - n.r - 10, n.x));
+        n.y = Math.max(n.r + 10, Math.min(H - n.r - 10, n.y));
+      });
+      // Periodic gentle perturbation — every ~90 ticks (~1.5s) — keeps motion organic
+      if (simTicks % 90 === 0) driftPerturb();
+    }
+    positionAll();
+    simTicks++;
+    requestAnimationFrame(simFrame);
+  }
+  requestAnimationFrame(simFrame);
+
+  // Pause sim when graph is off-screen — saves CPU
+  const graphSection = document.getElementById('graph');
+  if (graphSection) {
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => { graphVisible = e.isIntersecting; });
+    }, { threshold: 0 }).observe(graphSection);
+  }
+  // Pause when tab not visible
+  document.addEventListener('visibilitychange', () => { graphVisible = document.visibilityState === 'visible' && graphVisible; });
+
+  // Graph node → target element map
+  let graphScrollGuard = false;
+  let graphFocusedEl = null;
+  function clearGraphFocus(){
+    if (graphFocusedEl) { graphFocusedEl.classList.remove('graph-focus'); graphFocusedEl = null; }
+  }
+  function focusGraphTarget(nodeId){
+    // Ensure we're on resume view (cover view hides these targets)
+    if (root.getAttribute('data-view') === 'cover') setView('resume');
+    const target = document.querySelector(`[data-graph-id="${nodeId}"]`);
+    if (!target) return;
+    clearGraphFocus();
+    target.classList.add('graph-focus');
+    graphFocusedEl = target;
+    graphScrollGuard = true;
+    target.scrollIntoView({behavior: 'smooth', block: 'center'});
+    // Toast the user so they know what they jumped to
+    const node = nodes.find(n => n.id === nodeId);
+    const targetTitle = target.getAttribute('data-title') ||
+                        target.querySelector('.role-title')?.textContent.trim() ||
+                        target.querySelector('.domain-title')?.textContent.trim() ||
+                        target.querySelector('strong')?.textContent.trim() ||
+                        nodeId;
+    toast('GRAPH → ' + (node?.label || nodeId).toUpperCase(), 'Focused: ' + targetTitle);
+    setTimeout(() => { graphScrollGuard = false; }, 900);
+    setTimeout(() => clearGraphFocus(), 4200);
+  }
+  // Clear focus on real user intent — wheel, touchmove, or arrow keys
+  document.addEventListener('wheel', () => { if (!graphScrollGuard && graphFocusedEl) clearGraphFocus(); }, { passive: true });
+  document.addEventListener('touchmove', () => { if (!graphScrollGuard && graphFocusedEl) clearGraphFocus(); }, { passive: true });
+  document.addEventListener('click', (e) => {
+    if (!graphFocusedEl) return;
+    if (e.target.closest('.graph-svg') || e.target.closest('.graph-focus')) return;
+    clearGraphFocus();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!graphFocusedEl) return;
+    if (['Escape','PageDown','PageUp','ArrowDown','ArrowUp','Home','End'].includes(e.key)) clearGraphFocus();
+  });
+
+  function highlightNode(id){
+    const connected = new Set([id]);
+    edgeObjs.forEach(e => { if (e.source.id === id) connected.add(e.target.id); if (e.target.id === id) connected.add(e.source.id); });
+    nodes.forEach(x => { if (connected.has(x.id)) x.g.classList.remove('dim'); else x.g.classList.add('dim'); });
+    edgeObjs.forEach(e => {
+      if (e.source.id === id || e.target.id === id) { e.el.classList.add('highlight'); e.el.classList.remove('dim'); }
+      else { e.el.classList.add('dim'); e.el.classList.remove('highlight'); }
+    });
+  }
+  function clearHighlight(){
+    nodes.forEach(x => x.g.classList.remove('dim'));
+    edgeObjs.forEach(e => { e.el.classList.remove('highlight'); e.el.classList.remove('dim'); });
+  }
+
+  const themeObs = new MutationObserver(() => {
+    nodes.forEach(n => { n.dot.setAttribute('fill', commColor(n.c)); n.ring.setAttribute('stroke', commColor(n.c)); });
+  });
+  themeObs.observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+
+})();
+</script>
+
+</body>
+</html>

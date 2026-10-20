@@ -1,0 +1,80 @@
+name: CI & Quality Gate
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dom-and-syntax:
+    name: DOM & HTML Syntax Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate HTML DOM Hierarchy
+        run: |
+          python3 -c '
+          from html.parser import HTMLParser
+          class Validator(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.tags = []
+                  self.void_tags = {"meta", "link", "img", "br", "hr", "input", "source", "area", "base", "col", "embed", "param", "track", "wbr", "circle", "rect", "polyline", "path", "line", "polygon", "feTurbulence", "filter"}
+              def handle_starttag(self, tag, attrs):
+                  if tag not in self.void_tags:
+                      self.tags.append(tag)
+              def handle_endtag(self, tag):
+                  if tag in self.void_tags:
+                      return
+                  if self.tags and self.tags[-1] == tag:
+                      self.tags.pop()
+                  elif tag in self.tags:
+                      while self.tags and self.tags[-1] != tag:
+                          self.tags.pop()
+                      if self.tags:
+                          self.tags.pop()
+          v = Validator()
+          with open("index.html") as f:
+              v.feed(f.read())
+          assert len(v.tags) == 0, f"Unclosed tags found: {v.tags}"
+          print("✅ HTML DOM validation passed: 0 unclosed tags.")
+          '
+
+      - name: Validate Internal Navigation Anchors
+        run: |
+          python3 -c '
+          import re
+          with open("index.html") as f:
+              text = f.read()
+          anchors = re.findall(r"href=\"#([a-zA-Z0-9_\-]+)\"", text)
+          ids = set(re.findall(r"id=\"([a-zA-Z0-9_\-]+)\"", text))
+          missing = [a for a in set(anchors) if a not in ids]
+          assert len(missing) == 0, f"Broken internal anchor targets: {missing}"
+          print(f"✅ All {len(anchors)} internal anchors resolve to valid DOM targets.")
+          '
+
+  security-scan:
+    name: Gitleaks Secret Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true

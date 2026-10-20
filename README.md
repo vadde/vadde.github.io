@@ -13,6 +13,7 @@ This repository is connected to **two** hosting platforms. Pushing to the `maste
 
 ## 📁 Structure
 
-- `index.html`: The fully self-contained HTML/CSS/JS resume file.
-- `audio/`: Contains the background soundtrack referenced by the HTML.
+- `index.html`: The fully self-contained HTML/CSS/JS resume file with embedded career graph and view switcher.
+- `assets/`: Contains social media OpenGraph / Twitter preview assets (`preview.png`).
+- `audio/`: Contains the background soundtrack referenced by the HTML (`theme.mp3`).
 - `README.md`: This file.

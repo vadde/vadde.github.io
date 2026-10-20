@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Appa Rao Vadde — AI Platforms · Developer Productivity · Site Reliability Engineering. 10+ years shipping production multi-agent systems and developer platforms adopted by 100+ engineers across 25+ teams." />
+<meta name="description" content="Appa Rao Vadde — Software Development Engineer · Cloud Platform Engineer · AI Platforms · Developer Productivity · SRE. 10+ years shipping enterprise cloud migrations, multi-agent systems, and autonomous developer tools." />
 <meta name="author" content="Appa Rao Vadde" />
 <meta name="theme-color" content="#04060f" />
 <link rel="canonical" href="https://vadde.github.io/" />
 <meta property="og:type" content="profile" />
 <meta property="og:url" content="https://vadde.github.io/" />
-<meta property="og:title" content="Appa Rao Vadde — AI Platforms · Dev Productivity · SRE" />
-<meta property="og:description" content="Senior engineer shipping production multi-agent systems and developer platforms adopted by 100+ engineers across 25+ teams. AWS Bedrock · MCP · Context Hub · Chaos Engineering · Observability-as-Code." />
+<meta property="og:title" content="Appa Rao Vadde — Software Development Engineer · Cloud Platform Engineer · AI Platforms · SRE" />
+<meta property="og:description" content="Software Development Engineer and Cloud Platform Engineer shipping enterprise platforms, AWS Bedrock multi-agent systems, and autonomous developer cockpits. Full-spectrum SDLC mastery." />
 <meta property="og:image" content="https://vadde.github.io/assets/preview.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="Appa Rao Vadde — Staff-level AI Platforms · Developer Productivity · SRE" />
+<meta property="og:image:alt" content="Appa Rao Vadde — Software Development Engineer · Cloud Platform Engineer · AI Platforms · SRE" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Appa Rao Vadde — Staff-level AI/SRE/Platform Engineer" />
-<meta name="twitter:description" content="AI Platforms · Dev Productivity · SRE · 10+ years · platforms adopted by 100+ engineers." />
+<meta name="twitter:title" content="Appa Rao Vadde — Software Development Engineer · Cloud Platform Engineer · AI Platforms · SRE" />
+<meta name="twitter:description" content="Software Development Engineer &amp; Cloud Platform Engineer · 10+ years · enterprise cloud migrations, multi-agent systems, and autonomous developer tools." />
 <meta name="twitter:image" content="https://vadde.github.io/assets/preview.png" />
-<meta name="twitter:image:alt" content="Appa Rao Vadde — Staff-level AI Platforms · Developer Productivity · SRE" />
+<meta name="twitter:image:alt" content="Appa Rao Vadde — Software Development Engineer · Cloud Platform Engineer · AI Platforms · SRE" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234de1ff'/%3E%3Cstop offset='0.5' stop-color='%23a855f7'/%3E%3Cstop offset='1' stop-color='%23ff4de1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='58%25' font-family='Inter,system-ui,sans-serif' font-size='26' font-weight='900' fill='white' text-anchor='middle' dominant-baseline='middle'%3EAV%3C/text%3E%3C/svg%3E" />
-<title>Appa Rao Vadde — Cover Letter · Resume · Career Graph</title>
+<title>Appa Rao Vadde — Resume · Cover · Foundry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;700;900&family=Fraunces:ital,wght@0,500;0,700;1,500&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet" />
@@ -307,8 +307,8 @@ img, svg { display: block; max-width: 100%; }
 
 /* View-aware chip visibility — only show links that jump to visible content.
    Viewing Cover  → hide all resume section chips.
-   Viewing Resume → hide Cover chip.
-   Viewing Both   → show everything. */
+   Viewing Resume  → hide Cover chip.
+   Viewing Foundry → hide Cover and Resume chips. */
 html[data-view="cover"] .nav-links a[href="#hero"],
 html[data-view="cover"] .nav-links a[href="#stats"],
 html[data-view="cover"] .nav-links a[href="#highlights"],
@@ -317,6 +317,15 @@ html[data-view="cover"] .nav-links a[href="#expertise"],
 html[data-view="cover"] .nav-links a[href="#graph"],
 html[data-view="cover"] .nav-links a[href="#experience"],
 html[data-view="cover"] .nav-links a[href="#education"] { display: none; }
+html[data-view="foundry"] .nav-links a[href="#cover"],
+html[data-view="foundry"] .nav-links a[href="#hero"],
+html[data-view="foundry"] .nav-links a[href="#stats"],
+html[data-view="foundry"] .nav-links a[href="#highlights"],
+html[data-view="foundry"] .nav-links a[href="#summary"],
+html[data-view="foundry"] .nav-links a[href="#expertise"],
+html[data-view="foundry"] .nav-links a[href="#graph"],
+html[data-view="foundry"] .nav-links a[href="#experience"],
+html[data-view="foundry"] .nav-links a[href="#education"] { display: none; }
 html[data-view="resume"] .nav-links a[href="#cover"] { display: none; }
 
 /* nav-actions relies on .nav's `justify-content: space-between` to sit at the
@@ -865,11 +874,539 @@ body { padding-bottom: 48px; }
 @keyframes boot-out { to { opacity: 0; visibility: hidden; pointer-events: none; } }
 html.booting .boot { display: flex; }
 
-/* Document-view toggle (show cover only / resume only / both) */
-html[data-view="cover"] .resume-main { display: none; }
-html[data-view="resume"] .cover-letter { display: none; }
+/* Document-view toggle (show cover only / resume only / foundry only) */
+html[data-view="cover"] .resume-main,
+html[data-view="cover"] .foundry-main { display: none; }
+html[data-view="resume"] .cover-letter,
+html[data-view="resume"] .foundry-main { display: none; }
+html[data-view="foundry"] .cover-letter,
+html[data-view="foundry"] .resume-main { display: none; }
+html[data-view="foundry"] main,
 html[data-view="resume"] main,
 html[data-view="cover"] main { padding-top: 16px; }
+
+/* ============================================================================
+   FOUNDRY VIEW — Autonomous R&D, DevEx Cockpits & Systems Architecture
+   ============================================================================ */
+.foundry-main {
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+.foundry-hero {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.foundry-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--fg-muted);
+  letter-spacing: .02em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: none;
+}
+.foundry-eyebrow::before { content: '$'; color: var(--a1); font-weight: 700; }
+[data-theme="holo"] .foundry-eyebrow::before { content: '>'; color: var(--a1); }
+.foundry-eyebrow .foundry-sys-target { color: var(--fg); font-weight: 700; }
+.foundry-eyebrow .foundry-sys-flag { color: var(--a1); font-weight: 500; }
+.foundry-title {
+  font-size: clamp(34px, 4.8vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 14px;
+  background: var(--grad);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hero-flow 14s ease infinite;
+}
+[data-theme="holo"] .foundry-title { font-family: 'Orbitron', sans-serif; letter-spacing: .02em; }
+.foundry-lead-wrap {
+  width: 100%;
+}
+.foundry-lead {
+  font-size: clamp(15.5px, 1.3vw, 18px);
+  color: var(--fg-muted);
+  line-height: 1.65;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+.foundry-hero-chips {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin-top: 14px;
+}
+@media (max-width: 1180px) {
+  .foundry-hero-chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .foundry-hero-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .foundry-hero-chips { grid-template-columns: 1fr; }
+}
+.foundry-hero-chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  transition: all var(--t-fast);
+  text-decoration: none;
+  cursor: pointer;
+}
+.foundry-hero-chip:hover {
+  border-color: var(--a1);
+  background: var(--surface-hi);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+}
+.fhc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+.fhc-tag-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.fhc-arrow {
+  color: var(--a1);
+  font-size: 11px;
+  opacity: .5;
+  transition: transform var(--t-fast), opacity var(--t-fast);
+}
+.foundry-hero-chip:hover .fhc-arrow {
+  opacity: 1;
+  transform: translateY(2px);
+}
+.foundry-focus {
+  outline: 2px solid var(--a1) !important;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 1px var(--a1), 0 0 36px rgba(77,225,255,.4), 0 0 72px rgba(255,77,225,.2) !important;
+  transition: outline-color .25s, box-shadow .25s;
+  animation: focus-pulse 1.2s var(--ease) 1;
+  position: relative;
+  z-index: 5;
+}
+.fhc-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.fhc-dot.dot-cyan { background: #38bdf8; box-shadow: 0 0 8px rgba(56, 189, 248, .6); }
+.fhc-dot.dot-purple { background: #c084fc; box-shadow: 0 0 8px rgba(192, 132, 252, .6); }
+.fhc-dot.dot-amber { background: #fbbf24; box-shadow: 0 0 8px rgba(251, 191, 36, .6); }
+.fhc-dot.dot-green { background: #4ade80; box-shadow: 0 0 8px rgba(74, 222, 128, .6); }
+.fhc-title {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.3;
+}
+.fhc-desc {
+  font-size: 11.8px;
+  color: var(--fg-muted);
+  line-height: 1.4;
+}
+[data-theme="holo"] .fhc-title {
+  font-family: 'Chakra Petch', 'Orbitron', sans-serif;
+  letter-spacing: .01em;
+}
+[data-theme="holo"] .fhc-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+[data-theme="holo"] .foundry-hero-chip {
+  background: rgba(8, 12, 32, .55);
+  border-color: rgba(77, 225, 255, .18);
+}
+[data-theme="mica"] .foundry-hero-chip {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(26, 26, 34, 0.12);
+}
+[data-theme="mica"] .fhc-title { color: #1a1a22; }
+[data-theme="mica"] .fhc-desc { color: #4b5563; }
+[data-theme="mica"] .fhc-top { color: #6b7280; }
+.foundry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+@media (max-width: 960px) {
+  .foundry-grid { grid-template-columns: 1fr; }
+}
+.foundry-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 22px 20px;
+  backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--sat));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
+  overflow: hidden;
+}
+.foundry-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), var(--tint), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--t);
+  pointer-events: none;
+}
+.foundry-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+.foundry-card:hover::before {
+  opacity: 1;
+}
+.foundry-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.foundry-tag {
+  font-family: var(--font-mono);
+  font-size: 10.8px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--a1);
+  background: var(--tint);
+  border: 1px solid var(--border);
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+}
+.foundry-tag.tag-purple { color: #c084fc; background: rgba(192, 132, 252, 0.1); border-color: rgba(192, 132, 252, 0.3); }
+.foundry-tag.tag-cyan { color: #38bdf8; background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.3); }
+.foundry-tag.tag-green { color: #4ade80; background: rgba(74, 222, 128, 0.1); border-color: rgba(74, 222, 128, 0.3); }
+.foundry-tag.tag-amber { color: #fbbf24; background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3); }
+.foundry-live-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.foundry-live-dot::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.foundry-repo-name {
+  font-family: var(--font-mono);
+  font-size: 11.8px;
+  color: var(--fg-dim);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.foundry-item-title {
+  font-family: var(--font-sans);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--fg);
+  line-height: 1.25;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+[data-theme="holo"] .foundry-item-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+.foundry-friction {
+  background: rgba(239, 68, 68, 0.06);
+  border-left: 2px solid #ef4444;
+  padding: 8px 12px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--fg-muted);
+}
+.foundry-friction strong {
+  color: #f87171;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.foundry-solution {
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 2px solid #10b981;
+  padding: 8px 12px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--fg-muted);
+}
+.foundry-solution strong {
+  color: #34d399;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.foundry-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+.foundry-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-dim);
+  background: var(--surface-hi);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+.foundry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--border);
+}
+.foundry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fg-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  transition: all var(--t-fast);
+  text-decoration: none;
+}
+.foundry-btn:hover {
+  color: var(--fg);
+  border-color: var(--border-strong);
+  background: var(--surface-hi);
+  transform: translateY(-1px);
+}
+.foundry-btn svg {
+  flex-shrink: 0;
+  opacity: .75;
+  transition: opacity var(--t-fast);
+}
+.foundry-btn:hover svg {
+  opacity: 1;
+}
+.foundry-btn-primary {
+  color: var(--a1);
+  border-color: var(--a1);
+  background: var(--tint);
+}
+.foundry-btn-primary:hover {
+  color: #fff;
+  background: var(--a1);
+  border-color: var(--a1);
+}
+
+/* ============================================================================
+   FOUNDRY THEME HARMONIZATION (Holo, Mica, Fluent, Liquid Parity)
+   ============================================================================ */
+/* Holo Theme Overrides for Foundry */
+[data-theme="holo"] .foundry-card {
+  background: rgba(8, 12, 32, .55);
+  border-color: rgba(77, 225, 255, .18);
+}
+[data-theme="holo"] .foundry-item-title {
+  font-family: 'Chakra Petch', 'Orbitron', sans-serif;
+  font-size: 17.5px;
+  font-weight: 700;
+  letter-spacing: .015em;
+}
+[data-theme="holo"] .foundry-eyebrow,
+[data-theme="holo"] .foundry-tag,
+[data-theme="holo"] .foundry-live-dot,
+[data-theme="holo"] .foundry-repo-name,
+[data-theme="holo"] .foundry-chip,
+[data-theme="holo"] .foundry-btn {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+[data-theme="holo"] .foundry-tag,
+[data-theme="holo"] .foundry-chip {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+[data-theme="holo"] .foundry-lead,
+[data-theme="holo"] .foundry-friction,
+[data-theme="holo"] .foundry-solution {
+  font-family: 'Rajdhani', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: .005em;
+}
+[data-theme="holo"] .foundry-lead {
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+[data-theme="holo"] .foundry-friction,
+[data-theme="holo"] .foundry-solution {
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+[data-theme="holo"] .foundry-friction {
+  background: rgba(255, 77, 109, 0.08);
+  border-left: 2px solid #ff4d6d;
+}
+[data-theme="holo"] .foundry-friction strong {
+  color: #ff4d6d;
+  font-family: 'Share Tech Mono', monospace;
+  text-shadow: 0 0 8px rgba(255, 77, 109, .55);
+}
+[data-theme="holo"] .foundry-solution {
+  background: rgba(77, 255, 180, 0.08);
+  border-left: 2px solid #4dffb4;
+}
+[data-theme="holo"] .foundry-solution strong {
+  color: #4dffb4;
+  font-family: 'Share Tech Mono', monospace;
+  text-shadow: 0 0 8px rgba(77, 255, 180, .55);
+}
+[data-theme="holo"] .foundry-btn-primary {
+  box-shadow: 0 0 0 1px var(--a1), 0 0 12px rgba(77,225,255,.3);
+}
+
+/* Mica (Light Paper) Theme Overrides for Foundry */
+[data-theme="mica"] .foundry-card {
+  background: rgba(255, 255, 255, .75);
+  border-color: rgba(26, 26, 34, .14);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .04), 0 4px 12px rgba(0, 0, 0, .03);
+}
+[data-theme="mica"] .foundry-card:hover {
+  border-color: rgba(15, 118, 110, .45);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+}
+[data-theme="mica"] .foundry-eyebrow .foundry-sys-target {
+  color: #1a1a22;
+}
+[data-theme="mica"] .foundry-friction {
+  background: rgba(220, 38, 38, 0.06);
+  border-left: 2px solid #dc2626;
+  color: #374151;
+}
+[data-theme="mica"] .foundry-friction strong {
+  color: #b91c1c;
+}
+[data-theme="mica"] .foundry-solution {
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 2px solid #059669;
+  color: #374151;
+}
+[data-theme="mica"] .foundry-solution strong {
+  color: #047857;
+}
+[data-theme="mica"] .foundry-live-dot {
+  color: #4b5563;
+}
+[data-theme="mica"] .foundry-live-dot::before {
+  background: #059669;
+  box-shadow: 0 0 6px rgba(5, 150, 105, 0.4);
+}
+[data-theme="mica"] .foundry-tag {
+  color: #0f766e;
+  background: rgba(15, 118, 110, 0.08);
+  border-color: rgba(15, 118, 110, 0.22);
+}
+[data-theme="mica"] .foundry-tag.tag-purple {
+  color: #7e22ce;
+  background: rgba(126, 34, 206, 0.08);
+  border-color: rgba(126, 34, 206, 0.22);
+}
+[data-theme="mica"] .foundry-tag.tag-cyan {
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.22);
+}
+[data-theme="mica"] .foundry-tag.tag-green {
+  color: #15803d;
+  background: rgba(21, 128, 61, 0.08);
+  border-color: rgba(21, 128, 61, 0.22);
+}
+[data-theme="mica"] .foundry-tag.tag-amber {
+  color: #b45309;
+  background: rgba(180, 83, 9, 0.08);
+  border-color: rgba(180, 83, 9, 0.22);
+}
+[data-theme="mica"] .foundry-chip {
+  background: rgba(26, 26, 34, 0.05);
+  border-color: rgba(26, 26, 34, 0.12);
+  color: #374151;
+}
+[data-theme="mica"] .foundry-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a22;
+  border-color: rgba(26, 26, 34, 0.16);
+}
+[data-theme="mica"] .foundry-btn:hover {
+  background: #ffffff;
+  border-color: #1a1a22;
+  color: #000000;
+}
+[data-theme="mica"] .foundry-btn-primary {
+  color: #0f766e;
+  border-color: #0f766e;
+  background: rgba(15, 118, 110, 0.08);
+}
+[data-theme="mica"] .foundry-btn-primary:hover {
+  color: #ffffff;
+  background: #0f766e;
+  border-color: #0f766e;
+}
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
@@ -1101,7 +1638,7 @@ html[data-view="cover"] main { padding-top: 16px; }
 @media (hover: none) {
   .spotlight { display: none; }
   .highlight:hover, .role:hover, .stat-card:hover, .hero-stat:hover,
-  .skill-row:hover, .edu:hover, .platform:hover { transform: none; }
+  .skill-row:hover, .edu:hover, .platform:hover, .foundry-card:hover { transform: none; }
 }
 
 /* ── Safe-area insets for notched/rounded devices (iPhone X+ etc.) ── */
@@ -1235,7 +1772,8 @@ html[data-view="cover"] main { padding-top: 16px; }
   [data-theme="holo"] .hero-stat,
   [data-theme="holo"] .skill-row,
   [data-theme="holo"] .edu,
-  [data-theme="holo"] .platform {
+  [data-theme="holo"] .platform,
+  [data-theme="holo"] .foundry-card {
     transform-style: preserve-3d;
     transition: transform .35s var(--ease), border-color var(--t-fast), box-shadow .35s var(--ease);
     will-change: transform;
@@ -1245,7 +1783,8 @@ html[data-view="cover"] main { padding-top: 16px; }
   [data-theme="holo"] .hero-stat:hover,
   [data-theme="holo"] .skill-row:hover,
   [data-theme="holo"] .edu:hover,
-  [data-theme="holo"] .platform:hover {
+  [data-theme="holo"] .platform:hover,
+  [data-theme="holo"] .foundry-card:hover {
     transform:
       perspective(900px)
       rotateX(calc(var(--myN, 0) * -7deg))
@@ -1349,6 +1888,7 @@ html[data-view="cover"] main { padding-top: 16px; }
   /* Single-view printing — avoid trailing blank pages */
   html[data-view="cover"] .cover-letter { page-break-after: auto !important; break-after: auto !important; }
   html[data-view="resume"] .resume-main { page-break-before: auto !important; break-before: auto !important; }
+  html[data-view="foundry"] .foundry-main { page-break-before: auto !important; break-before: auto !important; }
 
   /* Hide only interactive chrome and smudge-causing layers.
      KEEP bg-layer + bg-gradient + bg-grid for the same atmosphere as web. */
@@ -1536,7 +2076,7 @@ html[data-view="cover"] main { padding-top: 16px; }
      in a partial-page remainder, so Chrome would move the entire role to the
      next page, leaving big empty real estate behind (e.g. after the graph).
      Individual .bullet items still avoid splitting, so content stays readable. */
-  .highlight, .stat-card, .skill-row, .edu, .platform, .hero-stat, .letter, .bullet { page-break-inside: avoid !important; }
+  .highlight, .stat-card, .skill-row, .edu, .platform, .hero-stat, .letter, .bullet, .foundry-card { page-break-inside: avoid !important; }
   .section { page-break-inside: auto !important; }
   .role { page-break-inside: auto !important; }
   /* Keep a role's header with at least the first bullet when splitting */
@@ -1576,7 +2116,7 @@ html[data-view="cover"] main { padding-top: 16px; }
   <div class="nav-doc-switch" role="tablist" aria-label="Document view">
     <button class="doc-btn" data-view-set="resume" data-active="true" title="Show Resume (R)">Resume</button>
     <button class="doc-btn" data-view-set="cover" title="Show Cover Letter (C)">Cover</button>
-    <button class="doc-btn" data-view-set="both" title="Show Both (B)">Both</button>
+    <button class="doc-btn" data-view-set="foundry" title="Show Engineering Foundry (F)">Foundry</button>
   </div>
   <div class="nav-links">
     <a href="#cover">Cover</a>
@@ -1663,7 +2203,7 @@ html[data-view="cover"] main { padding-top: 16px; }
       <div class="letter-sig-close">Respectfully,</div>
       <div class="letter-sig-name">Appa Rao Vadde</div>
       <div class="letter-sig-typed">Appa Rao Vadde</div>
-      <div class="letter-sig-role">Staff-level · AI Platforms · Developer Productivity · SRE</div>
+      <div class="letter-sig-role">Staff-level · Software Development Engineer · Cloud Platform · AI Platforms · Dev Productivity · SRE</div>
     </footer>
   </article>
 </section>
@@ -1676,9 +2216,11 @@ html[data-view="cover"] main { padding-top: 16px; }
 <!-- Hero -->
 <header class="hero section" id="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">whoami · staff-level · 2016 → present</div>
+    <div class="hero-eyebrow">whoami · staff-level software development &amp; cloud platform engineer · 2016 → present</div>
     <h1 class="hero-name">APPA RAO VADDE</h1>
     <p class="hero-title">
+      <span>Software Development Engineer</span><span class="dot"></span>
+      <span>Cloud Platform Engineer</span><span class="dot"></span>
       <span>AI Platforms</span><span class="dot"></span>
       <span>Developer Productivity</span><span class="dot"></span>
       <span>Site Reliability Engineering</span>
@@ -2011,13 +2553,277 @@ html[data-view="cover"] main { padding-top: 16px; }
 
 </div><!-- /.resume-main -->
 
+<!-- ========================================================================
+     THE ENGINEERING FOUNDRY (Autonomous R&D · DevEx Cockpits · Systems)
+     ======================================================================== -->
+<div class="foundry-main" id="foundry">
+
+<header class="foundry-hero section in" id="foundry-hero">
+  <div class="foundry-eyebrow">cat <span class="foundry-sys-target">//foundry.sys</span> <span class="foundry-sys-flag">--render=cockpit</span></div>
+  <h1 class="foundry-title">THE ENGINEERING FOUNDRY</h1>
+  
+  <div class="foundry-lead-wrap">
+    <p class="foundry-lead">
+      Systems, developer cockpits, and computational mental models forged outside corporate mandates. Built not because someone assigned a ticket, but because existing tools failed the mission—solving terminal blindness in AI agents, context-window bloat, local model observability, and interview anxiety for junior engineers.
+    </p>
+    <div class="foundry-hero-chips">
+      <a class="foundry-hero-chip" href="#tool-session-explorer" data-foundry-jump="tool-session-explorer" title="Jump to Session Explorer">
+        <div class="fhc-top">
+          <span class="fhc-tag-wrap"><span class="fhc-dot dot-cyan"></span> Agent Cockpit</span>
+          <span class="fhc-arrow">↓</span>
+        </div>
+        <div class="fhc-title">Terminal Blindness</div>
+        <div class="fhc-desc">Dialogue isolation &amp; real-time SSE</div>
+      </a>
+      <a class="foundry-hero-chip" href="#tool-omni-graph" data-foundry-jump="tool-omni-graph" title="Jump to Omni-Graph">
+        <div class="fhc-top">
+          <span class="fhc-tag-wrap"><span class="fhc-dot dot-purple"></span> AST Knowledge</span>
+          <span class="fhc-arrow">↓</span>
+        </div>
+        <div class="fhc-title">Context Bloat</div>
+        <div class="fhc-desc">Live-watch &amp; &le;1.5k token graphs</div>
+      </a>
+      <a class="foundry-hero-chip" href="#tool-quarkdock" data-foundry-jump="tool-quarkdock" title="Jump to QuarkDock">
+        <div class="fhc-top">
+          <span class="fhc-tag-wrap"><span class="fhc-dot dot-cyan"></span> Local AI Ops</span>
+          <span class="fhc-arrow">↓</span>
+        </div>
+        <div class="fhc-title">Deep Observability</div>
+        <div class="fhc-desc">Metal GPU, OTel &amp; LLM-as-judge</div>
+      </a>
+      <a class="foundry-hero-chip" href="#tool-dsa" data-foundry-jump="tool-dsa" title="Jump to DSA Pattern Bible">
+        <div class="fhc-top">
+          <span class="fhc-tag-wrap"><span class="fhc-dot dot-green"></span> Mentorship</span>
+          <span class="fhc-arrow">↓</span>
+        </div>
+        <div class="fhc-title">SIFT Framework</div>
+        <div class="fhc-desc">Algorithmic first-principles bible</div>
+      </a>
+      <a class="foundry-hero-chip" href="#tool-design-patterns" data-foundry-jump="tool-design-patterns" title="Jump to Design Patterns">
+        <div class="fhc-top">
+          <span class="fhc-tag-wrap"><span class="fhc-dot dot-amber"></span> Architecture</span>
+          <span class="fhc-arrow">↓</span>
+        </div>
+        <div class="fhc-title">Anti-Drift Design</div>
+        <div class="fhc-desc">Decoupled CQRS &amp; event sourcing</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="section in" id="foundry-grid-section">
+  <div class="section-head">
+    <h2 class="section-title">ls -la <span class="section-title-name">Systems_and_Cockpits/</span></h2>
+    <span class="section-kicker">5 open-source systems · live telemetry &amp; docs</span>
+  </div>
+
+  <div class="foundry-grid">
+    <!-- Card 1: Session Explorer -->
+    <article class="foundry-card" id="tool-session-explorer">
+      <div>
+        <div class="foundry-card-head">
+          <span class="foundry-tag">DEVEX COCKPIT</span>
+          <span class="foundry-live-dot">LIVE TOOL</span>
+        </div>
+        <div class="foundry-repo-name">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          vadde/PolyTuring · tools/session-explorer
+        </div>
+        <h3 class="foundry-item-title">Session Explorer · Browser Cockpit for CLI Coding Agents</h3>
+        <div class="foundry-friction">
+          <strong>The Friction:</strong> CLI coding assistants (Claude Code, Antigravity, OpenHands) flood terminal scrollbacks with hundreds of noisy tool executions, raw JSON payloads, and truncated markdown. Sifting through megabytes of raw terminal logs to verify generated architectures, review plans, and inspect decision trajectories creates severe cognitive fatigue and terminal blindness.
+        </div>
+        <div class="foundry-solution">
+          <strong>The Breakthrough:</strong> A compiled Go conversation intelligence cockpit that ingests multi-turn agent transcripts with sub-second delta updates. Features 1-click Dialogue Isolation (stripping autonomous tool execution noise to expose pure human intent and model reasoning), an In-Browser Artifact &amp; Plan Viewer with syntax highlighting and instant clipboard paths, an Interactive Mermaid Diagram Theater with 2D pan/zoom canvas, and real-time Server-Sent Events (SSE) live tailing with sub-millisecond WIP state recovery.
+        </div>
+      </div>
+      <div>
+        <div class="foundry-chips">
+          <span class="foundry-chip">Go 1.22</span>
+          <span class="foundry-chip">Server-Sent Events</span>
+          <span class="foundry-chip">Dialogue Isolation</span>
+          <span class="foundry-chip">Artifact &amp; Plan Viewer</span>
+          <span class="foundry-chip">Mermaid Theater</span>
+          <span class="foundry-chip">Zero-Dependency Binary</span>
+          <span class="foundry-chip">Sub-ms WIP Recovery</span>
+        </div>
+        <div class="foundry-actions">
+          <a class="foundry-btn foundry-btn-primary" href="https://vadde.github.io/PolyTuring/" target="_blank" rel="noopener">
+            Live Portal ↗
+          </a>
+          <a class="foundry-btn foundry-btn-gh" href="https://github.com/vadde/PolyTuring/tree/main/tools/session-explorer" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Repo ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2: Omni-Graph -->
+    <article class="foundry-card" id="tool-omni-graph">
+      <div>
+        <div class="foundry-card-head">
+          <span class="foundry-tag tag-purple">GRAPH-RAG &amp; AST</span>
+          <span class="foundry-live-dot">LIVE ENGINE</span>
+        </div>
+        <div class="foundry-repo-name">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          vadde/PolyTuring · tools/omni-graph
+        </div>
+        <h3 class="foundry-item-title">Omni-Graph · Deterministic AST Knowledge Hub for AI Agents</h3>
+        <div class="foundry-friction">
+          <strong>The Friction:</strong> AI coding agents are context-blind. Standard file tools run blind recursive grep or cat entire directories, dumping 10,000+ lines of raw code into prompts. This burns tokens, blows past model context limits, triggers severe hallucinations, and causes models to lose architectural coherence.
+        </div>
+        <div class="foundry-solution">
+          <strong>The Breakthrough:</strong> A local semantic knowledge hub built in Rust and SurrealDB v2 that models polyglot codebases as rich AST graphs with 384-dim HNSW vector search. Features a real-time Live-Watch daemon that detects filesystem events to incrementally re-index AST deltas on save, and native Symbolic LSP Analytics (definition lookup, reverse call-graph lineage, and 2-hop condensed subgraphs). Enforces a strict mathematical token budget (&le;1,500 tokens per slice) to completely eliminate context bloat.
+        </div>
+      </div>
+      <div>
+        <div class="foundry-chips">
+          <span class="foundry-chip">Rust</span>
+          <span class="foundry-chip">SurrealDB v2</span>
+          <span class="foundry-chip">Tree-Sitter AST</span>
+          <span class="foundry-chip">Live-Watch Daemon</span>
+          <span class="foundry-chip">Symbolic LSP Analytics</span>
+          <span class="foundry-chip">384d HNSW Vector</span>
+          <span class="foundry-chip">&le;1,500 Token Shield</span>
+          <span class="foundry-chip">Cosmograph WebGL</span>
+        </div>
+        <div class="foundry-actions">
+          <a class="foundry-btn foundry-btn-primary" href="https://vadde.github.io/PolyTuring/" target="_blank" rel="noopener">
+            Live Portal ↗
+          </a>
+          <a class="foundry-btn foundry-btn-gh" href="https://github.com/vadde/PolyTuring/tree/main/tools/omni-graph" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Repo ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3: QuarkDock -->
+    <article class="foundry-card" id="tool-quarkdock">
+      <div>
+        <div class="foundry-card-head">
+          <span class="foundry-tag tag-cyan">LOCAL AI &amp; OBSERVABILITY</span>
+          <span class="foundry-live-dot">ACTIVE PLATFORM</span>
+        </div>
+        <div class="foundry-repo-name">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          vadde/QuarkDock
+        </div>
+        <h3 class="foundry-item-title">QuarkDock · Local AI Playground, Deep Tracing &amp; Quality Gates</h3>
+        <div class="foundry-friction">
+          <strong>The Friction:</strong> In enterprise GenAI, running a local model or building a simple chat wrapper is trivial; the hard problem is observability, trace fidelity, and autonomous quality governance. When dozens of agent spans and tool calls execute, understanding reasoning trajectories, latency bottlenecks, and grounded correctness is impossible without deep instrumentation.
+        </div>
+        <div class="foundry-solution">
+          <strong>The Breakthrough:</strong> An enterprise-grade, self-hosted AI ecosystem with native Apple Silicon Metal acceleration (55–85 tok/sec) and deep Langfuse v2 + OpenTelemetry (OTel) tracing. Captures every prompt chunk, tool execution span, and inference latency with sub-millisecond trace fidelity, paired with a decoupled autonomous LLM-as-judge evaluation daemon that continuously scores correctness, conciseness, and hallucinations against local Metal models and streams evaluations directly to Langfuse.
+        </div>
+      </div>
+      <div>
+        <div class="foundry-chips">
+          <span class="foundry-chip">Apple Metal GPU</span>
+          <span class="foundry-chip">55–85 tok/sec</span>
+          <span class="foundry-chip">Langfuse v2 Tracing</span>
+          <span class="foundry-chip">OpenTelemetry (OTel)</span>
+          <span class="foundry-chip">LLM-as-Judge Daemon</span>
+          <span class="foundry-chip">FastAPI Gateway</span>
+          <span class="foundry-chip">React 19 Liquid Glass</span>
+        </div>
+        <div class="foundry-actions">
+          <a class="foundry-btn foundry-btn-gh" href="https://github.com/vadde/QuarkDock" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Repo ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 4: DSA Pattern Bible -->
+    <article class="foundry-card" id="tool-dsa">
+      <div>
+        <div class="foundry-card-head">
+          <span class="foundry-tag tag-green">MENTORSHIP &amp; INTUITION</span>
+          <span class="foundry-live-dot">OPEN KNOWLEDGE</span>
+        </div>
+        <div class="foundry-repo-name">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          vadde/DSA
+        </div>
+        <h3 class="foundry-item-title">DSA Pattern Bible · Algorithmic Mental Models for Mentorship</h3>
+        <div class="foundry-friction">
+          <strong>The Mission:</strong> Born directly from co-running enterprise intern pipelines and mentoring junior software engineers. Rote memorization of hundreds of LeetCode problems creates interview paralysis and fails to build the foundational analytical intuition required for real-world production engineering.
+        </div>
+        <div class="foundry-solution">
+          <strong>The Breakthrough:</strong> The SIFT Mental Model (State, Invariant, Flow, Transitions)—a foundational framework that demystifies algorithms by abstracting problems into reusable architectural archetypes (Sliding Window, Monotonic Stack, Two Pointers, Dynamic Programming State Machines). Replaces blind memorization with structural pattern recognition and engineering clarity.
+        </div>
+      </div>
+      <div>
+        <div class="foundry-chips">
+          <span class="foundry-chip">Intern Mentorship</span>
+          <span class="foundry-chip">SIFT Mental Model</span>
+          <span class="foundry-chip">State Invariants</span>
+          <span class="foundry-chip">Algorithmic Archetypes</span>
+          <span class="foundry-chip">Pattern Recognition</span>
+          <span class="foundry-chip">Complexity Analysis</span>
+        </div>
+        <div class="foundry-actions">
+          <a class="foundry-btn foundry-btn-gh" href="https://github.com/vadde/DSA" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Repo ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 5: Design Patterns -->
+    <article class="foundry-card" id="tool-design-patterns">
+      <div>
+        <div class="foundry-card-head">
+          <span class="foundry-tag tag-amber">SYSTEM DESIGN</span>
+          <span class="foundry-live-dot">ARCHITECTURE</span>
+        </div>
+        <div class="foundry-repo-name">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          vadde/DesignPatterns
+        </div>
+        <h3 class="foundry-item-title">Design Patterns · System Design Resilience &amp; Anti-Drift</h3>
+        <div class="foundry-friction">
+          <strong>The Mission:</strong> Systems complexity and evolutionary architectural drift. Rapidly scaling microservice ecosystems often suffer from tight coupling, fragile monolithic dependencies, and brittle interfaces that degrade under enterprise throughput.
+        </div>
+        <div class="foundry-solution">
+          <strong>The Breakthrough:</strong> A pragmatic system design and architectural resilience blueprint. Demonstrates production-grade decoupling patterns (CQRS, Event Sourcing, Circuit Breakers, Unit of Work, Dependency Inversion) to insulate services against drift, ensuring distributed architectures remain modular, testable, and resilient under high-concurrency enterprise workloads.
+        </div>
+      </div>
+      <div>
+        <div class="foundry-chips">
+          <span class="foundry-chip">System Design</span>
+          <span class="foundry-chip">Architectural Anti-Drift</span>
+          <span class="foundry-chip">Distributed Decoupling</span>
+          <span class="foundry-chip">CQRS &amp; Event Sourcing</span>
+          <span class="foundry-chip">Circuit Breakers</span>
+          <span class="foundry-chip">Python 3.14</span>
+        </div>
+        <div class="foundry-actions">
+          <a class="foundry-btn foundry-btn-gh" href="https://github.com/vadde/DesignPatterns" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub Repo ↗
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</div><!-- /.foundry-main -->
+
 </main>
 
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-sig">
     <span class="footer-name">Appa Rao Vadde</span>
-    <span class="footer-tag">AI Platforms · Dev Productivity · SRE</span>
+    <span class="footer-tag">Software Development Engineer · Cloud Platform Engineer · AI Platforms · Dev Productivity · SRE</span>
   </div>
   <div class="footer-contact">
     <a href="mailto:apparao.vadde@gmail.com">apparao.vadde@gmail.com</a>
@@ -2031,7 +2837,7 @@ html[data-view="cover"] main { padding-top: 16px; }
 <!-- Keyboard HUD -->
 <div class="kbd-hud" id="kbdHud" aria-hidden="true">
   <span><kbd>1-4</kbd>theme</span><span class="dot">·</span>
-  <span><kbd>C/R</kbd>view</span><span class="dot">·</span>
+  <span><kbd>C/R/F</kbd>view</span><span class="dot">·</span>
   <span><kbd>⌘K</kbd>search</span><span class="dot">·</span>
   <span><kbd>J/K</kbd>nav</span><span class="dot">·</span>
   <span><kbd>G</kbd>graph</span><span class="dot">·</span>
@@ -2045,7 +2851,7 @@ html[data-view="cover"] main { padding-top: 16px; }
   <div class="palette">
     <div class="palette-input-wrap">
       <span class="palette-icon">&gt;</span>
-      <input type="text" class="palette-input" id="paletteInput" placeholder="search cover + resume — bullets, skills, metrics…" autocomplete="off" />
+      <input type="text" class="palette-input" id="paletteInput" placeholder="search resume, cover, or foundry — tools, skills, metrics…" autocomplete="off" />
     </div>
     <div class="palette-results" id="paletteResults"></div>
   </div>
@@ -2064,11 +2870,11 @@ html[data-view="cover"] main { padding-top: 16px; }
       <kbd>1 / 2 / 3 / 4</kbd><span>Switch theme (Liquid · Fluent · Mica · Holo)</span>
       <kbd>C</kbd><span>Show Cover Letter only</span>
       <kbd>R</kbd><span>Show Resume only</span>
-      <kbd>B</kbd><span>Show Both (default)</span>
-      <kbd>⌘K / Ctrl+K</kbd><span>Command palette — fuzzy search cover + resume</span>
+      <kbd>F</kbd><span>Show Engineering Foundry (Autonomous Systems &amp; DevEx)</span>
+      <kbd>⌘K / Ctrl+K</kbd><span>Command palette — fuzzy search across all views</span>
       <kbd>J / K</kbd><span>Scroll next / previous section (vim)</span>
       <kbd>G</kbd><span>Focus the career graph</span>
-      <kbd>P</kbd><span>Print whatever's on screen — Resume / Cover / Both follows current view</span>
+      <kbd>P</kbd><span>Print whatever's on screen — Resume / Cover / Foundry</span>
       <kbd data-audio-only>M</kbd><span data-audio-only>Toggle background music — choice is remembered across visits</span>
       <kbd>?</kbd><span>Toggle this help</span>
       <kbd>Esc</kbd><span>Close any open modal · clear graph focus</span>
@@ -2092,7 +2898,7 @@ html[data-view="cover"] main { padding-top: 16px; }
   const root = document.documentElement;
   root.classList.add('js-ready');
   const THEMES = ['liquid', 'fluent', 'mica', 'holo'];
-  const VIEWS = ['both', 'cover', 'resume'];
+  const VIEWS = ['foundry', 'cover', 'resume'];
   const DEFAULT_THEME = 'holo';
   const DEFAULT_VIEW = 'resume';
 
@@ -2143,13 +2949,13 @@ html[data-view="cover"] main { padding-top: 16px; }
     setTheme(t, { silent: true });
   })();
 
-  // ========== Document view (cover / resume / both) ==========
+  // ========== Document view (cover / resume / foundry) ==========
   // Title suggestion for browser print dialog (becomes the default PDF filename)
   function titleFor(view){
     return ({
-      resume: 'Appa Rao Vadde Resume',
-      cover:  'Appa Rao Vadde Cover',
-      both:   'Appa Rao Vadde Cover Resume'
+      resume:  'Appa Rao Vadde — Resume · Software Development Engineer · Cloud Platform',
+      cover:   'Appa Rao Vadde — Cover Letter · Staff Engineering Seat',
+      foundry: 'Appa Rao Vadde — Engineering Foundry · Systems & Developer Cockpits'
     })[view] || 'Appa Rao Vadde Resume';
   }
   function setView(view, opts){
@@ -2162,10 +2968,10 @@ html[data-view="cover"] main { padding-top: 16px; }
     document.title = titleFor(view);
     // Scroll to top of viewport (sections have scroll-margin-top so headers are visible)
     if (view === 'cover') window.scrollTo({top: 0, behavior: 'smooth'});
-    else if (view === 'resume') window.scrollTo({top: 0, behavior: 'smooth'});
+    else if (view === 'foundry') window.scrollTo({top: 0, behavior: 'smooth'});
     else window.scrollTo({top: 0, behavior: 'smooth'});
     if (!(opts && opts.silent)) {
-      const vName = { resume: 'Resume', cover: 'Cover Letter', both: 'Cover + Resume' }[view] || view;
+      const vName = { resume: 'Resume', cover: 'Cover Letter', foundry: 'Engineering Foundry' }[view] || view;
       toast('VIEW → ' + vName.toUpperCase(), 'Showing ' + vName);
     }
     // If the command palette is open, refresh its scope to match the new view
@@ -2186,8 +2992,13 @@ html[data-view="cover"] main { padding-top: 16px; }
       const href = a.getAttribute('href');
       if (!href || !href.startsWith('#')) return;
       const currentView = root.getAttribute('data-view');
-      if (href === '#cover' && currentView !== 'cover' && currentView !== 'both') { e.preventDefault(); setView('cover'); }
-      else if (href !== '#cover' && currentView === 'cover') { e.preventDefault(); setView('resume'); setTimeout(() => document.querySelector(href)?.scrollIntoView({behavior: 'smooth', block: 'start'}), 80); }
+      if (href === '#cover' && currentView !== 'cover') { e.preventDefault(); setView('cover'); }
+      else if (href === '#foundry' && currentView !== 'foundry') { e.preventDefault(); setView('foundry'); }
+      else if (href !== '#cover' && href !== '#foundry' && (currentView === 'cover' || currentView === 'foundry')) {
+        e.preventDefault();
+        setView('resume');
+        setTimeout(() => document.querySelector(href)?.scrollIntoView({behavior: 'smooth', block: 'start'}), 80);
+      }
     });
   });
   (function initView(){
@@ -2207,7 +3018,7 @@ html[data-view="cover"] main { padding-top: 16px; }
     root.style.setProperty('--cy', e.clientY + 'px');
   }, { passive: true });
   document.addEventListener('pointermove', (e) => {
-    const cards = document.querySelectorAll('.stat-card, .highlight, .hero-stat, .skill-row, .edu, .platform');
+    const cards = document.querySelectorAll('.stat-card, .highlight, .hero-stat, .skill-row, .edu, .platform, .foundry-card');
     cards.forEach(card => {
       const r = card.getBoundingClientRect();
       if (e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom) {
@@ -2230,6 +3041,38 @@ html[data-view="cover"] main { padding-top: 16px; }
   }
   document.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
+
+  // ========== Foundry Radar Chips Jump Navigation ==========
+  let foundryFocusedEl = null;
+  function clearFoundryFocus() {
+    if (foundryFocusedEl) {
+      foundryFocusedEl.classList.remove('foundry-focus');
+      foundryFocusedEl = null;
+    }
+  }
+  document.querySelectorAll('.foundry-hero-chip[data-foundry-jump]').forEach(chip => {
+    chip.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = chip.getAttribute('data-foundry-jump');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      clearFoundryFocus();
+      target.classList.add('foundry-focus');
+      foundryFocusedEl = target;
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const tag = chip.querySelector('.fhc-title')?.textContent.trim() || 'System';
+      const desc = target.querySelector('.foundry-item-title')?.textContent.trim() || targetId;
+      toast('FOUNDRY → ' + tag.toUpperCase(), 'Focused: ' + desc);
+      setTimeout(() => clearFoundryFocus(), 3800);
+    });
+  });
+  document.addEventListener('wheel', () => { if (foundryFocusedEl) clearFoundryFocus(); }, { passive: true });
+  document.addEventListener('touchmove', () => { if (foundryFocusedEl) clearFoundryFocus(); }, { passive: true });
+  document.addEventListener('keydown', (e) => {
+    if (foundryFocusedEl && ['Escape','ArrowDown','ArrowUp','PageDown','PageUp'].includes(e.key)) {
+      clearFoundryFocus();
+    }
+  });
 
   // ========== Section reveal + Holo title glitch ==========
   const revealObs = new IntersectionObserver((entries) => {
@@ -2366,6 +3209,14 @@ html[data-view="cover"] main { padding-top: 16px; }
         href: '#expertise', el: s
       });
     });
+    document.querySelectorAll('.foundry-card').forEach(fc => {
+      corpus.push({
+        title: fc.querySelector('.foundry-item-title')?.textContent.trim() || 'Foundry System',
+        meta: 'Foundry · ' + (fc.querySelector('.foundry-tag')?.textContent.trim() || 'Systems'),
+        text: fc.textContent.replace(/\s+/g, ' ').trim(),
+        href: '#foundry', el: fc
+      });
+    });
     return corpus;
   }
 
@@ -2382,14 +3233,15 @@ html[data-view="cover"] main { padding-top: 16px; }
   function renderPaletteResults(q){
     if (!searchCorpus) searchCorpus = buildCorpus();
     // View-aware: only search within what's currently visible on screen.
-    // Resume view hides cover items, Cover view hides resume items, Both shows all.
+    // Resume view hides cover items, Cover view hides resume items, Foundry view shows foundry items.
     const view = root.getAttribute('data-view') || 'resume';
-    const viewFiltered = view === 'both'
-      ? searchCorpus
-      : searchCorpus.filter(it => {
-          const isCover = it.href === '#cover';
-          return view === 'cover' ? isCover : !isCover;
-        });
+    const viewFiltered = searchCorpus.filter(it => {
+      const isCover = it.href === '#cover';
+      const isFoundry = it.href === '#foundry' || (it.meta && it.meta.includes('Foundry'));
+      if (view === 'cover') return isCover;
+      if (view === 'foundry') return isFoundry;
+      return !isCover && !isFoundry;
+    });
     const ranked = viewFiltered
       .map(item => ({item, score: scoreMatch(item, q)}))
       .filter(r => q ? r.score > 0 : true)
@@ -2399,9 +3251,9 @@ html[data-view="cover"] main { padding-top: 16px; }
     if (ranked.length === 0) {
       const hint = view === 'cover'
         ? 'no matches in cover letter · try "hiring", "platforms", "team"…'
-        : view === 'resume'
-        ? 'no matches in resume · try "bedrock", "chaos", "$180K", "MCP"…'
-        : 'no matches · try "bedrock", "chaos", "django", "$180K", "MCP"…';
+        : view === 'foundry'
+        ? 'no matches in foundry · try "session explorer", "omni-graph", "rust", "metal", "SIFT"…'
+        : 'no matches in resume · try "bedrock", "chaos", "$180K", "MCP", "foundry"…';
       paletteResults.innerHTML = '<div class="palette-empty">' + hint + '</div>';
       return;
     }
@@ -2426,11 +3278,9 @@ html[data-view="cover"] main { padding-top: 16px; }
   }
   function palettePlaceholder(){
     const view = root.getAttribute('data-view') || 'resume';
-    return view === 'cover'
-      ? 'search cover letter — paragraphs…'
-      : view === 'resume'
-      ? 'search resume — bullets, highlights, skills…'
-      : 'search cover + resume — bullets, skills, metrics…';
+    if (view === 'cover') return 'search cover letter — paragraphs…';
+    if (view === 'foundry') return 'search foundry — session explorer, omni-graph, quarkdock, dsa, patterns…';
+    return 'search resume — bullets, highlights, skills, sde…';
   }
   function openPalette(){
     palette.classList.add('open');
@@ -2447,11 +3297,16 @@ html[data-view="cover"] main { padding-top: 16px; }
   function jumpTo(href, el){
     const target = el || document.querySelector(href);
     if (!target) return;
-    target.scrollIntoView({behavior: 'smooth', block: 'center'});
-    const prevOutline = target.style.outline;
-    target.style.outline = '2px solid var(--a1)';
-    target.style.borderRadius = target.style.borderRadius || '8px';
-    setTimeout(() => { target.style.outline = prevOutline; }, 1400);
+    if (href === '#cover' && root.getAttribute('data-view') !== 'cover') setView('cover');
+    else if (href === '#foundry' && root.getAttribute('data-view') !== 'foundry') setView('foundry');
+    else if (href !== '#cover' && href !== '#foundry' && root.getAttribute('data-view') !== 'resume') setView('resume');
+    setTimeout(() => {
+      target.scrollIntoView({behavior: 'smooth', block: 'center'});
+      const prevOutline = target.style.outline;
+      target.style.outline = '2px solid var(--a1)';
+      target.style.borderRadius = target.style.borderRadius || '8px';
+      setTimeout(() => { target.style.outline = prevOutline; }, 1400);
+    }, 80);
   }
 
   // ========== Help modal ==========
@@ -2462,12 +3317,12 @@ html[data-view="cover"] main { padding-top: 16px; }
   helpBackdrop?.addEventListener('click', (e) => { if (e.target === helpBackdrop) closeHelp(); });
 
   // ========== Print ==========
-  // Print honors the current view: Resume only, Cover only, or Both — whatever's on screen.
+  // Print honors the current view: Resume only, Cover only, or Foundry — whatever's on screen.
   // Document title is set to the view-specific filename so the browser's
-  // Save-as-PDF dialog suggests: "Appa Rao Vadde Resume" / "Cover" / "Cover Resume".
+  // Save-as-PDF dialog suggests: "Appa Rao Vadde Resume" / "Cover" / "Foundry".
   function doPrint(){
     const v = root.getAttribute('data-view');
-    const vName = { resume: 'Resume', cover: 'Cover Letter', both: 'Cover + Resume' }[v] || 'Resume';
+    const vName = { resume: 'Resume', cover: 'Cover Letter', foundry: 'Engineering Foundry' }[v] || 'Resume';
     document.title = titleFor(v);
     toast('PRINT → ' + vName.toUpperCase(), 'Sending ' + vName + ' to print');
     setTimeout(() => window.print(), 120);
@@ -2577,7 +3432,7 @@ html[data-view="cover"] main { padding-top: 16px; }
   // ========== Keyboard shortcuts ==========
   function focusGraph(){ document.getElementById('graph')?.scrollIntoView({behavior: 'smooth'}); }
   function scrollSection(dir){
-    const sections = Array.from(document.querySelectorAll('#cover, #hero, #stats, #highlights, #summary, #expertise, #graph, #experience, #education'));
+    const sections = Array.from(document.querySelectorAll('#cover, #hero, #stats, #highlights, #summary, #expertise, #graph, #experience, #education, #foundry-hero, #tool-session-explorer, #tool-omni-graph, #tool-quarkdock, #tool-dsa, #tool-design-patterns'));
     const scrollTop = window.scrollY + 100;
     let idx = sections.findIndex(s => s.offsetTop >= scrollTop);
     if (idx === -1) idx = sections.length - 1;
@@ -2631,7 +3486,7 @@ html[data-view="cover"] main { padding-top: 16px; }
     else if (e.key === '4') setTheme('holo', {boot: true});
     else if (k === 'c') { e.preventDefault(); setView('cover'); }
     else if (k === 'r') { e.preventDefault(); setView('resume'); }
-    else if (k === 'b') { e.preventDefault(); setView('both'); }
+    else if (k === 'f') { e.preventDefault(); setView('foundry'); }
     else if (k === 'p') { e.preventDefault(); doPrint(); }
     else if (k === 'm' && !isCoarsePointer) { e.preventDefault(); toggleAudio(); }
     else if (k === 'g') { e.preventDefault(); focusGraph(); }
